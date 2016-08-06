@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ecf0f1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            
+            
+          <LinearLayout
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#3498db" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vision Statement"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:typeface="serif"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+<TextView
+         
+        android:layout_margin="3dp"
+        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     Technocrats Appware Businesshas a vision to serve our nation and take it to new heights in service industry. We want India to be the first choice for investors not because of its cheap devices in fact due to the quality of  software/application and services it provides."
+        android:textAppearance="?android:attr/textAppearanceMedium" />  
+            
+            
+   <LinearLayout
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#d35400" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mission Statement"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:typeface="serif"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+<TextView
+         
+        android:background="#ffffff"
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     Technocrats Appware Businesswas started with a thought which came into execution and  then there was no U turn. Mr. Jay Shah executed his brilliant idea and started with hand full  of people. However, within a short span of 2 months we have reached a respectable figure  of 5  clients. We will train and place candidates in leading organizations where they are  performing as per best of their skills and knowledge. We have served major US and UK  clients and are expanding rapidly. Our mission is to take India at the top in service industry."
+        android:textAppearance="?android:attr/textAppearanceMedium" />         
+            
+
+
+
+<LinearLayout
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1abc9c" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Competitiveness"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:typeface="serif"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+<TextView
+         
+        android:background="#ffffff"
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     Quality is not the only factor which proves the competency in the market, there are other factor involves too; Time management, honesty, integrity, market knowledge, cost efficiency and much more. Technocrats AppwareBusinesskeeps all parameters in mind when it comes to delivery of work. 
+ We analyse our Clients requirement, we study the market, and after apposite planning, and analytics comes the execution. We have Six Sigma certified staff, hence we place our own Quality benchmarking and deliver in accordance."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+
+<LinearLayout
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#8e44ad" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quality Policies"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:typeface="serif"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+<TextView
+         
+        android:background="#ffffff"
+        android:layout_marginBottom="7dp"
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     We are a team of Quality Six Sigma green belt and black belt certified people. Henceforth, delivering quality  is in our veins. We have Kaizan and Lean certified staff, and focus on individual and team efforts towards achievement of goals while eliminating waste."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

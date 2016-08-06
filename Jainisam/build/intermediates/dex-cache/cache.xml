@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="922c24fbfc4247947fcfaf2b95f295a16a8c3d17">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-9.0.2_55bbe0700539dba7ac7da8436ee617eb19719328\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bc156efaaee99f1ef6bf471347373a4cbb28e2a1">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-9.0.2_78ec5d3084cf2ad30a8030bac60643cce6c7b022\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.prolificinteractive\material-calendarview\1.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="19f21aeff153921e11375e50183f30405d018477">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.prolificinteractive-material-calendarview-1.1.0_ee85188718bddbf7fcacc201b7bd679d655d0c1d\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_7b3613883b1f2674d50342d9c584cd458935e065\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="604ecf403feb0084dc6d0c12f1677a490cf45e4c">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-9.0.2_4ba1d72d1a5e14b33033dee6879b330723fab671\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="cf16220db9128d91a215aedc739584181d5ca6a4">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-9.0.2_bbd6845fe875f873d5fc920a8aa996643448031a\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_920aac5e6400f77ca92e8ea55597de64a459272a\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ebb8fa823f9bceed930edb3377133e75aa3e2625">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_18659fdc5b5fd698b173305464711cfdd189b8de\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a45bc1ed812137b21dddd1cedaa3712b308f0b3f">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-9.0.2_d9f50bd9703c7b9f3879ac5f4eab28a2cf2aacf3\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9819419ce8d79f3f81a0fc70f9345ac8c843af9c">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.0.2_1811d51858a89f1e90c0257b816752360eda4e41\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-23.0.0_4c872080d5b023eba3f697045b172c2af9d16600\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.0.2_c3d4908a3dd33d45157a58478fb27513fe260994\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="829c6e46cb221c2102801221c648b77113743e81">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.0.2_163509225dbbf164059b9f01e58d7597e3e955e9\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\libs\activation.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\2\activation_81f27504c6ecec7e6eacea03d5577bac28ad65b1\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.2_a9b75ca4cb6fbfa90575c48bc952581243f86285\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2ab5be19bbd34bae74662ea6b2d4451314d92d97">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-9.0.2_2643b1305cd100df54733ee29c5b40b26b6db65b\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="be09545b7e6ff322c7286d2e80bed3b75b76c529">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_4fadfe9fac2b043fef82948ea0829104f491ce08\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.0.2_7a983b59b742fe6c4d0cdd6a1fbbdede4510c526\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="cd4c7c54e15d9ccbc448384fa2c4684d69ca73f0">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.0.2_3fd12e01462b2a7835738b9ea77dcb3db0dcab21\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_39238e9afbe480e79dc1d212baf39e4f90ff1798\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="003ebdacd5f75067b8724f92bd5eefa323d870aa">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-gridlayout-v7-23.3.0_cb057892c5cfcda1c07265b30f873f5c2f508eeb\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0c835e9f3875cf245877c9b17d1c69bc98f16057">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-9.0.2_64c6438b6e783dad0d20c185b3824b4af6fb13e7\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fe5b47e764869f1076cb9cfe12801ed2ef4e9117">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-9.0.2_0c6886e92d020a273f798c1c3f592f30b541b7e2\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f4fb6981392ca7680d02fd57d26d6124c141d9d9">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-9.0.2_d9b287137dde51840d7948ddef63514a68067406\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.0.2_2f6eed67562a9c42523f1efc8e9af8447998ebf1\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d900f2a1ff098cac8befe6c023d723e9afb154be">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.0.2_148c517825d994d7d6f9c105e447533b9a188727\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6ff48ef26bc539c78af4aa061cb9bad6abcbf5e8">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.0.2_8c3920f86752673f1afe0abd3ea6d85ddbcf60c4\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2bf893856577f5038c0b8007a43fda3b3c5beb23">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-23.4.0_a191205be808459f640a071a30d4233fb7f6a6db\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_1d726426c1e380e6abac1ed5b767496d345c744f\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="92a1d5f71b0fc8938f1d3f2e6ef984b52b894b4d">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.0.2_549e6b5dfa1471532fa084df5603694acb93b30e\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_ac34cc11cec5fca32529e98fff9d6b1ba24f9ca1\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="53f10fcd322a3931495d6ca2078a81f4957cdbce">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-9.0.2_e3f6199bcdc332c3e10a25381e495dc9d2b52c18\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\libs\additionnal.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\2\additionnal_13177b9ccbcea0a2ae7970cd537f2441088b771a\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6c58c14d15602fea2c50138c73bb107e8b832b62">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-9.0.2_860295c5a0e7db3cfa7ed85b6e87cd84a8a1a745\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="28baadd077f5b9c18aa62f8043ee44a622f71a80">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d35dc39d974a8952379ffc2ef2e55a487b3b125d\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.0.2_60779b35ba330f39c3630518109b2097b304234f\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.0.2_c1f642547e3af4d623dce91d8756c0dae21c7a43\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jay\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-android-1.2.0_0daa709b3f08cc7f268810a7cb41d0adb2a0c4e7\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e11da70cff6a544a45cdc21f419802d9bb9043ac">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-9.0.2_586e57ef339d69226128f36142b4ac58d19299d7\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_sdk_6.0\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_55d6713d0ea03b84c66355db7e1ae3ff69bb3ebe\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c96952c162c9f6076f44c5939982cb35491442ea">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-9.0.2_650f21473f7afe31ab2ed4fd8b33915364c891f6\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b6af089f583d547bcffc0689b2e80bc7aaa54b15">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-9.0.2_245a16e314649c5732c461052d26d0952dc21afe\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a498fab72f8663c26fbf3d4496eb6b673b17bcae">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-9.0.2_3102dabf56697b0a34b5aeada5260d6dbb97fe83\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="764d32faf85bc6f7bd2cdcb3a70a482c1884fdd2">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-9.0.2_c28bd1b540dfae34f7fbeb5e8e39669919f6f2db\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e6970f0554f9508c041f1f6960af15cc888c9f35">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-9.0.2_68074fbe781232dadff4b42e81c5594f7a2ee7a6\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f2774b1e02e5fbc524590311a744263c3b152d63">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.0.2_b506c46b432a7c47bcc89f2b7ddeca45f495601e\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f399a2fde7888450cadcaec4974bfd169d8cce43">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-9.0.2_23be4afb5b5b202443f0ed3bc173fe2408dd4036\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.0.2_c8d63898151705f21295e686bea252cad1518697\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_20881a8e868c27290521c456f5aa8d848e71104a\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_a18985295ba94b0d80500f7be76ed40d9cd4eb76\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8c0fc9b1ea0bac0cb31d60c8b1bf2feb0518e3a9">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-9.0.2_66fc512cefc9fd72307c27fee2f0ffafbfa0e111\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="143813b18381b28de1e04aae1d92fcb374a0add9">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-9.0.2_fabdf99d35a7c394ca27a337514f80540d4abe22\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7e52b440a26498c56b4f263e215223b5451c955e">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-9.0.2_04a1849a47d6fa0d053c5de7689b9e5b3d780e1c\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fa472b7cbd3897bf6bed6068ac0b00e494987688">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.0.2_e18c947a2462e8ecb3fa2b05c7790c1690d654db\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jay\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_29425aa2d3d9422eac8a3109aecc413e8d9d484d\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d9ea4cdaafa29ec4651d6e4715788d3fcaa7b913">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-9.0.2_a4ece8255c8190d1fa2cd223c58930b4eeeea645\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.6.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1c1afa0ab2a8197a5da1b36c4167a9e479cb74d9">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.6.0_7736dcd07d65861dec77ed7e1c241a74434d210e\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b8e0372ca6dc89ac4fe22b76eeea4f68ece435b8">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.0.2_c531cadf98e0b8d936f9c01d18a9317a73e929fa\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.hdodenhof-circleimageview-2.0.0_1c33ab2a373b134db6846e7b2b6baf3243e7e92e\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\libs\mail.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\2\mail_8d2bf04dd120e4269fe8d187dcee2ab3f90d5e59\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="060a7157438a0b1b0706b99c430fb3ecbc5a79a4">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-9.0.2_7f98250a6fa4587d3ed4010757fc21ff47b008bd\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="20e1a0f0de6276a5f36062b655f8b20f8cc00cc4">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-9.0.2_010348e591d1c44af43a40ce71046d132beb2384\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.0.2_8737a5294655c053dca95f9e3302247ccf715677\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_1c543a0f8f5597e05b6856401aa66130955df0f0\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_d6e9b638492f3de973c86c1ffc2c81f231378706\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.0.2_509e1b4a607eb7d2eadb5ceb0b6d09860b50040d\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_532962f61cac971a7403f8cb2ce42380f203b0ac\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4ec890171a97b5ab98292f131aa784e0f3792c73">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.0.2_ee5346fd08e3e6f892dfacbfcec0fcce3658c101\classes.dex" />
+    </item>
+    <item
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\exploded-aar\com.github.scottyab\showhidepasswordedittext\0.6\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b21b96a99ee47704701ab108a3408ed3b6c08279">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Jainisam\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.scottyab-showhidepasswordedittext-0.6_ce06e0adb0221c8ac04ecbf4b56b93b8deaf929d\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        card_view:cardCornerRadius="3dp"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:alpha="0.90"
+            android:background="@color/colorAccent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.20"
+                    android:layout_height="50dp"
+                    android:id="@+id/tv_title_companyname_logo"
+                    android:padding="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="2dp"
+                    android:textSize="25dp"
+                    android:text="H"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/hexagonshape_black"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_contest_titlte"
+                        android:layout_marginTop="5dp"
+                        android:textSize="23dp"
+                        android:paddingLeft="5dp"
+                        android:text="Title"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_white_1000"/>
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_title_companyname"
+                        android:paddingLeft="5dp"
+                        android:textSize="20dp"
+                        android:text="CompanyName"
+                        android:textColor="#000"
+                        android:gravity="left"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cccccc"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:padding="2dp"
+                android:text="Starts"
+                android:textColor="@color/md_green_A700"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#cccccc"/>
+
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_startday_detailevent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_marginTop="1dp"
+                        android:id="@+id/tv_startdate_detailevent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="1/1/2016"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_marginTop="1dp"
+                        android:id="@+id/tv_starttime_detailevent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="23:59:00"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="5dp"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_marginRight="7dp"
+            android:layout_height="match_parent"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@color/md_red_A700"
+                android:padding="2dp"
+                android:text="End"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#cccccc"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_endday_detailevent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:id="@+id/tv_enddate_detailevent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="july'16"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_marginTop="1dp"
+                android:id="@+id/tv_endtime_detailevent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="23:59:00"
+                android:textColor="#000000"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kjkjkjkj"
+        android:textSize="14dp"
+        android:text="Link : "
+        android:textIsSelectable="true"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#000000"
+        android:autoLink="web"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_link_url"
+        android:textSize="14dp"
+        android:text="URL"
+        android:textIsSelectable="true"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#000000"
+        android:autoLink="web"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:text="Status  : "
+            android:drawableTint="@color/colorPrimary"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:padding="1dp"
+            android:layout_marginRight="1dp"
+            android:text="Status: "
+            android:gravity="left|center"
+            android:textColor="#000000"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:text="Duration  : "
+            android:drawableTint="@color/colorPrimary"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:padding="2dp"
+            android:text=" "
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_event_discription"
+        android:paddingLeft="5dp"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:textIsSelectable="true"
+        android:text="Description : NA."
+        android:textColor="#000"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#cccccc"/>
+
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_addreminder"
+                    android:padding="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="3dp"
+                    android:textSize="17dp"
+                    android:text="Add Reminder"
+                    android:drawableLeft="@android:drawable/ic_popup_reminder"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorAccent" />
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_share"
+                    android:padding="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2dp"
+                    android:textSize="17dp"
+                    android:text="Share"
+                    android:drawableLeft="@android:drawable/ic_menu_share"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorAccent" />
+
+
+            </LinearLayout>
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true"
+        android:fitsSystemWindows="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        card_view:cardCornerRadius="3dp"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_status_countdown"
+                android:paddingLeft="5dp"
+                android:textSize="27dp"
+                android:gravity="center"
+                android:text="Conutdown"
+                android:textColor="#000"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center"
+                android:background="#cccccc"/>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_remaintime"
+                android:paddingLeft="5dp"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:text="00:00:00 "
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <!--<com.github.lzyzsd.circleprogress.ArcProgress-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/arc_progress"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--custom:arc_bottom_text="MEMORY"/>-->
+
+
+
+    </LinearLayout>
+</ScrollView>

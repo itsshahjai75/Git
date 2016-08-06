@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AM-Admin</string>
+
+    <string-array name="query_suggestions">
+        <item>Grains/Beans</item>
+        <item>Masalas/Spices</item>
+        <item>Snacks</item>
+        <item>Dry Fruits</item>
+        <item>Instant Cook</item>
+
+        <item>Coffee/Tea</item>
+        <item>Breads/Breakfast</item>
+        <item>Chocolates</item>
+        <item>Biscuits/Cookies</item>
+        <item>Oils/Ghee</item>
+
+        <item>Salt/Sugar</item>
+        <item>Pickles/Sauces</item>
+        <item>Home Care</item>
+        <item>Beverages</item>
+        <item>Baby Care Cook</item>
+
+        <item>Personal Care</item>
+
+    </string-array>
+</resources>

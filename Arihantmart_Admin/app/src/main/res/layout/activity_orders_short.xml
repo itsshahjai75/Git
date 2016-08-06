@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context="com.arihantmartadmin.jay.arihantmart_admin.Orders_short">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:elevation="2dp"
+        android:background="#fff"
+        android:layout_gravity="left"
+        android:layout_height="wrap_content">
+    </SearchView>
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_summary"
+    android:textSize="19dp"
+    android:text="All Orders: "
+    android:paddingLeft="15dp"
+    android:paddingTop="2dp"
+    android:layout_marginTop="5dp"
+    android:textColor="#000000"/>
+
+
+<com.arihantmartadmin.jay.arihantmart_admin.CustomRecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+</LinearLayout>
+
+

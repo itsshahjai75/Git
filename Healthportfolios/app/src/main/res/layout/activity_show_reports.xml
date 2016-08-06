@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/home_relative_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#f3f3f3"
+android:orientation="vertical"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="healthportfolios.techno.healthportfolios.Show_reports">>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:padding="2dp"
+            android:id="@+id/tv_useremail"
+            android:textColor="#000000"
+            android:textSize="19dp"
+            android:text="shah.jai75@gmail.com"
+            android:gravity="left|center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btn_logout"
+            android:textSize="21dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_corner_oval_white"
+            android:drawableLeft="@android:drawable/ic_secure"
+            android:layout_weight="0.5" />
+
+
+    </LinearLayout>
+<TextView
+    android:padding="2dp"
+    android:id="@+id/tv_totalresult"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:textColor="#ffffff"
+    android:textSize="19dp"
+    android:text="Reports's Details"
+    android:background="@drawable/rounded_oval_primerycolor"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+
+
+
+<!-- Framelayout to display Fragments -->
+<FrameLayout
+    android:id="@+id/frame_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+
+    <healthportfolios.techno.healthportfolios.CustomRecyclerView
+        android:id="@+id/reports_recyclierview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+
+</FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="technocrats.appware" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Technocrats"
+        android:theme="@style/MyMaterialTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Technocrats" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Homescreen_new"
+            android:label="@string/title_activity_homescreen" >
+        </activity>
+        <activity
+            android:name=".Offers"
+            android:label="@string/title_activity_offers" >
+        </activity>
+        <activity
+            android:name=".Reg_form"
+            android:label="@string/title_activity_reg_form"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".Preview"
+            android:label="@string/title_activity_preview" >
+        </activity>
+        <activity
+            android:name=".Scan_QR"
+            android:label="Scan QR Code of Certificate" >
+        </activity>
+        <activity
+            android:name=".Contactus"
+            android:label="@string/title_activity_contactus" >
+        </activity>
+    </application>
+
+</manifest>
