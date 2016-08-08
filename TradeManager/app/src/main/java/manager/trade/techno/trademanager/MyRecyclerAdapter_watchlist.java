@@ -12,6 +12,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -136,7 +137,7 @@ public class MyRecyclerAdapter_watchlist extends RecyclerView
             db = dbh.getWritableDatabase();
             // Select All Query
 
-            String selectQuery =  "SELECT  * FROM listingcompanies WHERE SecurityId = '" + mDataset.get(position).getCompnay_code() + "';";
+            String selectQuery =  "SELECT  * FROM listingcompanies WHERE SecurityCode = '" + mDataset.get(position).getCompnay_code() + "';";
             //Log.i("TAG", selectQuery);
             //Log.i("TAG day", selectQuery);
              mCursor = db.rawQuery(selectQuery, null);
@@ -241,8 +242,8 @@ public class MyRecyclerAdapter_watchlist extends RecyclerView
                                     db2 = dbh2.getWritableDatabase();
 
 
-                                    String selectQuery = "DELETE FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_short_code + " = '" + holder.tv_company_shortcode.getText().toString() + "';";
-                                    //Log.i("TAG", selectQuery);
+                                    String selectQuery = "DELETE FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_code + " = '" + mDataset.get(position).getCompnay_code() + "';";
+                                   Log.i("TAG", selectQuery);
                                     mCursor = db2.rawQuery(selectQuery, null);
                                     mCursor.moveToFirst();
 

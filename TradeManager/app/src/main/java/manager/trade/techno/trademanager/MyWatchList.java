@@ -6,6 +6,12 @@ import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.RectF;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -46,7 +52,7 @@ import okhttp3.Response;
  */
 public class MyWatchList extends Fragment {
     Boolean isInternetPresent = false;
-
+    private Paint p = new Paint();
 
     private AutoCompleteTextView autoComplete;
     Button btn_add;
@@ -56,7 +62,7 @@ public class MyWatchList extends Fragment {
     DatabaseHelper_Compnies myDbHelper;
     Cursor c,mCursor;
 
-    String shortname,longname;
+    String securitycode,longname;
 
     private ArrayAdapter<String> adapter;
 
@@ -114,10 +120,11 @@ public class MyWatchList extends Fragment {
             if(c.moveToFirst()) {
                 do {
 
+                    String company_securitcode = c.getString(0).toString();
                     String comapny_short_code=c.getString(1).toString();
-                    String comapny_fullname=c.getString(2).toString();;
+                    String comapny_fullname=c.getString(2).toString();
 
-                    compnies.add(comapny_short_code+"\n("+comapny_fullname+")");
+                    compnies.add(comapny_fullname +"\n("+company_securitcode+")");
 
                 } while (c.moveToNext());
             }
@@ -158,13 +165,16 @@ public class MyWatchList extends Fragment {
                                     long arg3) {
 
 
-                shortname=arg0.getItemAtPosition(arg2).toString();
-                shortname=shortname.substring(0,shortname.indexOf("\n"));
+
 
 
                 longname=arg0.getItemAtPosition(arg2).toString();
-                longname=longname.substring(longname.indexOf("\n"));
-                autoComplete.setText(shortname+longname);
+                longname=longname.substring(0,longname.indexOf("\n")-1);
+
+                securitycode=arg0.getItemAtPosition(arg2).toString();
+                securitycode=securitycode.substring(securitycode.indexOf("\n"));
+
+                autoComplete.setText(longname+securitycode);
 
             }
         });
@@ -188,9 +198,9 @@ public class MyWatchList extends Fragment {
                     dbh = new DatabaseHelper(getContext());
                     db = dbh.getWritableDatabase();
 
-                    longname=longname.replace("(","");
-                    longname=longname.replace(")","");
-                    longname=longname.replace(".","");
+                    securitycode=securitycode.replace("(","");
+                    securitycode=securitycode.replace(")","");
+                    //longname=longname.replace(".","");
                     String selectQuery = "SELECT  * FROM " + DatabaseHelper.TABLE_NAME +";";
                     //Log.i("TAG", selectQuery);
                     mCursor = db.rawQuery(selectQuery, null);
@@ -201,7 +211,7 @@ public class MyWatchList extends Fragment {
                     if((mCursor!=null || mCursor.getCount()>0 ) && mCursor.getCount()<5) {
                         // Log.d("insert==","1");
 
-                        String repeatequery = "SELECT  * FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_short_code + " = '" + shortname + "';";
+                        String repeatequery = "SELECT  * FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_code + " = '" + securitycode + "';";
                         //Log.i("TAG", selectQuery);
                         Cursor mCursor2 = db.rawQuery(repeatequery, null);
                         mCursor2.moveToFirst();
@@ -213,9 +223,9 @@ public class MyWatchList extends Fragment {
                                     DatabaseHelper.company_full_name + "," +
                                     DatabaseHelper.company_code +
                                     ") VALUES ( '" +
-                                    shortname + "','" +
+                                      "null','" +
                                     longname + "','" +
-                                    "null');";
+                                    securitycode+"');";
                             // Log.i("TAG", insertquery);
                             Cursor insert_cursor = db.rawQuery(insertquery, null);
                             insert_cursor.moveToFirst();
@@ -241,9 +251,9 @@ public class MyWatchList extends Fragment {
                                 DatabaseHelper.company_full_name + "," +
                                 DatabaseHelper.company_code +
                                 ") VALUES ( '" +
-                                shortname + "','" +
+                                "null','" +
                                 longname + "','" +
-                                "null');";
+                                securitycode+"');";
                         // Log.i("TAG", insertquery);
                         Cursor insert_cursor = db.rawQuery(insertquery, null);
                         insert_cursor.moveToFirst();
@@ -431,58 +441,97 @@ public class MyWatchList extends Fragment {
             public void onSwiped(final RecyclerView.ViewHolder viewHolder, int direction) {
                 // callback for swipe to dismiss, removing item from data and adapter
 
+                if (direction == ItemTouchHelper.LEFT){
+                    AlertDialog.Builder alertbox = new AlertDialog.Builder(getContext());
+                    alertbox.setMessage("Item will be removed from your WatchList.");
+                    alertbox.setTitle("Delete Item ?");
+                    alertbox.setIcon(R.drawable.appicon);
 
-                AlertDialog.Builder alertbox = new AlertDialog.Builder(getContext());
-                alertbox.setMessage("Item will be removed from your WatchList.");
-                alertbox.setTitle("Delete Item ?");
-                alertbox.setIcon(R.drawable.appicon);
+                    alertbox.setNeutralButton("Delete",
+                            new DialogInterface.OnClickListener() {
 
-                alertbox.setNeutralButton("Delete",
-                        new DialogInterface.OnClickListener() {
-
-                            public void onClick(DialogInterface arg0,int arg1) {
-
-
-                                try {
-
-                                    dbh = new DatabaseHelper(getContext());
-                                    db = dbh.getWritableDatabase();
-
-                                    DataObject_Watchlist clickedCategory = (DataObject_Watchlist)results.get(viewHolder.getAdapterPosition());
-                                    String companyshortcode = clickedCategory.getCompnay_code();
-
-                                    String selectQuery = "DELETE FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_short_code + " = '" + companyshortcode + "';";
-                                    //Log.i("TAG", selectQuery);
-                                    mCursor = db.rawQuery(selectQuery, null);
-                                    mCursor.moveToFirst();
+                                public void onClick(DialogInterface arg0,int arg1) {
 
 
+                                    try {
 
+                                        dbh = new DatabaseHelper(getContext());
+                                        db = dbh.getWritableDatabase();
+
+                                        DataObject_Watchlist clickedCategory = (DataObject_Watchlist)results.get(viewHolder.getAdapterPosition());
+                                        String companycode = clickedCategory.getCompnay_code();
+                                        Log.d("companycode",companycode);
+
+                                        String selectQuery = "DELETE FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_code + " = '" + companycode + "';";
+                                        //Log.i("TAG", selectQuery);
+                                        mCursor = db.rawQuery(selectQuery, null);
+                                        mCursor.moveToFirst();
 
 
 
-                                }catch (Exception Esql){
-                                    Esql.printStackTrace();
-                                }finally {
-                                    if (mCursor != null && !mCursor.isClosed())
-                                        mCursor.close();
-                                    db.close();
+
+
+
+                                    }catch (Exception Esql){
+                                        Esql.printStackTrace();
+                                    }finally {
+                                        if (mCursor != null && !mCursor.isClosed())
+                                            mCursor.close();
+                                        db.close();
+
+                                    }
+                                    Toast.makeText(getContext(), "Deleted...", Toast.LENGTH_LONG).show();
+
+                                    results.remove(viewHolder.getAdapterPosition()); // results.remove(position); // for basic code
+                                    mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());//mAdapter.notifyItemRemoved(position); // for basic code
+
+
 
                                 }
-                                Toast.makeText(getContext(), "Deleted...", Toast.LENGTH_LONG).show();
+                            });
+                    alertbox.show();
 
-                                results.remove(viewHolder.getAdapterPosition()); // results.remove(position); // for basic code
-                                mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());//mAdapter.notifyItemRemoved(position); // for basic code
-
-
-
-                            }
-                        });
-                alertbox.show();
-
-            mAdapter.notifyDataSetChanged();
+                    mAdapter.notifyDataSetChanged();
+                } else {
+                    /*removeView();
+                    edit_position = position;
+                    alertDialog.setTitle("Edit Country");
+                    et_country.setText(countries.get(position));
+                    alertDialog.show();*/
+                }
             }
-        });
+
+
+            @Override
+            public void onChildDraw(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
+
+                Bitmap icon;
+                if (actionState == ItemTouchHelper.ACTION_STATE_SWIPE) {
+
+                    View itemView = viewHolder.itemView;
+                    float height = (float) itemView.getBottom() - (float) itemView.getTop();
+                    float width = height / 3;
+
+                    if (dX > 0) {
+                        p.setColor(Color.parseColor("#388E3C"));
+                        RectF background = new RectF((float) itemView.getLeft(), (float) itemView.getTop(), dX, (float) itemView.getBottom());
+                        c.drawRect(background, p);
+                        icon = BitmapFactory.decodeResource(getResources(), R.drawable.delete_icon);
+                        RectF icon_dest = new RectF((float) itemView.getLeft() + width, (float) itemView.getTop() + width, (float) itemView.getLeft() + 2 * width, (float) itemView.getBottom() - width);
+                        c.drawBitmap(icon, null, icon_dest, p);
+                    } else {
+                        p.setColor(Color.parseColor("#D32F2F"));
+                        RectF background = new RectF((float) itemView.getRight() + dX, (float) itemView.getTop(), (float) itemView.getRight(), (float) itemView.getBottom());
+                        c.drawRect(background, p);
+                        icon = BitmapFactory.decodeResource(getResources(), R.drawable.delete_icon);
+                        RectF icon_dest = new RectF((float) itemView.getRight() - 2 * width, (float) itemView.getTop() + width, (float) itemView.getRight() - width, (float) itemView.getBottom() - width);
+                        c.drawBitmap(icon, null, icon_dest, p);
+                    }
+                }
+                super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
+            }
+
+            });
         swipeToDismissTouchHelper.attachToRecyclerView(mRecyclerView);
 
         return convertView;
@@ -526,7 +575,7 @@ public class MyWatchList extends Fragment {
             Log.d("url",str_whatchlist_shares);
 
             Request request = new Request.Builder()
-                    .url("http://finance.google.com/finance/info?client=ig&q=bse%3a"+str_whatchlist_shares)
+                    .url("http://finance.google.com/finance/info?client=ig&q="+str_whatchlist_shares)
                     .build();
 
 
@@ -575,6 +624,7 @@ public class MyWatchList extends Fragment {
 
 
                 mRecyclerView.setAdapter(mAdapter);
+              // Log.d("result string",res1);
                 res1=res1.substring(3);
                 JSONArray array_res = new JSONArray(res1);
 
@@ -656,10 +706,10 @@ public class MyWatchList extends Fragment {
 
             if (mCursor.moveToFirst()) {
                 do {
-                    String company_short_code = mCursor.getString(mCursor.getColumnIndex(DatabaseHelper.company_short_code));
+                    String company_code = mCursor.getString(mCursor.getColumnIndex(DatabaseHelper.company_code));
 
 
-                    str_whatchlist_shares=str_whatchlist_shares+",bse:"+company_short_code;
+                    str_whatchlist_shares=str_whatchlist_shares+",bom:"+company_code;
 
 
 
