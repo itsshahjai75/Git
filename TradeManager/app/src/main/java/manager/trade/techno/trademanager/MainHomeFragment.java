@@ -280,7 +280,7 @@ public class MainHomeFragment extends Fragment {
 
                     //===========nasdaq============================
 
-                    JSONObject obj3 = array_res.getJSONObject(2);
+                    JSONObject obj3 = array_res.getJSONObject(3);
 
                     String nasdaq = obj3.getString("l_cur");
                     String nasdaq_diff = obj3.getString("c");
@@ -301,7 +301,7 @@ public class MainHomeFragment extends Fragment {
 
                     //========nikkei-----------------
 
-                    JSONObject obj4 = array_res.getJSONObject(3);
+                    JSONObject obj4 = array_res.getJSONObject(2);
 
                     String nikkei = obj4.getString("l_cur");
                     String nikkei_diff = obj4.getString("c");

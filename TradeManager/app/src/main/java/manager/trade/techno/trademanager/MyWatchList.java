@@ -32,7 +32,6 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.github.brnunes.swipeablerecyclerview.SwipeableRecyclerViewTouchListener;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -74,7 +73,8 @@ public class MyWatchList extends Fragment {
 
 
     public MyWatchList() {
-        // Required empty public constructor
+// Required empty public constructor
+
     }
 
 
@@ -172,7 +172,7 @@ public class MyWatchList extends Fragment {
                 longname=longname.substring(0,longname.indexOf("\n")-1);
 
                 securitycode=arg0.getItemAtPosition(arg2).toString();
-                securitycode=securitycode.substring(securitycode.indexOf("\n"));
+                securitycode=securitycode.substring(securitycode.indexOf("\n")+1);
 
                 autoComplete.setText(longname+securitycode);
 
@@ -304,128 +304,6 @@ public class MyWatchList extends Fragment {
         mRecyclerView.setLayoutManager(mLayoutManager);
 
 
-       /*
-       this code is for individual left and right swipe of recycler view and gridle lib we have to add for this code use...
-       SwipeableRecyclerViewTouchListener swipeTouchListener =
-                new SwipeableRecyclerViewTouchListener(mRecyclerView,
-                        new SwipeableRecyclerViewTouchListener.SwipeListener() {
-                            @Override
-                            public boolean canSwipeLeft(int position) {
-                                return true;
-                            }
-
-                            @Override
-                            public boolean canSwipeRight(int position) {
-                                return true;
-                            }
-
-                            @Override
-                            public void onDismissedBySwipeLeft(RecyclerView recyclerView, int[] reverseSortedPositions) {
-                                for (final int position : reverseSortedPositions) {
-
-                                    AlertDialog.Builder alertbox = new AlertDialog.Builder(getContext());
-                                    alertbox.setMessage("Item will be removed from your WatchList.");
-                                    alertbox.setTitle("Delete Item ?");
-                                    alertbox.setIcon(R.drawable.appicon);
-
-                                    alertbox.setNeutralButton("Delete",
-                                            new DialogInterface.OnClickListener() {
-
-                                                public void onClick(DialogInterface arg0,int arg1) {
-
-
-                                                    try {
-
-                                                        dbh = new DatabaseHelper(getContext());
-                                                        db = dbh.getWritableDatabase();
-
-                                                        DataObject_Watchlist clickedCategory = (DataObject_Watchlist)results.get(position);
-                                                        String companyshortcode = clickedCategory.getCompnay_code();
-                                                        String selectQuery = "DELETE FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_short_code + " = '" +companyshortcode + "';";
-                                                        //Log.i("TAG", selectQuery);
-                                                        mCursor = db.rawQuery(selectQuery, null);
-                                                        mCursor.moveToFirst();
-
-
-
-
-
-
-                                                    }catch (Exception Esql){
-                                                        Esql.printStackTrace();
-                                                    }finally {
-                                                        if (mCursor != null && !mCursor.isClosed())
-                                                            mCursor.close();
-                                                        db.close();
-
-                                                    }
-                                                    Toast.makeText(getContext(), "Deleted...", Toast.LENGTH_LONG).show();
-                                                    results.remove(position);
-                                                    mAdapter.notifyItemRemoved(position);
-                                                }
-                                            });
-                                    alertbox.show();
-
-
-                                }
-                                mAdapter.notifyDataSetChanged();
-                            }
-
-                            @Override
-                            public void onDismissedBySwipeRight(RecyclerView recyclerView, int[] reverseSortedPositions) {
-                                for (final int position : reverseSortedPositions) {
-
-                                    AlertDialog.Builder alertbox = new AlertDialog.Builder(getContext());
-                                    alertbox.setMessage("Item will be removed from your WatchList.");
-                                    alertbox.setTitle("Delete Item ?");
-                                    alertbox.setIcon(R.drawable.appicon);
-
-                                    alertbox.setNeutralButton("Delete",
-                                            new DialogInterface.OnClickListener() {
-
-                                                public void onClick(DialogInterface arg0,int arg1) {
-
-
-                                                    try {
-
-                                                        dbh = new DatabaseHelper(getContext());
-                                                        db = dbh.getWritableDatabase();
-
-                                                        DataObject_Watchlist clickedCategory = (DataObject_Watchlist)results.get(position);
-                                                        String companyshortcode = clickedCategory.getCompnay_code();
-
-                                                        String selectQuery = "DELETE FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_short_code + " = '" + companyshortcode + "';";
-                                                        //Log.i("TAG", selectQuery);
-                                                        mCursor = db.rawQuery(selectQuery, null);
-                                                        mCursor.moveToFirst();
-
-
-
-
-
-
-                                                    }catch (Exception Esql){
-                                                        Esql.printStackTrace();
-                                                    }finally {
-                                                        if (mCursor != null && !mCursor.isClosed())
-                                                            mCursor.close();
-                                                        db.close();
-
-                                                    }
-                                                    Toast.makeText(getContext(), "Deleted...", Toast.LENGTH_LONG).show();
-                                                    results.remove(position);
-                                                    mAdapter.notifyItemRemoved(position);
-                                                }
-                                            });
-                                    alertbox.show();
-                                }
-                                mAdapter.notifyDataSetChanged();
-                            }
-                        });
-
-
-        mRecyclerView.addOnItemTouchListener(swipeTouchListener);
-*/
 
 
         // init swipe to dismiss logic
@@ -462,14 +340,10 @@ public class MyWatchList extends Fragment {
                                         String companycode = clickedCategory.getCompnay_code();
                                         Log.d("companycode",companycode);
 
-                                        String selectQuery = "DELETE FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_code + " = '" + companycode + "';";
+                                        String deletequery = "DELETE FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_code + "='" + companycode + "';";
                                         //Log.i("TAG", selectQuery);
-                                        mCursor = db.rawQuery(selectQuery, null);
+                                        mCursor = db.rawQuery(deletequery, null);
                                         mCursor.moveToFirst();
-
-
-
-
 
 
                                     }catch (Exception Esql){
@@ -549,7 +423,7 @@ public class MyWatchList extends Fragment {
         {
 
             super.onPreExecute();
-             Log.d("pre execute", "Executando onPreExecute ingredients");
+            // Log.d("pre execute", "Executando onPreExecute ingredients");
 
 
 
@@ -668,18 +542,11 @@ public class MyWatchList extends Fragment {
     }
 
 
-
-
-
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
 
-
-
-
-//====this is code for default load time code for geting data from table and parse to webservice==========
+        //====this is code for default load time code for geting data from table and parse to webservice==========
 
 
         ConnectionDetector cd = new ConnectionDetector(getContext());
@@ -687,56 +554,64 @@ public class MyWatchList extends Fragment {
         isInternetPresent = cd.isConnectingToInternet();
 
 
-        try {
+
+        ///===calling index web service from google to live share rates====
+        // check for Internet status
+        if (isInternetPresent) {
+            // Internet Connection is Present
+
+
+            try {
 
 
 
-            dbh = new DatabaseHelper(getContext());
-            db = dbh.getWritableDatabase();
-            // Select All Query
+                dbh = new DatabaseHelper(getContext());
+                db = dbh.getWritableDatabase();
+                // Select All Query
 
-            String selectQuery = "SELECT  * FROM " + DatabaseHelper.TABLE_NAME+";";
-            //Log.i("TAG day", selectQuery);
-            Cursor mCursor = db.rawQuery(selectQuery, null);
+                String selectQuery = "SELECT  * FROM " + DatabaseHelper.TABLE_NAME+";";
+                //Log.i("TAG day", selectQuery);
+                mCursor = db.rawQuery(selectQuery, null);
 
                         /*String[] columns = new String[] { DatabaseHelper._ID, DatabaseHelper.DURATION, DatabaseHelper.END,DatabaseHelper.START, DatabaseHelper.EVENT
                                 ,DatabaseHelper.HREF, DatabaseHelper.CONTEST_ID,DatabaseHelper.RESOURCE_ID, DatabaseHelper.RESOURCE_NAME};
                         //Cursor mCursor = db.query(DatabaseHelper.TABLE_NAME, columns,null,  null, null, null, null);*/
 
 
-            if (mCursor.moveToFirst()) {
-                do {
-                    String company_code = mCursor.getString(mCursor.getColumnIndex(DatabaseHelper.company_code));
+                if (mCursor.moveToFirst()) {
+                    do {
+                        String company_code = mCursor.getString(mCursor.getColumnIndex(DatabaseHelper.company_code));
 
 
-                    str_whatchlist_shares=str_whatchlist_shares+",bom:"+company_code;
-
-
-
-
-                } while (mCursor.moveToNext());
-            }
+                        str_whatchlist_shares=str_whatchlist_shares+",bom:"+company_code;
 
 
 
 
-            mCursor.close();
-            db.close();
+                    } while (mCursor.moveToNext());
+                }
 
-        }catch (Exception ecxe){
-            ecxe.printStackTrace();
-        }finally {
-            if (mCursor != null) {
+
+
+
                 mCursor.close();
                 db.close();
-            }
-        }
 
-        ///===calling index web service from google to live share rates====
-        // check for Internet status
-        if (isInternetPresent) {
-            // Internet Connection is Present
+            }catch (Exception ecxe){
+                ecxe.printStackTrace();
+            }finally {
+                if (mCursor != null) {
+                    mCursor.close();
+                    db.close();
+                }
+            }
+
+
             // make HTTP requests
+
+
+
+
 
             if(!str_whatchlist_shares.isEmpty() || str_whatchlist_shares!=null || !str_whatchlist_shares.equalsIgnoreCase("null")) {
 
@@ -770,7 +645,6 @@ public class MyWatchList extends Fragment {
 
 
 //========================================================================================
-
 
 
     }

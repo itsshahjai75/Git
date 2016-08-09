@@ -242,10 +242,11 @@ public class MyRecyclerAdapter_watchlist extends RecyclerView
                                     db2 = dbh2.getWritableDatabase();
 
 
-                                    String selectQuery = "DELETE FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_code + " = '" + mDataset.get(position).getCompnay_code() + "';";
-                                   Log.i("TAG", selectQuery);
-                                    mCursor = db2.rawQuery(selectQuery, null);
+                                    String deletequery = "DELETE FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_code + " = '" + mDataset.get(position).getCompnay_code() + "';";
+                                   Log.i("TAG", deletequery);
+                                    mCursor = db2.rawQuery(deletequery, null);
                                     mCursor.moveToFirst();
+                                    mCursor.close();
 
 
 
