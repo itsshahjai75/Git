@@ -26,6 +26,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -319,7 +320,7 @@ public class MyWatchList extends Fragment {
             public void onSwiped(final RecyclerView.ViewHolder viewHolder, int direction) {
                 // callback for swipe to dismiss, removing item from data and adapter
 
-                if (direction == ItemTouchHelper.LEFT){
+                if (direction == ItemTouchHelper.LEFT || direction == ItemTouchHelper.RIGHT ){
                     AlertDialog.Builder alertbox = new AlertDialog.Builder(getContext());
                     alertbox.setMessage("Item will be removed from your WatchList.");
                     alertbox.setTitle("Delete Item ?");
@@ -546,6 +547,8 @@ public class MyWatchList extends Fragment {
     public void onAttach(Context context) {
         super.onAttach(context);
 
+
+
         //====this is code for default load time code for geting data from table and parse to webservice==========
 
 
@@ -591,6 +594,9 @@ public class MyWatchList extends Fragment {
                     } while (mCursor.moveToNext());
                 }
 
+                if(mCursor.getCount()==0){
+                str_whatchlist_shares="null";
+                }
 
 
 

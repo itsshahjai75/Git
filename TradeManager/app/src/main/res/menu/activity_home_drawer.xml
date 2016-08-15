@@ -29,8 +29,8 @@
             android:icon="@drawable/top_loser" />
 
         <item
-            android:id="@+id/nav_setting"
-            android:title="Account"
+            android:id="@+id/nav_currency"
+            android:title="Currency"
             android:icon="@drawable/setting"/>
 
 

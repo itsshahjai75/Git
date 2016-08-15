@@ -1,5 +1,6 @@
 package manager.trade.techno.trademanager;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
@@ -7,6 +8,7 @@ import android.database.DatabaseUtils;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.speech.RecognizerIntent;
@@ -14,6 +16,7 @@ import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -30,6 +33,9 @@ import android.widget.Toast;
 
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +43,9 @@ import java.util.Set;
 
 import DB.DatabaseHelper;
 import DB.DatabaseHelper_Compnies;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 public class Home extends AppCompatActivity {
 
@@ -51,11 +60,11 @@ public class Home extends AppCompatActivity {
 
     TextView tv_total_sponsers, tv_total_contests;
 
-    DatabaseHelper dbh;
-    SQLiteDatabase db;
 
     DatabaseHelper_Compnies myDbHelper;
     Cursor c;
+
+    String comapny_fullname,str_company_scurityID,res1;
 
 
 
@@ -119,10 +128,10 @@ public class Home extends AppCompatActivity {
             if(c.moveToFirst()) {
                 do {
 
-                    String comapny_short_code=c.getString(1).toString();
-                    String comapny_fullname=c.getString(2).toString();;
+                    str_company_scurityID=c.getString(0).toString();
+                    comapny_fullname=c.getString(2).toString();;
 
-                    compnies.add(comapny_short_code+"\n("+comapny_fullname+")");
+                    compnies.add(comapny_fullname+"\n("+str_company_scurityID+")");
 
                 } while (c.moveToNext());
             }
@@ -154,7 +163,7 @@ public class Home extends AppCompatActivity {
 
         FragmentTransaction tx;
         tx = getSupportFragmentManager().beginTransaction();
-        tx.replace(R.id.frame, new MainHomeFragment());
+        tx.replace(R.id.frame, new Home_fragment());
         tx.commit();
 
 
@@ -173,11 +182,10 @@ public class Home extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 Snackbar.make(findViewById(android.R.id.content), "Query: " + query, Snackbar.LENGTH_LONG).show();
-                /*Intent result = new Intent(Home.this, ResultContestLink.class);
-                result.putExtra("query", query);
 
-                startActivity(result);
-                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);*/
+                str_company_scurityID = query.substring(query.indexOf("(")+1,query.length()-1);
+                comapny_fullname=query.substring(0,query.indexOf("("));
+                new GetShareIndex().execute();
                 return false;
             }
 
@@ -185,18 +193,6 @@ public class Home extends AppCompatActivity {
             public boolean onQueryTextChange(String newText) {
                 //Do some magic
                 return false;
-            }
-        });
-
-        searchView.setOnSearchViewListener(new MaterialSearchView.SearchViewListener() {
-            @Override
-            public void onSearchViewShown() {
-                //Do some magic
-            }
-
-            @Override
-            public void onSearchViewClosed() {
-                //Do some magic
             }
         });
 
@@ -265,7 +261,6 @@ public class Home extends AppCompatActivity {
                 //Closing drawer on item click
                 drawer.closeDrawers();
                 Fragment fragment = null;
-                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
                 //Check to see which item was being clicked and perform appropriate action
                 switch (menuItem.getItemId()) {
@@ -274,7 +269,7 @@ public class Home extends AppCompatActivity {
                     //Replacing the main content with ContentFragment Which is our Inbox View;
                     case R.id.nav_live:
                         // Toast.makeText(getApplicationContext(),"Shop",Toast.LENGTH_SHORT).show();
-                        fragment = new MainHomeFragment();
+                        fragment = new Home_fragment();
                         break;
 
                     case R.id.nav_watchlist:
@@ -301,7 +296,7 @@ public class Home extends AppCompatActivity {
 
                         Intent intentshare = new Intent(Intent.ACTION_SEND);
                         intentshare.setType("text/plain");
-                        intentshare.putExtra(Intent.EXTRA_TEXT, "Best Competitive Programming news/reminder app for Coders.World wide coding competitions and hiring challenges.Solve the challenges and get chance to win awesome prizes and also hired by world famous MNCs(i.e AMAZON , IBM , intel , google , SAP many more...).\n\n\n" + "https://play.google.com/store/apps/details?id=com.techno.jay.codingcontests&hl=en"+"\n\n-developed by Technocrats Appware");
+                        intentshare.putExtra(Intent.EXTRA_TEXT, "Indian Stock market apps for Traders and Broker to get price and index rate.");
                         startActivity(Intent.createChooser(intentshare, "Share"));
 
 
@@ -317,13 +312,16 @@ public class Home extends AppCompatActivity {
                         }
                         break;
 
-
-
-                    case R.id.nav_setting:
-                        Intent seting = new Intent(Home.this, Setting_app.class);
-                        startActivity(seting);
-                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                    case R.id.nav_currency:
+                        fragment= new Currency_fragment();
                         break;
+
+
+                   /* case R.id.nav_setting:
+                       *//* Intent seting = new Intent(Home.this, Setting_app.class);
+                        startActivity(seting);
+                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);*//*
+                        break;*/
 
                     case R.id.nav_exit:
                         System.exit(0);
@@ -354,9 +352,8 @@ public class Home extends AppCompatActivity {
                 if (fragment != null) {
                     Log.d("fragment Tag",fragment.toString());
 
-                    fragmentTransaction.replace(R.id.frame, fragment);
-                    //getSupportFragmentManager().beginTransaction().replace(R.id.frame, fragment).addToBackStack(null).commit();
-                    fragmentTransaction.addToBackStack(null).commit();
+                    //fragmentTransaction.replace(R.id.frame, fragment);
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame, fragment).addToBackStack(null).commit();
 
                     getSupportActionBar().setTitle("Trade Manager");
 
@@ -394,7 +391,7 @@ public class Home extends AppCompatActivity {
                     return;
                 } else if(getFragmentManager().getBackStackEntryCount() == 0) {
                     this.doubleBackToExitPressedOnce = true;
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frame, new MainHomeFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame, new Home_fragment()).commit();
                     navigationView.getMenu().getItem(0).setChecked(true);
                     Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
                 }else {
@@ -481,6 +478,158 @@ public class Home extends AppCompatActivity {
 
 
 
+    class GetShareIndex extends AsyncTask<Object, Void, String> {
+
+
+
+        @Override
+        protected void onPreExecute()//execute thaya pela
+        {
+
+            super.onPreExecute();
+            // Log.d("pre execute", "Executando onPreExecute ingredients");
+
+
+
+
+        }
+
+        @Override
+        protected String doInBackground(Object... parametros) {
+
+            // System.out.println("On do in back ground----done-------");
+
+
+            //Log.d("post execute", "Executando doInBackground   ingredients");
+
+// should be a singleton
+            OkHttpClient client = new OkHttpClient();
+            /*HttpUrl.Builder urlBuilder = HttpUrl.parse("https://ajax.googleapis.com/ajax/services/search/images").newBuilder();
+            urlBuilder.addQueryParameter("v", "1.0");
+            urlBuilder.addQueryParameter("q", "android");
+            urlBuilder.addQueryParameter("rsz", "8");
+            String url = urlBuilder.build().toString();*/
+
+            Log.d("url",str_company_scurityID);
+
+            Request request = new Request.Builder()
+                    .url("http://finance.google.com/finance/info?client=ig&q=bom:"+str_company_scurityID)
+                    .build();
+
+
+
+            try{
+                //request mate nicheno code
+                Response response = client.newCall(request).execute();
+
+                res1=response.body().string();
+                // Log.d("okhtp==",res1);
+
+            }catch(Exception e){
+                e.printStackTrace();
+
+            }
+
+
+
+//            progressDialog.dismiss();
+            return res1;
+
+        }
+
+
+
+        @Override
+        protected void onPostExecute(String result)
+        {
+
+            String response_string="";
+            // System.out.println("OnpostExecute----done-------");
+            super.onPostExecute(result);
+
+            if (res1 == null || res1.equals("")) {
+
+
+
+                Toast.makeText(Home.this, "Network connection ERROR or ERROR", Toast.LENGTH_LONG).show();
+                //
+
+                return;
+            }
+
+
+            try {
+
+
+
+                // Log.d("result string",res1);
+                res1=res1.substring(3);
+                JSONArray array_res = new JSONArray(res1);
+
+                for(int a =0;a<array_res.length();a++){
+
+
+                    //  Log.i("RESPONSE", res1);
+                    JSONObject obj = array_res.getJSONObject(a);
+
+                    String company_code = obj.getString("t");
+                    String current_index = obj.getString("l_cur");
+                    String diff_index = obj.getString("c");
+                    String diff_per_index = obj.getString("cp");
+                    String time_index = obj.getString("lt");
+                    String preivous_close = obj.getString("pcls_fix");
+
+
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Home.this);
+
+                    // set title
+                    alertDialogBuilder.setTitle(comapny_fullname);
+
+                    // set dialog message
+                    alertDialogBuilder
+                            .setMessage("Details\n"+current_index+"\n"+diff_index+" ( "+diff_per_index+"%)\nLast Update : "+time_index)
+                            .setCancelable(false)
+                            /*.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,int id) {
+                                    // if this button is clicked, close
+                                    // current activity
+                                    MainActivity.this.finish();
+                                }
+                            })*/
+                            .setNegativeButton("OK",new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    // if this button is clicked, just close
+                                    // the dialog box and do nothing
+                                    dialog.cancel();
+                                }
+                            });
+
+                    // create alert dialog
+                    AlertDialog alertDialog = alertDialogBuilder.create();
+
+                    // show it
+                    alertDialog.show();
+
+
+
+                }
+
+            }
+
+            catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+
+
+            //pg_bar.setVisibility(View.GONE);
+
+
+
+
+
+        }
+    }
 
 
 

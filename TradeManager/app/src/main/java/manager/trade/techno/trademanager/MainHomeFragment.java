@@ -1,11 +1,14 @@
 package manager.trade.techno.trademanager;
 
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +20,7 @@ import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.xml.sax.Parser;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -102,8 +106,7 @@ public class MainHomeFragment extends Fragment {
             @Override
             public void onRefresh() {
                 //Refreshing data on server
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame, new MainHomeFragment()).commit();
-
+                startActivity(new Intent(getActivity(),Home.class));
             }
         });
 
@@ -241,6 +244,7 @@ public class MainHomeFragment extends Fragment {
                     JSONObject obj = array_res.getJSONObject(0);
 
                     String sensex = obj.getString("l_cur");
+                    sensex= Html.fromHtml((String) sensex).toString();
                     String sensex_diff = obj.getString("c");
                     String sensex_diff_per = obj.getString("cp");
                     String sensex_time = obj.getString("lt");
@@ -262,6 +266,7 @@ public class MainHomeFragment extends Fragment {
                     JSONObject obj2 = array_res.getJSONObject(1);
 
                     String nifty = obj2.getString("l_cur");
+                    nifty= Html.fromHtml((String) nifty).toString();
                     String nifty_diff = obj2.getString("c");
                     String nifty_diff_per = obj2.getString("cp");
                     String nifty_time = obj2.getString("lt");
@@ -323,6 +328,7 @@ public class MainHomeFragment extends Fragment {
 
                     JSONObject obj5 = array_res.getJSONObject(4);
                     String mcx = obj5.getString("l_cur");
+                    mcx= Html.fromHtml((String) mcx).toString();
                     String mcx_diff = obj5.getString("c");
                     String mcx_diff_per = obj5.getString("cp");
                     String mcx_time = obj5.getString("lt");
