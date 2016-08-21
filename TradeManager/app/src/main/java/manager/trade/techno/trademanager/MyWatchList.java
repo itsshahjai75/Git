@@ -22,6 +22,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -511,6 +512,7 @@ public class MyWatchList extends Fragment {
 
                     String company_code = obj.getString("t");
                     String current_index = obj.getString("l_cur");
+                    current_index= Html.fromHtml((String) current_index).toString();
                     String diff_index = obj.getString("c");
                     String diff_per_index = obj.getString("cp");
                     String time_index = obj.getString("lt");

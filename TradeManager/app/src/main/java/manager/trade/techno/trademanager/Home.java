@@ -17,6 +17,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
+import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -239,7 +240,7 @@ public class Home extends AppCompatActivity {
         assert navigationView != null;
         navigationView.setCheckedItem(R.id.nav_live);
         navigationView.getMenu().getItem(0).setChecked(true);
-        navigationView.setItemIconTintList(null);
+        //navigationView.setItemIconTintList(null);
 
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -574,6 +575,7 @@ public class Home extends AppCompatActivity {
 
                     String company_code = obj.getString("t");
                     String current_index = obj.getString("l_cur");
+                    current_index= Html.fromHtml((String) current_index).toString();
                     String diff_index = obj.getString("c");
                     String diff_per_index = obj.getString("cp");
                     String time_index = obj.getString("lt");

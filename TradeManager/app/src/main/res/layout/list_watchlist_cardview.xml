@@ -275,6 +275,7 @@
 
                 <ImageView
                     android:id="@+id/img_chart"
+                    android:visibility="gone"
                     android:layout_gravity="right"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
