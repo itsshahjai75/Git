@@ -47,7 +47,7 @@
         jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="e54156df910561fe7f0e40383aecb8126785a104">
+        sha1="4a24ea5628bcf3d925e5028b082e3ebbc414ebb0">
         <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e4b61be4bc6c46dfbe6a2d487b9dce7936e51173\classes.dex" />
     </item>
     <item
@@ -152,7 +152,7 @@
         jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="39737e091f753e724fbd5c9659157e95702b3643">
+        sha1="345eafb250977c853f30cf38e9e69e5c0e77a62d">
         <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_71bb2893b6b57e1c71462ff8a00073c327547484\classes.dex" />
     </item>
     <item

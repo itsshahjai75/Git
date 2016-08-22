@@ -24,7 +24,8 @@
                 android:textSize="30dp"
                 android:text="Live Index"
                 android:textColor="@color/md_white_1000"
-                android:background="@color/md_green_500"/>
+                android:background="@color/md_green_500"
+                android:visibility="gone"/>
 
             <android.support.v4.widget.NestedScrollView
                 android:layout_width="match_parent"

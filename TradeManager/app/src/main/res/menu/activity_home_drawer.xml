@@ -31,7 +31,7 @@
         <item
             android:id="@+id/nav_currency"
             android:title="Currency"
-            android:icon="@drawable/setting"/>
+            android:icon="@drawable/currency_icon"/>
 
 
 
