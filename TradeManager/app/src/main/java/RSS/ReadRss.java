@@ -22,14 +22,15 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 public class ReadRss extends AsyncTask<Void, Void, Void> {
     Context context;
-    String address = "http://www.moneycontrol.com/rss/marketreports.xml";//"http://www.sciencemag.org/rss/news_current.xml";
+    String address;// = "http://www.moneycontrol.com/rss/marketreports.xml";//"http://www.sciencemag.org/rss/news_current.xml";
     ProgressDialog progressDialog;
     ArrayList<FeedItem>feedItems;
     RecyclerView recyclerView;
     URL url;
-    public ReadRss(Context context,RecyclerView recyclerView) {
+    public ReadRss(Context context,RecyclerView recyclerView,String address) {
         this.recyclerView=recyclerView;
         this.context = context;
+        this.address = address;
         progressDialog = new ProgressDialog(context);
         progressDialog.setMessage("Loading...");
     }

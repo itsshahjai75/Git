@@ -51,7 +51,7 @@ public class News_fragment extends Fragment {
             }
         });
         recyclerView= (RecyclerView)convertView.findViewById(R.id.recyclerview);
-        ReadRss readRss=new ReadRss(getContext(),recyclerView);
+        ReadRss readRss=new ReadRss(getContext(),recyclerView,"http://www.moneycontrol.com/rss/MCtopnews.xml");
         readRss.execute();
 
 

@@ -1,3 +1,271 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-v13\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1dcb8005f460d87baed0abdc9ec997a58797856e">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_42080adc17f5e5d6506ede117b851a01e4b9b837\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.0_3d29b1bb8b6faf256ecda977181cf9a6c43baee0\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-v13\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6bf34c4b4fcd3f6913eca652d13c51dbde51c3a4">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-24.2.0_f8c3c0f9a1ead7fc0c67351ae537a0720a213865\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_b5abd547002a7014d4cd81d5dfae8e2126b96ad6\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jay\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.8.0_80a5614b65b0fe6a5470cdab1c96d1cbf9cbcc8c\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_5c27cac5b2669fae4fcdcfe08915982651c4517d\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.0_af91a9d0202d7f627dccf14e9306401606cbb9fc\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.github.scottyab\showhidepasswordedittext\0.6\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="b21b96a99ee47704701ab108a3408ed3b6c08279">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.scottyab-showhidepasswordedittext-0.6_f9b7e2c29b8843913b7c282f7a703c3d7b9d1a1a\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="49c3327f7096fe0b4666c6116c5d6eda140e8fda">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e4b61be4bc6c46dfbe6a2d487b9dce7936e51173\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.1.3\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.daimajia.androidanimations-library-1.1.3_567d458dc7b20d4149a242862021b9ed4038b72f\classes.dex" />
+    </item>
+    <item
+        jar="E:\android_sdk_6.0\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_1f9e8e30ac160abbe69d85d9c8e5de4dd4930ce6\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="96e33a7aaee00ab64270e2a9887b8f9ef32c8b73">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.2.0_705eb678d3eae790c3de5bc72fb376d1235bcb07\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_1f35b5ca7e222d3b3138a8bf754a68f57860f08a\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.github.lzyzsd\circleprogress\1.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="e6f9fb0d2ea982d656d6dca785a9097659395874">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.lzyzsd-circleprogress-1.1.0_054b334e3c304f970211c2be8daf9c5e06a99121\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\me.zhanghai.android.materialprogressbar\library\1.1.4\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="2a24cba08e1d865a79e61335f5a1bd64d520106d">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\me.zhanghai.android.materialprogressbar-library-1.1.4_2349610a3804c9cc846959904b7fa95c1be193db\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_8d01abc73e14cc4993b736ae6fdce9ac47bcdbbc\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.0_f7cd2241686e05585f375b20c7e3715007f9c296\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\net.colindodd\toggleimagebutton\1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="589073e2f4ae2c8d70b712fe3a43491f99e9da34">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\net.colindodd-toggleimagebutton-1.1_f66b41246c5155f8d7ded5b3a70120ee22168dd5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jay\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_f93d12f8f66dbcbc1683f305a4a86bf72534e4b5\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.0_bb4e47316abe90a9b23e09e3b837f02c7814cc93\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.0_70027abb42966b2d632d705e2855bb1d5ec885e2\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_23995c8da581f028ec825cfc3f8ccbefdfcb130a\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_7a94b550e256ca4d322ad0512152096efa4f27a3\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.miguelcatalan\materialsearchview\1.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="918e3e9514d90e54421b674cf0c95044f4e155ad">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.miguelcatalan-materialsearchview-1.4.0_dbb1a0546c8c48ccf8e621d9a4a2619b4f1990ff\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.0_3072904bbaa0f41dc01b358a7417203d4db31a1a\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\me.himanshusoni.quantityview\quantity-view\1.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="44d695ff1c388afe70bd3fa759af617bbb14b868">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\me.himanshusoni.quantityview-quantity-view-1.1.1_045ce436bb93a257af2b032eec545c5c32d09608\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="820acba36fa86ab15cb3d472b654dedb495075fd">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-gridlayout-v7-24.2.0_fdf629f9dec18fb05c2e2e9ede425551c64e47ef\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.cleveroad\loopbar\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="4c9bbf376a16afcbdf2cf9872977cab3274a933f">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.cleveroad-loopbar-1.0.0_97ade8d5ecabf40ed48bb3a981d4cefef52c8cdb\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="a82ed990ac799f12bb3c6409cd31044b005202c5">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_71bb2893b6b57e1c71462ff8a00073c327547484\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.0_5fb01c3fffc658bb0a6ea5bd2c193f0092ab495c\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_3fac6f53a285202a9797089dc4b440d4422b0497\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.hdodenhof-circleimageview-2.0.0_72d61baf41fbc546e3243c220cefcaedabf53d39\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.0_46f8737b814ecec29e80bc919c0632bf9dee43ed\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\design\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.0_e97880f00b4bad6dbf29bba8d12f4c5e4e0b2480\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jay\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_6370a374961a277b04f550cac46a0a6cc82f35f8\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.daimajia.easing\library\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.daimajia.easing-library-1.0.1_2362f73ec6e4d3b0e7ef64c283bf540a83bbd237\classes.dex" />
+    </item>
+    <item
+        jar="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.0_af04751bcee0f3a96d1f0501f0ac94ccf01cfdd4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jay\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="E:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\TradeManager\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.3.0_c930986de526d878dbfbed0ece026d5692e272df\classes.dex" />
+    </item>
+
+</items>

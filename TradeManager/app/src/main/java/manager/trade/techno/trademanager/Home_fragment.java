@@ -64,6 +64,7 @@ public class Home_fragment extends Fragment {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager());
         adapter.addFragment(new MainHomeFragment(), "Stock Market");
         adapter.addFragment(new News_fragment(), "News");
+        adapter.addFragment(new Market_reports(), "Market Report");
 
         viewPager.setAdapter(adapter);
     }
