@@ -33,8 +33,6 @@ public class Home_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        // Inflate the layout for this fragment
-        // Inflate the layout for this fragment
         FontChangeCrawler fontChanger = new FontChangeCrawler(getActivity().getAssets(), "fonts/ProductSans-Regular.ttf");
         // fontChanger.replaceFonts((ViewGroup) this.findViewById(android.R.id.content));
         //==2) for fragment hoy to====
