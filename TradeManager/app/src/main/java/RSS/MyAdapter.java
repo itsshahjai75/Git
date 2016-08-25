@@ -17,6 +17,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
+import manager.trade.techno.trademanager.FontChangeCrawler;
 import manager.trade.techno.trademanager.R;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
@@ -30,6 +31,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(context).inflate(R.layout.rss_custom_row_view,parent,false);
         MyViewHolder holder=new MyViewHolder(view);
+        FontChangeCrawler fontChanger = new FontChangeCrawler(context.getAssets(), "fonts/ProductSans-Regular.ttf");
+        //fontChanger.replaceFonts((ViewGroup) this.findViewById(android.R.id.content));
+        //==2) for fragment hoy to====
+        //== fontChanger.replaceFonts((ViewGroup) this.getView());
+        //===3) for adepterview and handlerview na use mate====
+        //==convertView = inflater.inflate(R.layout.listitem, null);
+        fontChanger.replaceFonts((ViewGroup)view);
         return holder;
     }
 

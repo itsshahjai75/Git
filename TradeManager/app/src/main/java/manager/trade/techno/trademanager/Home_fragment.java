@@ -32,19 +32,11 @@ public class Home_fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        FontChangeCrawler fontChanger = new FontChangeCrawler(getActivity().getAssets(), "fonts/ProductSans-Regular.ttf");
-        // fontChanger.replaceFonts((ViewGroup) this.findViewById(android.R.id.content));
-        //==2) for fragment hoy to====
-        //fontChanger.replaceFonts((ViewGroup) this.getView());
-        //===3) for adepterview and handlerview na use mate====
-        // Inflate the layout for this fragment
-        View convertView = inflater.inflate(R.layout.fragment_home_fragment, container, false);
-        //==add this line to change all font to coustom font in fragments
-        fontChanger.replaceFonts((ViewGroup)convertView);
 
-        /*toolbar = (Toolbar) findViewById(R.id.toolbar_new);
-        setSupportActionBar(toolbar);*/
+
+        View convertView = inflater.inflate(R.layout.fragment_home_fragment, container, false);
+
+
 
 
 

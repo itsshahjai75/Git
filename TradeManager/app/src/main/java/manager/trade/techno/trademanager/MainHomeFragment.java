@@ -61,16 +61,8 @@ public class MainHomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        // Inflate the layout for this fragment
-        FontChangeCrawler fontChanger = new FontChangeCrawler(getActivity().getAssets(), "fonts/ProductSans-Regular.ttf");
-        // fontChanger.replaceFonts((ViewGroup) this.findViewById(android.R.id.content));
-        //==2) for fragment hoy to====
-       //fontChanger.replaceFonts((ViewGroup) this.getView());
-        //===3) for adepterview and handlerview na use mate====
-        // Inflate the layout for this fragment
+
         View convertView = inflater.inflate(R.layout.fragment_main_home, container, false);
-        //==add this line to change all font to coustom font in fragments
-        fontChanger.replaceFonts((ViewGroup)convertView);
 
 
         tv_sensex =(TextView)convertView.findViewById(R.id.tv_sensext_count);
