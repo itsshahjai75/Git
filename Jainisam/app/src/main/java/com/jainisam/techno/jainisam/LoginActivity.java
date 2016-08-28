@@ -259,12 +259,10 @@ public class LoginActivity extends AppCompatActivity {
 
                 }else{
 
-                    Snackbar snackbar = Snackbar
-                            .make(findViewById(android.R.id.content), " Sorry! No Internet!!!", Snackbar.LENGTH_LONG);
+                    Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), " Sorry! No Internet!!!", Snackbar.LENGTH_LONG);
 
                     // Changing message text color
                     snackbar.setActionTextColor(Color.BLUE);
-
                     // Changing action button text color
                     View sbView = snackbar.getView();
                     TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);

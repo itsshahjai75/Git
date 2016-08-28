@@ -5,9 +5,13 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,15 +22,24 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.xml.sax.Parser;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-import okhttp3.HttpUrl;
+import MyFirebase.RecyclerViewAdapter;
+import MyFirebase.Stockindex;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -35,22 +48,35 @@ import okhttp3.Response;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MainHomeFragment extends Fragment {
+public class MainHomeFragment extends Fragment implements
+        GoogleApiClient.OnConnectionFailedListener{
 
 
-    TextView tv_sensex,tv_sensex_diff_per,tv_sensex_time;
-    TextView tv_nifty,tv_nifty_diff_per,tv_nifty_time;
-    TextView tv_nasdaq,tv_nasdaq_diff_per,tv_nasdaq_time;
-    TextView tv_nikkei,tv_nikkei_diff_per,tv_nikkei_time;
-    TextView tv_mcx,tv_mcx_diff_per,tv_mcx_time;
+    private static final String TAG = "index fragment";
+    private RecyclerView recyclerView;
+    private LinearLayoutManager linearLayoutManager;
+    private RecyclerViewAdapter recyclerViewAdapter;
+    private DatabaseReference databaseReference;
+    private List<Stockindex> allindex;
 
-    ImageView img_sensex,img_nifty,img_nasdaq,img_nikkei,img_mcx;
+
     SwipeRefreshLayout mSwipeRefreshLayout;
+    private static FirebaseDatabase fbDatabase;
 
 
     String res1;
     Boolean isInternetPresent = false;
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        if(fbDatabase == null) {
+            fbDatabase = FirebaseDatabase.getInstance();
+            fbDatabase.setPersistenceEnabled(true);
+        }
+
+    }
 
     public MainHomeFragment() {
         // Required empty public constructor
@@ -62,35 +88,8 @@ public class MainHomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View convertView = inflater.inflate(R.layout.fragment_main_home, container, false);
+        final View convertView = inflater.inflate(R.layout.fragment_main_home, container, false);
 
-
-        tv_sensex =(TextView)convertView.findViewById(R.id.tv_sensext_count);
-        tv_sensex_diff_per=(TextView)convertView.findViewById(R.id.tv_sensext_diff_per);
-        tv_sensex_time=(TextView)convertView.findViewById(R.id.tv_sensext_time);
-
-        tv_nifty =(TextView)convertView.findViewById(R.id.tv_nifty_count);
-        tv_nifty_diff_per=(TextView)convertView.findViewById(R.id.tv_nifty_diff_per);
-        tv_nifty_time=(TextView)convertView.findViewById(R.id.tv_nifty_time);
-
-        tv_nasdaq =(TextView)convertView.findViewById(R.id.tv_nasdaq_count);
-        tv_nasdaq_diff_per=(TextView)convertView.findViewById(R.id.tv_nasdaq_diff_per);
-        tv_nasdaq_time=(TextView)convertView.findViewById(R.id.tv_nasdaq_time);
-
-
-        tv_nikkei =(TextView)convertView.findViewById(R.id.tv_nikkei_count);
-        tv_nikkei_diff_per=(TextView)convertView.findViewById(R.id.tv_nikkei_diff_per);
-        tv_nikkei_time=(TextView)convertView.findViewById(R.id.tv_nikkei_time);
-
-        tv_mcx =(TextView)convertView.findViewById(R.id.tv_mcx_count);
-        tv_mcx_diff_per=(TextView)convertView.findViewById(R.id.tv_mcx_diff_per);
-        tv_mcx_time=(TextView)convertView.findViewById(R.id.tv_mcx_time);
-
-        img_sensex=(ImageView)convertView.findViewById(R.id.img_sensex);
-        img_nifty=(ImageView)convertView.findViewById(R.id.img_nifty);
-        img_nasdaq=(ImageView)convertView.findViewById(R.id.img_nasdaq);
-        img_nikkei=(ImageView)convertView.findViewById(R.id.img_nikkei);
-        img_mcx=(ImageView)convertView.findViewById(R.id.img_mcx);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout)convertView.findViewById(R.id.swipe_refrash_home);
 
@@ -98,7 +97,36 @@ public class MainHomeFragment extends Fragment {
             @Override
             public void onRefresh() {
                 //Refreshing data on server
-                startActivity(new Intent(getActivity(),Home.class));
+                // creating connection detector class instance
+                ConnectionDetector cd = new ConnectionDetector(getContext());
+                // get Internet status
+                isInternetPresent = cd.isConnectingToInternet();
+
+                // check for Internet status
+                if (isInternetPresent) {
+                    // Internet Connection is Present
+                    // make HTTP requests
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+                        new GetSensex().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                    } else {
+                        new GetSensex().execute();
+                    }
+
+                } else {
+                    // Internet connection is not present
+                    // Ask user to connect to Internet
+                    Snackbar.make(convertView, "No internet connection!", Snackbar.LENGTH_LONG)
+                            .setAction("Setting", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                }
+                            }).show();
+                    if (mSwipeRefreshLayout.isRefreshing()) {
+                        mSwipeRefreshLayout.setRefreshing(false);
+                    }
+
+                }
             }
         });
 
@@ -111,36 +139,112 @@ public class MainHomeFragment extends Fragment {
         if (isInternetPresent) {
             // Internet Connection is Present
             // make HTTP requests
-
-
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
                 new GetSensex().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
             } else {
                 new GetSensex().execute();
             }
 
-
-
-
-
-
-
-
         } else {
             // Internet connection is not present
             // Ask user to connect to Internet
-
-
+            Snackbar.make(convertView, "No internet connection!", Snackbar.LENGTH_LONG)
+                    .setAction("Setting", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                        }
+                    }).show();
 
         }
 
 
 
+//----------------------------------------------------------------------------------------------------------------------------------------------
 
+        allindex = new ArrayList<Stockindex>();
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("index");
+        databaseReference.keepSynced(true);
+        recyclerView = (RecyclerView)convertView.findViewById(R.id.indexRecyclerView);
+        linearLayoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        recyclerViewAdapter = new RecyclerViewAdapter(getContext(), allindex);
+
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                getAllTask(dataSnapshot);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+
+     /*   databaseReference.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                getAllTask(dataSnapshot);
+            }
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                getAllTask(dataSnapshot);
+            }
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+               // taskDeletion(dataSnapshot);
+            }
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+            }
+        });
+*/
+
+
+        //================================
 
 
         return  convertView;
 
+    }
+
+
+
+    private void getAllTask(DataSnapshot dataSnapshot){
+
+        for(DataSnapshot singleSnapshot : dataSnapshot.getChildren()){
+            Log.e("Count " ,""+dataSnapshot.getChildrenCount());
+
+            Stockindex post = singleSnapshot.getValue(Stockindex.class);
+
+            System.out.println("title: " + post.getTitle());
+            System.out.println("diff: " + post.getDiff());
+            allindex.add(new Stockindex(post.getTitle(),post.getIndexpoint(),post.getDiff(),post.getTime()));
+
+        }
+        recyclerView.setAdapter(recyclerViewAdapter);
+        recyclerViewAdapter.notifyDataSetChanged();
+    }
+    private void taskDeletion(DataSnapshot dataSnapshot){
+        for(DataSnapshot singleSnapshot : dataSnapshot.getChildren()) {
+            String taskTitle = singleSnapshot.getValue(String.class);
+            for(int i = 0; i < allindex.size(); i++){
+                if(allindex.get(i).getTitle().equals(taskTitle)){
+                    allindex.remove(i);
+                }
+            }
+            Log.d(TAG, "Task tile " + taskTitle);
+            recyclerViewAdapter.notifyDataSetChanged();
+            recyclerViewAdapter = new RecyclerViewAdapter(getActivity(), allindex);
+            recyclerView.setAdapter(recyclerViewAdapter);
+        }
     }
 
     class GetSensex extends AsyncTask<Object, Void, String> {
@@ -223,13 +327,13 @@ public class MainHomeFragment extends Fragment {
             }
 
             try {
-
+                Map<String, Map<String, String>> index_root = new HashMap<String, Map<String, String>>();
 
 
                 res1=res1.substring(3);
                 JSONArray array_res = new JSONArray(res1);
 
-                for(int a =0;a<=array_res.length();a++){
+
 
 
                     //  Log.i("RESPONSE", res1);
@@ -242,15 +346,16 @@ public class MainHomeFragment extends Fragment {
                     String sensex_time = obj.getString("lt");
 
 
-                    tv_sensex.setText(sensex+" ( "+sensex_diff+")");
-                    tv_sensex_diff_per.setText(sensex_diff_per+" % ");
-                    tv_sensex_time.setText(sensex_time);
+                    Map<String, String> node_sensex = new HashMap<String, String>();
+                    node_sensex.put("title", "SENSEX");
+                    node_sensex.put("indexpoint", sensex);
+                    node_sensex.put("diff", sensex_diff+" ( "+sensex_diff_per+" % )");
+                    node_sensex.put("time", sensex_time);
 
-                    if(sensex_diff.contains("+")){
-                        img_sensex.setImageResource(R.drawable.upmarket);
-                    }else{
-                        img_sensex.setImageResource(R.drawable.downmarket);
-                    }
+
+
+
+
 
 
                     // ==------nifty---------------------
@@ -264,15 +369,14 @@ public class MainHomeFragment extends Fragment {
                     String nifty_time = obj2.getString("lt");
 
 
-                    tv_nifty.setText(nifty+" ( "+nifty_diff+")");
-                    tv_nifty_diff_per.setText(nifty_diff_per +" % ");
-                    tv_nifty_time.setText(nifty_time);
+                    Map<String, String> node_nifty = new HashMap<String, String>();
+                    node_nifty.put("title", "NIFTY");
+                    node_nifty.put("indexpoint", nifty);
+                    node_nifty.put("diff", nifty_diff+" ( "+nifty_diff_per+" % )");
+                    node_nifty.put("time", nifty_time);
 
-                    if(nifty_diff.contains("+")){
-                        img_nifty.setImageResource(R.drawable.upmarket);
-                    }else{
-                        img_nifty.setImageResource(R.drawable.downmarket);
-                    }
+
+
 
 
                     //===========nasdaq============================
@@ -285,16 +389,12 @@ public class MainHomeFragment extends Fragment {
                     String nasdaq_time = obj3.getString("lt");
 
 
-                    tv_nasdaq.setText(nasdaq+" ( "+nasdaq_diff+")");
-                    tv_nasdaq_diff_per.setText(nasdaq_diff_per+" % ");
-                    tv_nasdaq_time.setText(nasdaq_time);
 
-                    if(nasdaq_diff.contains("+")){
-                        img_nasdaq.setImageResource(R.drawable.upmarket);
-                    }else{
-                        img_nasdaq.setImageResource(R.drawable.downmarket);
-                    }
-
+                Map<String, String> node_nasdaq = new HashMap<String, String>();
+                node_nasdaq.put("title", "NASDAQ");
+                node_nasdaq.put("indexpoint", nasdaq);
+                node_nasdaq.put("diff",nasdaq_diff+" ( "+nasdaq_diff_per+" % )");
+                node_nasdaq.put("time", nasdaq_time);
 
                     //========nikkei-----------------
 
@@ -306,15 +406,11 @@ public class MainHomeFragment extends Fragment {
                     String nikkei_time = obj4.getString("lt");
 
 
-                    tv_nikkei.setText(nikkei+" ( "+nikkei_diff+")");
-                    tv_nikkei_diff_per.setText(nikkei_diff_per+" % ");
-                    tv_nikkei_time.setText(nikkei_time);
-
-                    if(nikkei_diff.contains("+")){
-                        img_nikkei.setImageResource(R.drawable.upmarket);
-                    }else{
-                        img_nikkei.setImageResource(R.drawable.downmarket);
-                    }
+                Map<String, String> node_nikkei = new HashMap<String, String>();
+                node_nikkei.put("title", "NIKKEI");
+                node_nikkei.put("indexpoint", nikkei);
+                node_nikkei.put("diff",nikkei_diff+" ( "+nikkei_diff_per+" % )");
+                node_nikkei.put("time", nikkei_time);
 
                     ///===mcx=====
 
@@ -326,17 +422,27 @@ public class MainHomeFragment extends Fragment {
                     String mcx_time = obj5.getString("lt");
 
 
-                    tv_mcx.setText(mcx+" ( "+mcx_diff+")");
-                    tv_mcx_diff_per.setText(mcx_diff_per+" % ");
-                    tv_mcx_time.setText(mcx_time);
+                Map<String, String> node_mcx = new HashMap<String, String>();
+                node_mcx.put("title", "MCX");
+                node_mcx.put("indexpoint", mcx);
+                node_mcx.put("diff",mcx_diff+" ( "+mcx_diff_per+" % )");
+                node_mcx.put("time", mcx_time);
+                //=================================================================
 
-                    if(mcx_diff.contains("+")){
-                        img_mcx.setImageResource(R.drawable.upmarket);
-                    }else{
-                        img_mcx.setImageResource(R.drawable.downmarket);
-                    }
+                index_root.put("5",node_mcx);
+                index_root.put("4",node_nikkei);
+                index_root.put("3",node_nasdaq);
+                index_root.put("2", node_nifty);
+                index_root.put("1", node_sensex);
 
-                }
+
+
+
+
+                databaseReference.setValue(index_root);
+
+
+
 
             }
 
@@ -358,5 +464,12 @@ public class MainHomeFragment extends Fragment {
     }
 
 
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+        // An unresolvable error has occurred and Google APIs (including Sign-In) will not
+        // be available.
+        Log.d("firebase TAG", "onConnectionFailed:" + connectionResult);
+        Toast.makeText(getContext(), "Google Play Services error.", Toast.LENGTH_SHORT).show();
+    }
 
 }

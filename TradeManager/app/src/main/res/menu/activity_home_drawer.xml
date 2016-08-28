@@ -25,7 +25,7 @@
 
          <item
             android:id="@+id/nav_toplooser"
-            android:title="Top Looser"
+            android:title="Top Loser"
             android:icon="@drawable/top_loser" />
 
         <item

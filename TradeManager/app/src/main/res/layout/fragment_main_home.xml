@@ -15,6 +15,12 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/indexRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"/>
+
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -27,7 +33,7 @@
                 android:background="@color/md_green_500"
                 android:visibility="gone"/>
 
-            <android.support.v4.widget.NestedScrollView
+          <!--  <android.support.v4.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <LinearLayout
@@ -500,7 +506,7 @@
 
 
 
-                            <!-- <TextView
+                            &lt;!&ndash; <TextView
                                  android:layout_marginTop="5dp"
                                  android:id="@+id/btn_addtocart"
                                  android:paddingLeft="2pt"
@@ -514,7 +520,7 @@
                                  android:gravity="center"
                                  android:background="@color/colorPrimary"
                                  android:drawableTint="@color/icons"
-                                 android:drawableLeft="@drawable/addtocart_icon"/>-->
+                                 android:drawableLeft="@drawable/addtocart_icon"/>&ndash;&gt;
 
                         </LinearLayout>
 
@@ -776,7 +782,7 @@
 
 
                 </LinearLayout>
-            </android.support.v4.widget.NestedScrollView>
+            </android.support.v4.widget.NestedScrollView>-->
         </LinearLayout>
     </android.support.v4.widget.SwipeRefreshLayout>
 
