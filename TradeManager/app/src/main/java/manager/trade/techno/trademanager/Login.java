@@ -124,10 +124,16 @@ public class Login extends AppCompatActivity {
 
                                         String mobile_no = dataSnapshot.child("mobno").getValue(String.class);
                                         String pwd = dataSnapshot.child("pwd").getValue(String.class);
+                                        String email = dataSnapshot.child("email").getValue(String.class);
 
 
                                         Log.d("Mobile USEr = ",mobile_no+"\n password ="+pwd);
                                         if(mobno.equals(mobile_no) && pwd.equals(password)){
+
+                                            sharepref.edit().putString("key_login","yes").apply();
+                                            sharepref.edit().putString("key_useremail", email).apply();
+                                            sharepref.edit().putString("key_usermobno", mobile_no).apply();
+
                                             startActivity(new Intent(Login.this,Home.class));
                                         }else if(mobile_no ==  null  || pwd == null){
                                             Snackbar snackbar = Snackbar

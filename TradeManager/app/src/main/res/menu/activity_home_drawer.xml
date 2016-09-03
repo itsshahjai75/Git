@@ -43,6 +43,12 @@
             android:id="@+id/nav_feedback"
             android:title="Rate/Review Us"
             android:icon="@drawable/feedback_icon"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/logout"/>
+
         <item
             android:id="@+id/nav_exit"
             android:title="Exit"
@@ -57,7 +63,18 @@
                     android:icon="@drawable/aboutus"/>
 
               </menu>
-        </item>-->
+        </item>
+
+
+        <item android:title="Admin" >
+            <menu>
+                <item
+                    android:id="@+id/nav_admin_tips"
+                    android:title="Admin Tips"
+                    android:icon="@drawable/tips_icon"/>
+
+            </menu>
+        </item>
     </group>
 
 

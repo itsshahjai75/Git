@@ -215,12 +215,11 @@ public class MainHomeFragment extends Fragment implements
     private void getAllTask(DataSnapshot dataSnapshot){
 
         for(DataSnapshot singleSnapshot : dataSnapshot.getChildren()){
-            Log.e("Count " ,""+dataSnapshot.getChildrenCount());
+            //Log.e("Count " ,""+dataSnapshot.getChildrenCount());
 
             Stockindex post = singleSnapshot.getValue(Stockindex.class);
-
-            System.out.println("title: " + post.getTitle());
-            System.out.println("diff: " + post.getDiff());
+            /*System.out.println("title: " + post.getTitle());
+            System.out.println("diff: " + post.getDiff());*/
             allindex.add(new Stockindex(post.getTitle(),post.getIndexpoint(),post.getDiff(),post.getTime()));
 
         }
@@ -235,7 +234,7 @@ public class MainHomeFragment extends Fragment implements
                     allindex.remove(i);
                 }
             }
-            Log.d(TAG, "Task tile " + taskTitle);
+            //Log.d(TAG, "Task tile " + taskTitle);
             recyclerViewAdapter.notifyDataSetChanged();
             recyclerViewAdapter = new RecyclerViewAdapter(getActivity(), allindex);
             recyclerView.setAdapter(recyclerViewAdapter);

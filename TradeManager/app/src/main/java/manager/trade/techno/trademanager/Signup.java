@@ -2,6 +2,7 @@ package manager.trade.techno.trademanager;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.support.design.widget.Snackbar;
@@ -62,6 +63,8 @@ public class Signup extends AppCompatActivity {
     CheckBox cb_terms;
 
     private DatabaseReference databaseReference;
+    SharedPreferences sharepref;
+
 
 
 
@@ -83,6 +86,7 @@ public class Signup extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference("users");
         databaseReference.keepSynced(true);
         //-------------------------------------------------
+        sharepref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
 
 
         et_name = (EditText)this.findViewById(R.id.et_name);
@@ -361,7 +365,7 @@ public class Signup extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish(); // call this to finish the current activity
-           
+
 
 
         }

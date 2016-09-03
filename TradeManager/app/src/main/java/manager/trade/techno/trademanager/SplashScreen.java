@@ -28,6 +28,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +53,7 @@ public class SplashScreen extends AppCompatActivity {
         sharepref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         myDbHelper = new DatabaseHelper_Compnies(SplashScreen.this);
 
+        //==for static db insert code....
         try {
 
             myDbHelper.createDataBase();
@@ -68,27 +70,28 @@ public class SplashScreen extends AppCompatActivity {
         }
 
 
-        // creating connection detector class instance
-        ConnectionDetector cd = new ConnectionDetector(this);
-        // get Internet status
-        isInternetPresent = cd.isConnectingToInternet();
-
-        // check for Internet status
-        if (isInternetPresent) {
-            // Internet Connection is Present
-            // make HTTP requests
-
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
 
 
+                    if(sharepref.getString("key_login", "no").equals("yes")){
+
+                        startActivity(new Intent(SplashScreen.this,
+                                Home.class));
+                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                        finish();
 
 
-                    startActivity(new Intent(SplashScreen.this,
-                            Login.class));
-                    overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-                    finish();
+                    }else{
+
+                        startActivity(new Intent(SplashScreen.this,
+                                Login.class));
+                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                        finish();
+
+                    }
+
 
 
 
@@ -101,32 +104,6 @@ public class SplashScreen extends AppCompatActivity {
 
 
 
-
-        } else {
-
-
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-
-
-
-
-
-                    startActivity(new Intent(SplashScreen.this,
-                            Login.class));
-                    overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-                    finish();
-
-
-
-
-
-                }
-            }, SPLASH_TIME_OUT);
-
-
-        }
 
 
 

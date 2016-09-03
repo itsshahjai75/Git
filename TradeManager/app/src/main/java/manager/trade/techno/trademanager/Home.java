@@ -7,6 +7,7 @@ import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -242,6 +243,17 @@ public class Home extends AppCompatActivity {
         navigationView.getMenu().getItem(0).setChecked(true);
         //navigationView.setItemIconTintList(null);
 
+        Menu menu =navigationView.getMenu();
+
+        MenuItem admin_tips = menu.findItem(R.id.nav_admin_tips);
+
+        String logedin_mobno=sharepref.getString("key_usermobno", "null");
+        if(logedin_mobno.equals("8866875879")) {
+            admin_tips.setVisible(true);
+        }else{
+            admin_tips.setVisible(false);
+        }
+
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
 
@@ -275,7 +287,7 @@ public class Home extends AppCompatActivity {
 
                     case R.id.nav_watchlist:
 
-                        fragment= new MyWatchList();
+                        fragment= new Watchlist_Firebase();
                         break;
 
                     case R.id.nav_tips:
@@ -335,14 +347,34 @@ public class Home extends AppCompatActivity {
                         fragment= new Aboutus();
                         break;
 
-                    /*case R.id.nav_aboutus:
-                        // Toast.makeText(getApplicationContext(),"Shop",Toast.LENGTH_SHORT).show();
-                        fragment= new Aboutus_fragment();
-                        break;
+                    case R.id.nav_logout:
+                        //Toast.makeText(getApplicationContext(),"Logout",Toast.LENGTH_SHORT).show();
 
-                    case R.id.spam:
-                        Toast.makeText(getApplicationContext(),"Spam Selected",Toast.LENGTH_SHORT).show();
-                        return true;*/
+                        Intent intent = new Intent(getApplicationContext(), Login.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                        finish();
+
+                        Snackbar snackbar = Snackbar
+                                .make(findViewById(android.R.id.content), "  Thank You.!!!!", Snackbar.LENGTH_LONG);
+
+                        // Changing message text color
+                        snackbar.setActionTextColor(Color.BLUE);
+
+                        // Changing action button text color
+                        View sbView = snackbar.getView();
+                        TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+                        textView.setTextColor(Color.YELLOW);
+                        snackbar.show();
+
+                        Toast.makeText(Home.this, "Logout Done !\nMiss you, Comeback Soon.  ", Toast.LENGTH_LONG).show();
+
+                        sharepref.edit().putString("key_login","no").commit();
+                        sharepref.edit().putString("key_useremail", "").apply();
+                        sharepref.edit().putString("key_usermobno", "").apply();
+
+
+                        break;
                     default:
                         Toast.makeText(getApplicationContext(), "Coming Soon...", Toast.LENGTH_SHORT).show();
 
