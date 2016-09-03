@@ -61,7 +61,6 @@ public class MainHomeFragment extends Fragment implements
 
 
     SwipeRefreshLayout mSwipeRefreshLayout;
-    private static FirebaseDatabase fbDatabase;
 
 
     String res1;
@@ -71,10 +70,6 @@ public class MainHomeFragment extends Fragment implements
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if(fbDatabase == null) {
-            fbDatabase = FirebaseDatabase.getInstance();
-            fbDatabase.setPersistenceEnabled(true);
-        }
 
     }
 
@@ -163,7 +158,7 @@ public class MainHomeFragment extends Fragment implements
 //----------------------------------------------------------------------------------------------------------------------------------------------
 
         allindex = new ArrayList<Stockindex>();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("index");
+        databaseReference = FirebaseDatabase.getInstance().getReference("index");
         databaseReference.keepSynced(true);
         recyclerView = (RecyclerView)convertView.findViewById(R.id.indexRecyclerView);
         linearLayoutManager = new LinearLayoutManager(getContext());

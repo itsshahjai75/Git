@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.io.IOException;
 
 import DB.DatabaseHelper_Compnies;
@@ -22,12 +24,20 @@ public class SplashScreen extends AppCompatActivity {
 
     DatabaseHelper_Compnies myDbHelper;
 
+    private static FirebaseDatabase fbDatabase;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+        if(fbDatabase == null) {
+            fbDatabase = FirebaseDatabase.getInstance();
+            fbDatabase.setPersistenceEnabled(true);
+        }
+
 
         FontChangeCrawler fontChanger = new FontChangeCrawler(getAssets(), "fonts/ProductSans-Regular.ttf");
         fontChanger.replaceFonts((ViewGroup) this.findViewById(android.R.id.content));
@@ -76,7 +86,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
                     startActivity(new Intent(SplashScreen.this,
-                            Home.class));
+                            Login.class));
                     overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                     finish();
 
@@ -104,7 +114,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
                     startActivity(new Intent(SplashScreen.this,
-                            Home.class));
+                            Login.class));
                     overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                     finish();
 

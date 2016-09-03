@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="manager.trade.techno.trademanager">
 
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -26,10 +25,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".Home_tab" />
-        <activity android:name=".Home"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Setting_app"></activity>
+        <activity
+            android:name=".Home"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Setting_app" />
+        <activity
+            android:name=".Login"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Signup"></activity>
     </application>
 
 </manifest>
