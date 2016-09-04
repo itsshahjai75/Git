@@ -49,7 +49,7 @@
                         android:paddingLeft="5dp"
                         android:paddingTop="2dp"
                         android:paddingBottom="2dp"
-                        android:textSize="20dp"
+                        android:textSize="17dp"
                         android:text="Loading..."
                         android:textColor="#ffffff"
                         android:background="@color/md_blue_A400"/>
@@ -116,7 +116,7 @@
                             android:layout_width="0dp"
                             android:layout_weight="0.8"
                             android:layout_height="match_parent"
-                            android:textSize="25dp"
+                            android:textSize="21dp"
                             android:gravity="center"
                             android:text="Loading..."
                             android:textColor="#000000"/>
@@ -137,7 +137,7 @@
                                 android:id="@+id/tv_pointdiff"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="20dp"
+                                android:textSize="17dp"
                                 android:text="Loading..."
                                 android:textColor="#000000"/>
 
@@ -154,7 +154,7 @@
                                 android:id="@+id/tv_pointdiff_per"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="20dp"
+                                android:textSize="17dp"
                                 android:text="Loading..."
                                 android:textColor="#000000"/>
 
@@ -286,8 +286,8 @@
                 <ImageView
                     android:id="@+id/img_share"
                     android:layout_gravity="right"
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:layout_marginRight="10dp"
                     android:tint="@color/md_blue_A400"
                     android:src="@drawable/share"/>
@@ -295,8 +295,8 @@
                 <ImageView
                     android:id="@+id/img_delete"
                     android:layout_gravity="right"
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:layout_marginRight="10dp"
                     android:tint="@color/md_blue_A400"
                     android:src="@android:drawable/ic_delete"/>

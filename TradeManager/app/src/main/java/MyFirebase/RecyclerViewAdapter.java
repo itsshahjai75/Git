@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import java.util.List;
 
+import manager.trade.techno.trademanager.FontChangeCrawler;
 import manager.trade.techno.trademanager.R;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolders> {
@@ -25,6 +26,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
         RecyclerViewHolders viewHolder = null;
         View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.index_raw_layout, parent, false);
         viewHolder = new RecyclerViewHolders(layoutView, stockindex);
+
+        FontChangeCrawler fontChanger = new FontChangeCrawler(context.getAssets(), "fonts/ProductSans-Regular.ttf");
+        fontChanger.replaceFonts((ViewGroup)layoutView);
+
+
+
         return viewHolder;
     }
     @Override

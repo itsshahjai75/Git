@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home_tab" />
+        <activity android:name="Extra_RND_lib.Home_tab" />
         <activity
             android:name=".Home"
             android:theme="@style/AppTheme.NoActionBar"

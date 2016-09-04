@@ -66,13 +66,6 @@ public class MainHomeFragment extends Fragment implements
     String res1;
     Boolean isInternetPresent = false;
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-
-    }
-
     public MainHomeFragment() {
         // Required empty public constructor
     }
@@ -180,27 +173,6 @@ public class MainHomeFragment extends Fragment implements
         });
 
 
-     /*   databaseReference.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                getAllTask(dataSnapshot);
-            }
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                getAllTask(dataSnapshot);
-            }
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-               // taskDeletion(dataSnapshot);
-            }
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-            }
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-            }
-        });
-*/
 
 
         //================================
@@ -226,20 +198,7 @@ public class MainHomeFragment extends Fragment implements
         recyclerView.setAdapter(recyclerViewAdapter);
         recyclerViewAdapter.notifyDataSetChanged();
     }
-    private void taskDeletion(DataSnapshot dataSnapshot){
-        for(DataSnapshot singleSnapshot : dataSnapshot.getChildren()) {
-            String taskTitle = singleSnapshot.getValue(String.class);
-            for(int i = 0; i < allindex.size(); i++){
-                if(allindex.get(i).getTitle().equals(taskTitle)){
-                    allindex.remove(i);
-                }
-            }
-            //Log.d(TAG, "Task tile " + taskTitle);
-            recyclerViewAdapter.notifyDataSetChanged();
-            recyclerViewAdapter = new RecyclerViewAdapter(getActivity(), allindex);
-            recyclerView.setAdapter(recyclerViewAdapter);
-        }
-    }
+
 
     class GetSensex extends AsyncTask<Object, Void, String> {
 

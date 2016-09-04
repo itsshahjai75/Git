@@ -3,8 +3,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="10dp">
+    android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -64,7 +63,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
                         android:id="@+id/title"
-                        android:textSize="21dp"
+                        android:textSize="17dp"
                         android:text="Sensex"
                         android:paddingLeft="15dp"
                         android:textColor="#000000"/>
@@ -81,7 +80,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/indexpoint"
-                        android:textSize="21dp"
+                        android:textSize="17dp"
                         android:text="Loading..."
                         android:paddingLeft="15dp"
                         android:layout_marginTop="3dp"
@@ -101,7 +100,7 @@
                         android:id="@+id/diff"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="21dp"
+                        android:textSize="17dp"
                         android:text="Loading..."
                         android:paddingLeft="15dp"
                         android:layout_marginTop="3dp"

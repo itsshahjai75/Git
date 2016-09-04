@@ -1,35 +1,42 @@
 package manager.trade.techno.trademanager;
 
 
-import android.content.Intent;
+import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.RectF;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import org.json.JSONArray;
@@ -40,10 +47,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import Adapters.MyRecyclerAdapter_watchlist;
 import DB.DatabaseHelper;
 import DB.DatabaseHelper_Compnies;
-import MyFirebase.RecyclerViewAdapter;
-import MyFirebase.Stockindex;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -209,6 +215,8 @@ public class Watchlist_Firebase extends Fragment {
                 }else{
                     securitycode=securitycode.substring(1,securitycode.length()-1);
                     str_whatchlist_shares=securitycode;
+                    HideSoftKeyboard.hideSoftKeyboard(getActivity());
+
                     new GetShareIndex().execute();
 
 
@@ -240,6 +248,107 @@ public class Watchlist_Firebase extends Fragment {
 
         results = new ArrayList<DataObject_Watchlist>();
         mAdapter = new MyRecyclerAdapter_watchlist(results);
+
+        ItemTouchHelper swipeToDismissTouchHelper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(
+                ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+            @Override
+            public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
+                // callback for drag-n-drop, false to skip this feature
+                return false;
+            }
+
+            @Override
+            public void onSwiped(final RecyclerView.ViewHolder viewHolder, int direction) {
+                // callback for swipe to dismiss, removing item from data and adapter
+
+                if (direction == ItemTouchHelper.LEFT || direction == ItemTouchHelper.RIGHT ){
+                    AlertDialog.Builder alertbox = new AlertDialog.Builder(getContext());
+                    alertbox.setMessage("Item will be removed from your WatchList.");
+                    alertbox.setTitle("Delete Item ?");
+                    alertbox.setIcon(R.drawable.appicon);
+
+                    alertbox.setNeutralButton("Delete",
+                            new DialogInterface.OnClickListener() {
+
+                                public void onClick(DialogInterface arg0,int arg1) {
+
+                                    DataObject_Watchlist clickedCategory = (DataObject_Watchlist)results.get(viewHolder.getAdapterPosition());
+                                    String companycode = clickedCategory.getCompnay_code();
+
+                                    Query applesQuery = databaseReference.child(sharepref.getString("key_usermobno",null))
+                                            .child(companycode);
+                                    applesQuery.addListenerForSingleValueEvent(
+                                            new ValueEventListener() {
+                                                @Override
+                                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                                    // Get user value
+                                                    for (DataSnapshot singleSnapshot: dataSnapshot.getChildren()) {
+                                                        singleSnapshot.getRef().removeValue();
+                                                    }
+
+                                                    // ...
+                                                }
+
+                                                @Override
+                                                public void onCancelled(DatabaseError databaseError) {
+                                                    Log.w("TAG", "getUser:onCancelled", databaseError.toException());
+                                                    // ...
+                                                }
+                                            });
+                                    Toast.makeText(getContext(), "Deleted...", Toast.LENGTH_LONG).show();
+
+
+                                    results.remove(viewHolder.getAdapterPosition()); // results.remove(position); // for basic code
+                                    mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());//mAdapter.notifyItemRemoved(position); // for basic code
+
+
+
+                                }
+                            });
+                    alertbox.show();
+
+                    mAdapter.notifyDataSetChanged();
+                } else {
+                    /*removeView();
+                    edit_position = position;
+                    alertDialog.setTitle("Edit Country");
+                    et_country.setText(countries.get(position));
+                    alertDialog.show();*/
+                }
+            }
+
+
+            @Override
+            public void onChildDraw(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
+
+                Bitmap icon;
+                if (actionState == ItemTouchHelper.ACTION_STATE_SWIPE) {
+
+                    View itemView = viewHolder.itemView;
+                    float height = (float) itemView.getBottom() - (float) itemView.getTop();
+                    float width = height / 3;
+
+                    if (dX > 0) {
+                        p.setColor(Color.parseColor("#388E3C"));
+                        RectF background = new RectF((float) itemView.getLeft(), (float) itemView.getTop(), dX, (float) itemView.getBottom());
+                        c.drawRect(background, p);
+                        icon = BitmapFactory.decodeResource(getResources(), R.drawable.delete_icon);
+                        RectF icon_dest = new RectF((float) itemView.getLeft() + width, (float) itemView.getTop() + width, (float) itemView.getLeft() + 2 * width, (float) itemView.getBottom() - width);
+                        c.drawBitmap(icon, null, icon_dest, p);
+                    } else {
+                        p.setColor(Color.parseColor("#D32F2F"));
+                        RectF background = new RectF((float) itemView.getRight() + dX, (float) itemView.getTop(), (float) itemView.getRight(), (float) itemView.getBottom());
+                        c.drawRect(background, p);
+                        icon = BitmapFactory.decodeResource(getResources(), R.drawable.delete_icon);
+                        RectF icon_dest = new RectF((float) itemView.getRight() - 2 * width, (float) itemView.getTop() + width, (float) itemView.getRight() - width, (float) itemView.getBottom() - width);
+                        c.drawBitmap(icon, null, icon_dest, p);
+                    }
+                }
+                super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
+            }
+
+        });
+        swipeToDismissTouchHelper.attachToRecyclerView(mRecyclerView);
 
 
 
@@ -418,6 +527,8 @@ public class Watchlist_Firebase extends Fragment {
 
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame, new Watchlist_Firebase()).commit();
 
+                    Toast.makeText(getContext(), "Added...", Toast.LENGTH_LONG).show();
+
 
                 }
 
@@ -567,5 +678,6 @@ public class Watchlist_Firebase extends Fragment {
 
         }
     }
+
 
 }

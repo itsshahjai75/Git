@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80pt"
+        android:layout_height="90pt"
         android:orientation="vertical"
         android:background="@drawable/navigation_header">
 
@@ -45,13 +45,13 @@
                 android:textColor="#FFF"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:id="@+id/tv_total_sponsers" />
+                android:id="@+id/tv_mobileno" />
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="\''Monitor your stock any where any time.\''"
-                android:id="@+id/tv_total_contests"
+                android:id="@+id/tv_email_address_header"
                 android:gravity="center"
                 android:textSize="13sp"
                 android:textColor="#fff" />
@@ -75,7 +75,7 @@
         android:background="@drawable/circleshape"
         android:elevation="4dp"
         android:src="@drawable/appicon"
-        android:layout_marginBottom="47dp"
+        android:layout_marginBottom="40dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 

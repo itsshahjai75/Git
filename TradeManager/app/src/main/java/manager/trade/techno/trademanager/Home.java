@@ -60,7 +60,7 @@ public class Home extends AppCompatActivity {
     MaterialSearchView searchView;
 
 
-    TextView tv_total_sponsers, tv_total_contests;
+    TextView tv_mobileno, tv_email_address_header;
 
 
     DatabaseHelper_Compnies myDbHelper;
@@ -226,11 +226,11 @@ public class Home extends AppCompatActivity {
         navigationView = (NavigationView) findViewById(R.id.nav_view);
 
         View header = navigationView.getHeaderView(0);
-        tv_total_sponsers = (TextView) header.findViewById(R.id.tv_total_sponsers);
-        tv_total_contests = (TextView) header.findViewById(R.id.tv_total_contests);
+        tv_mobileno = (TextView) header.findViewById(R.id.tv_mobileno);
+        tv_email_address_header = (TextView) header.findViewById(R.id.tv_email_address_header);
 
-        /*tv_total_contests.setText("Total Contests : "+getProfilesCount());
-        tv_total_sponsers.setText("Total Contests websites : "+sharepref.getString("totalsposor","NA"));*/
+        tv_email_address_header.setText(sharepref.getString("key_useremail","NA"));
+        tv_mobileno.setText(sharepref.getString("key_usermobno","NA"));
 
 
 
@@ -338,7 +338,7 @@ public class Home extends AppCompatActivity {
 
                     case R.id.nav_exit:
                         System.exit(0);
-                        getIntent().setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        getIntent().setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
 
                         break;
 

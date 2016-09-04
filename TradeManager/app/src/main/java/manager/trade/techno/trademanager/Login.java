@@ -135,6 +135,8 @@ public class Login extends AppCompatActivity {
                                             sharepref.edit().putString("key_usermobno", mobile_no).apply();
 
                                             startActivity(new Intent(Login.this,Home.class));
+                                            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                                            finish();
                                         }else if(mobile_no ==  null  || pwd == null){
                                             Snackbar snackbar = Snackbar
                                                     .make(findViewById(android.R.id.content), " Sorry! No Data found!!!", Snackbar.LENGTH_LONG);
