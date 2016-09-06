@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -32,6 +33,7 @@ import manager.trade.techno.trademanager.DataObject_Watchlist;
 import manager.trade.techno.trademanager.FontChangeCrawler;
 import manager.trade.techno.trademanager.MyScaler;
 import manager.trade.techno.trademanager.R;
+import manager.trade.techno.trademanager.Watchlist_Firebase;
 
 public class MyRecyclerAdapter_watchlist extends RecyclerView
         .Adapter<MyRecyclerAdapter_watchlist
@@ -45,7 +47,7 @@ public class MyRecyclerAdapter_watchlist extends RecyclerView
     private static ArrayList<DataObject_Watchlist> mDataset;
     private static Context mContext;
 
-     SharedPreferences sharepref;
+     static SharedPreferences sharepref;
 
     DatabaseHelper dbh2;
     SQLiteDatabase db2;
@@ -78,7 +80,53 @@ public class MyRecyclerAdapter_watchlist extends RecyclerView
             img_delete=(ImageView) itemView.findViewById(R.id.img_delete);
             cardview=(CardView) itemView.findViewById(R.id.card_view);
 
+            img_delete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(final View view) {
 
+
+                    AlertDialog.Builder alertbox = new AlertDialog.Builder(view.getRootView().getContext());
+                    alertbox.setMessage("Item will be removed from your WatchList.");
+                    alertbox.setTitle("Delete Item ?");
+                    alertbox.setIcon(R.drawable.appicon);
+
+                    alertbox.setNeutralButton("Delete",
+                            new DialogInterface.OnClickListener() {
+
+                                public void onClick(DialogInterface arg0,int arg1) {
+
+                                    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("watchlist");
+                                    Query applesQuery = databaseReference.child(sharepref.getString("key_usermobno","na"))
+                                            .child(mDataset.get(getAdapterPosition()).getCompany_code());
+                                    applesQuery.addListenerForSingleValueEvent(
+                                            new ValueEventListener() {
+                                                @Override
+                                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                                    // Get user value
+                                                    for (DataSnapshot singleSnapshot: dataSnapshot.getChildren()) {
+                                                        singleSnapshot.getRef().removeValue();
+                                                    }
+
+                                                    // ...
+                                                }
+
+                                                @Override
+                                                public void onCancelled(DatabaseError databaseError) {
+                                                    Log.w("TAG", "getUser:onCancelled", databaseError.toException());
+                                                    // ...
+                                                }
+                                            });
+                                    Toast.makeText(mContext, "Deleted...", Toast.LENGTH_LONG).show();
+                                    cardview.setVisibility(View.GONE);
+                                    view.startAnimation(new MyScaler(1.0f, 1.0f, 1.0f, 0.0f, 500, view, true));
+                                    //((AppCompatActivity)mContext).getSupportFragmentManager().beginTransaction().replace(R.id.frame, new Watchlist_Firebase()).commit();
+                                }
+                            });
+                    alertbox.show();
+
+
+                }
+            });
 
 
 
@@ -133,61 +181,18 @@ public class MyRecyclerAdapter_watchlist extends RecyclerView
 
         sharepref = mContext.getApplicationContext().getSharedPreferences("MyPref",mContext.MODE_PRIVATE);
 
-        try {
 
-
-
-            dbh = new DatabaseHelper_Compnies(mContext);
-            db = dbh.getWritableDatabase();
-            // Select All Query
-
-            String selectQuery =  "SELECT  * FROM listingcompanies WHERE SecurityCode = '" + mDataset.get(position).getCompnay_code() + "';";
-            //Log.i("TAG", selectQuery);
-            //Log.i("TAG day", selectQuery);
-             mCursor = db.rawQuery(selectQuery, null);
-
-                        /*String[] columns = new String[] { DatabaseHelper._ID, DatabaseHelper.DURATION, DatabaseHelper.END,DatabaseHelper.START, DatabaseHelper.EVENT
-                                ,DatabaseHelper.HREF, DatabaseHelper.CONTEST_ID,DatabaseHelper.RESOURCE_ID, DatabaseHelper.RESOURCE_NAME};
-                        //Cursor mCursor = db.query(DatabaseHelper.TABLE_NAME, columns,null,  null, null, null, null);*/
-
-
-            if (mCursor.moveToFirst()) {
-                do {
-                    String company_short_code = mCursor.getString(mCursor.getColumnIndex("SecurityId"));
-                    String company_full_name = mCursor.getString(mCursor.getColumnIndex("SecurityName"));
-                    //String company_code = mCursor.getString(mCursor.getColumnIndex(DatabaseHelper.company_code));
-
-                    holder.tv_title_companyname.setText(company_full_name);
-                    holder.tv_company_shortcode.setText(company_short_code);
-
-                } while (mCursor.moveToNext());
-            }
-
-
-
-
-            mCursor.close();
-            db.close();
-
-        }catch (Exception ecxe){
-            ecxe.printStackTrace();
-        }finally {
-            if (mCursor != null) {
-                mCursor.close();
-                db.close();
-            }
-        }
-
-        holder.tv_livepoints.setText(mDataset.get(position).getCompany_current_index().replace("Rs.",""));
-        holder.tv_pointdiff.setText("("+mDataset.get(position).getCompany_diff_index()+")");
-        if(mDataset.get(position).getCompany_diff_index().contains("+")){
+        holder.tv_title_companyname.setText(mDataset.get(position).getFull_name());
+        holder.tv_livepoints.setText(mDataset.get(position).getCurrent_index());
+        holder.tv_pointdiff.setText("("+mDataset.get(position).getDiff_index()+")");
+        if(mDataset.get(position).getDiff_index().contains("+")){
             holder.img_updown.setImageResource(R.drawable.upmarket);
         }else{
             holder.img_updown.setImageResource(R.drawable.downmarket);
         }
-        holder.tv_pointdiff_per.setText(mDataset.get(position).getCompany_diff_per_index()+" % ");
-        holder.tv_previousclose.setText(mDataset.get(position).getCompany_preivous_close());
-        holder.tv_lastupdate.setText(mDataset.get(position).getCompany_time_index());
+        holder.tv_pointdiff_per.setText(mDataset.get(position).getDiff_per_index()+" % ");
+        holder.tv_previousclose.setText(mDataset.get(position).getPreivous_close());
+        holder.tv_lastupdate.setText(mDataset.get(position).getTime_index());
 
 
         // Log.i(LOG_TAG, "Adding Listener");
@@ -224,53 +229,7 @@ public class MyRecyclerAdapter_watchlist extends RecyclerView
         });
 
 
-        holder.img_delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View view) {
 
-
-                AlertDialog.Builder alertbox = new AlertDialog.Builder(view.getRootView().getContext());
-                alertbox.setMessage("Item will be removed from your WatchList.");
-                alertbox.setTitle("Delete Item ?");
-                alertbox.setIcon(R.drawable.appicon);
-
-                alertbox.setNeutralButton("Delete",
-                        new DialogInterface.OnClickListener() {
-
-                            public void onClick(DialogInterface arg0,int arg1) {
-
-                                DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("watchlist");
-                                Query applesQuery = databaseReference.child(sharepref.getString("key_usermobno",null))
-                                        .child(mDataset.get(position).getCompnay_code());
-                                applesQuery.addListenerForSingleValueEvent(
-                                        new ValueEventListener() {
-                                            @Override
-                                            public void onDataChange(DataSnapshot dataSnapshot) {
-                                                // Get user value
-                                                for (DataSnapshot singleSnapshot: dataSnapshot.getChildren()) {
-                                                    singleSnapshot.getRef().removeValue();
-                                                }
-
-                                                // ...
-                                            }
-
-                                            @Override
-                                            public void onCancelled(DatabaseError databaseError) {
-                                                Log.w("TAG", "getUser:onCancelled", databaseError.toException());
-                                                // ...
-                                            }
-                                        });
-                                Toast.makeText(mContext, "Deleted...", Toast.LENGTH_LONG).show();
-                                holder.cardview.setVisibility(View.GONE);
-                                view.startAnimation(new MyScaler(1.0f, 1.0f, 1.0f, 0.0f, 500, view, true));
-
-                            }
-                        });
-                alertbox.show();
-
-
-            }
-        });
 
 
     }

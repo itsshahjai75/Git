@@ -50,7 +50,7 @@ dependencies {
     //for animation of recyclerview====
     //for html parsing
     //Adding Firebase
-    
+
 
     compile 'com.android.support:appcompat-v7:24.2.0'
     compile 'me.zhanghai.android.materialprogressbar:library:1.1.4'

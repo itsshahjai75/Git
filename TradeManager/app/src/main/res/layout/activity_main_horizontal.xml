@@ -6,7 +6,7 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Extra_RND_lib.Home_tab">
+    tools:context="extra_rnd_libs.Home_tab">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"

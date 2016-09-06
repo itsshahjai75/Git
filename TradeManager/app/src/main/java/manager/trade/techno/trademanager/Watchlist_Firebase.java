@@ -25,6 +25,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.DecelerateInterpolator;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -50,6 +52,8 @@ import java.util.Map;
 import Adapters.MyRecyclerAdapter_watchlist;
 import DB.DatabaseHelper;
 import DB.DatabaseHelper_Compnies;
+import MyFirebase.Stockindex;
+import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -59,13 +63,19 @@ import okhttp3.Response;
  */
 public class Watchlist_Firebase extends Fragment {
 
+    private int visibleThreshold = 5;
+    int pastVisiblesItems, visibleItemCount, totalItemCount;
+    private static final int HIDE_THRESHOLD = 20;
+    private int scrolledDistance = 0;
+    private boolean controlsVisible = true;
+
     SharedPreferences sharepref;
 
     Boolean isInternetPresent = false;
     private Paint p = new Paint();
 
     private AutoCompleteTextView autoComplete;
-    Button btn_add;
+    Button btn_add,btn_refresh;
     DatabaseHelper dbh;
     SQLiteDatabase db;
 
@@ -87,7 +97,7 @@ public class Watchlist_Firebase extends Fragment {
     private DatabaseReference databaseReference;
     RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
-    ArrayList results;
+    ArrayList<DataObject_Watchlist> results;
 
 
 
@@ -99,14 +109,9 @@ public class Watchlist_Firebase extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        // Inflate the layout for this fragment
+
         FontChangeCrawler fontChanger = new FontChangeCrawler(getActivity().getAssets(), "fonts/ProductSans-Regular.ttf");
-        // fontChanger.replaceFonts((ViewGroup) this.findViewById(android.R.id.content));
-        //==2) for fragment hoy to====
-        //fontChanger.replaceFonts((ViewGroup) this.getView());
-        //===3) for adepterview and handlerview na use mate====
-        // Inflate the layout for this fragment
+
         View convertView = inflater.inflate(R.layout.fragment_my_watch_list, container, false);
         //==add this line to change all font to coustom font in fragments
         fontChanger.replaceFonts((ViewGroup)convertView);
@@ -179,6 +184,13 @@ public class Watchlist_Firebase extends Fragment {
 
         autoComplete = (AutoCompleteTextView)convertView.findViewById(R.id.et_companyname);
         btn_add = (Button) convertView.findViewById(R.id.btn_add);
+        btn_refresh = (Button) convertView.findViewById(R.id.btn_refrsh);
+        btn_refresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new GetShareIndex_all().execute();
+            }
+        });
 
         // set adapter for the auto complete fields
         autoComplete.setAdapter(adapter);
@@ -220,13 +232,6 @@ public class Watchlist_Firebase extends Fragment {
                     new GetShareIndex().execute();
 
 
-
-
-                    //=================================================================
-
-
-
-
                 }
 
             }
@@ -242,7 +247,7 @@ public class Watchlist_Firebase extends Fragment {
 
 
 
-        LinearLayoutManager mLayoutManager;
+        final LinearLayoutManager mLayoutManager;
         mLayoutManager = new LinearLayoutManager(getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
 
@@ -273,7 +278,7 @@ public class Watchlist_Firebase extends Fragment {
                                 public void onClick(DialogInterface arg0,int arg1) {
 
                                     DataObject_Watchlist clickedCategory = (DataObject_Watchlist)results.get(viewHolder.getAdapterPosition());
-                                    String companycode = clickedCategory.getCompnay_code();
+                                    String companycode = clickedCategory.getCompany_code();
 
                                     Query applesQuery = databaseReference.child(sharepref.getString("key_usermobno",null))
                                             .child(companycode);
@@ -296,18 +301,19 @@ public class Watchlist_Firebase extends Fragment {
                                                 }
                                             });
                                     Toast.makeText(getContext(), "Deleted...", Toast.LENGTH_LONG).show();
-
-
                                     results.remove(viewHolder.getAdapterPosition()); // results.remove(position); // for basic code
                                     mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());//mAdapter.notifyItemRemoved(position); // for basic code
+                                    mAdapter.notifyDataSetChanged();
 
+
+                                    //getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame, new Watchlist_Firebase()).commit();
 
 
                                 }
                             });
                     alertbox.show();
 
-                    mAdapter.notifyDataSetChanged();
+
                 } else {
                     /*removeView();
                     edit_position = position;
@@ -351,57 +357,105 @@ public class Watchlist_Firebase extends Fragment {
         swipeToDismissTouchHelper.attachToRecyclerView(mRecyclerView);
 
 
+        mRecyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView mRecyclerView, int dx, int dy) {
+                int topRowVerticalPosition =
+                        (mRecyclerView == null || mRecyclerView.getChildCount() == 0) ? 0 : mRecyclerView.getChildAt(0).getTop();
+                // mSwipeRefreshLayout.setEnabled(topRowVerticalPosition >= 0);
+//=========================================================================================================
+                if (scrolledDistance > HIDE_THRESHOLD && controlsVisible) {
+                    //onHide();
 
 
-        databaseReference.child(sharepref.getString("key_usermobno",null)).addListenerForSingleValueEvent(
-                new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        // Get user value
-                        for(DataSnapshot singleSnapshot : dataSnapshot.getChildren()){
-                            String security_code = singleSnapshot.getKey();
-                            Log.e("childcode",""+security_code);
+                    btn_refresh.animate().translationY(btn_refresh.getHeight()).setInterpolator(new AccelerateInterpolator(2)).start();
+                    //floatingActionButton.animate().translationY(floatingActionButton.getHeight()).setInterpolator(new AccelerateInterpolator(2)).start();
 
-                            str_whatchlist_shares=str_whatchlist_shares+",bom:"+security_code;
+                    controlsVisible = false;
+                    scrolledDistance = 0;
+                } else if (scrolledDistance < -HIDE_THRESHOLD && !controlsVisible) {
+                    //onShow();
+                    btn_refresh.animate().translationY(0).setInterpolator(new DecelerateInterpolator(2)).start();
+                    // floatingActionButton.animate().translationY(0).setInterpolator(new DecelerateInterpolator(2)).start();
 
-                        }
-
-                        new GetShareIndex_all().execute();
+                    controlsVisible = true;
+                    scrolledDistance = 0;
 
 
+                }
 
-                        // ...
-                    }
+                if ((controlsVisible && dy > 0) || (!controlsVisible && dy < 0)) {
+                    scrolledDistance += dy;
+                }
 
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-                        Log.w("TAG", "getUser:onCancelled", databaseError.toException());
-                        // ...
-                    }
-                });
+                //======================================================================================================
 
+                if (dy > 0) //check for scroll down
+                {
+                    visibleItemCount = mLayoutManager.getChildCount();
+                    totalItemCount = mLayoutManager.getItemCount();
+                    pastVisiblesItems = mLayoutManager.findFirstVisibleItemPosition();
+                }
+
+                //=======================================================================================================
+            }
+
+            @Override
+            public void onScrollStateChanged(RecyclerView mRecyclerView, int newState) {
+                super.onScrollStateChanged(mRecyclerView, newState);
+            }
+
+
+        });
+
+
+
+        databaseReference.child(sharepref.getString("key_usermobno",null)).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                getAllTask(dataSnapshot);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
 
 
         return convertView;
     }
 
+    private void getAllTask(DataSnapshot dataSnapshot){
 
 
-   /* private void taskDeletion(DataSnapshot dataSnapshot){
-        for(DataSnapshot singleSnapshot : dataSnapshot.getChildren()) {
-            String taskTitle = singleSnapshot.getValue(String.class);
-            for(int i = 0; i < allindex.size(); i++){
-                if(allindex.get(i).getClass().equals(taskTitle)){
-                    allindex.remove(i);
-                }
-            }
-            Log.d(TAG, "Task tile " + taskTitle);
-            recyclerViewAdapter.notifyDataSetChanged();
-            recyclerViewAdapter = new RecyclerViewAdapter(getActivity(), allindex);
-            recyclerView.setAdapter(recyclerViewAdapter);
+        mRecyclerView.setAdapter(mAdapter);
+        for(DataSnapshot singleSnapshot : dataSnapshot.getChildren()){
+            //Log.e("Count " ,""+dataSnapshot.getChildrenCount());
+
+
+            DataObject_Watchlist stock_details = singleSnapshot.getValue(DataObject_Watchlist.class);
+            String companname = stock_details.getFull_name();
+            String company_code = stock_details.getCompany_code();
+            String current_index = stock_details.getCurrent_index();
+            String diff_index = stock_details.getDiff_index();
+            String diff_per_index = stock_details.getDiff_per_index();
+            String time_index = stock_details.getTime_index();
+            String preivous_close = stock_details.getPreivous_close();
+
+            //Log.e("diff indes " ,""+diff_index);
+
+            results.add(new DataObject_Watchlist(company_code, current_index, diff_index, diff_per_index, time_index, preivous_close,companname));
+            // Log.e("object",company_code);
+
+            mAdapter.notifyDataSetChanged();
         }
-    }*/
+
+    }
+
+
 
 
     class GetShareIndex extends AsyncTask<Object, Void, String> {
@@ -519,13 +573,15 @@ public class Watchlist_Firebase extends Fragment {
                     stock_index_details.put("diff_per_index", diff_per_index);
                     stock_index_details.put("time_index", time_index);
                     stock_index_details.put("preivous_close", preivous_close);
+                    stock_index_details.put("company_code",company_code);
 
                     //=================================================================
 
 
                     databaseReference.child(sharepref.getString("key_usermobno",null)).child(company_code).setValue(stock_index_details);
 
-                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame, new Watchlist_Firebase()).commit();
+                    autoComplete.setText("");
+                   getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame, new Watchlist_Firebase()).commit();
 
                     Toast.makeText(getContext(), "Added...", Toast.LENGTH_LONG).show();
 
@@ -572,16 +628,14 @@ public class Watchlist_Firebase extends Fragment {
 
             // System.out.println("On do in back ground----done-------");
 
+            for (DataObject_Watchlist p : results) {
+                str_whatchlist_shares="bom:"+p.getCompany_code()+",";
+                Log.d("all IDS",str_whatchlist_shares);
+            }
 
             //Log.d("post execute", "Executando doInBackground   ingredients");
-
-// should be a singleton
+            // should be a singleton
             OkHttpClient client = new OkHttpClient();
-            /*HttpUrl.Builder urlBuilder = HttpUrl.parse("https://ajax.googleapis.com/ajax/services/search/images").newBuilder();
-            urlBuilder.addQueryParameter("v", "1.0");
-            urlBuilder.addQueryParameter("q", "android");
-            urlBuilder.addQueryParameter("rsz", "8");
-            String url = urlBuilder.build().toString();*/
 
             Log.d("url",str_whatchlist_shares);
 
@@ -654,10 +708,36 @@ public class Watchlist_Firebase extends Fragment {
                     String preivous_close = obj.getString("pcls_fix");
 
 
-                    DataObject_Watchlist obj12 = new DataObject_Watchlist(company_code, current_index, diff_index, diff_per_index, time_index, preivous_close);
+                   /* DataObject_Watchlist obj12 = new DataObject_Watchlist(company_code, current_index, diff_index, diff_per_index, time_index, preivous_close);
                     // Log.d("object",EVENT);
                     results.add(obj12);
-                    mAdapter.notifyDataSetChanged();
+                    mAdapter.notifyDataSetChanged();*/
+
+//                   /* Map<String, String> stock_index_details = new HashMap<String, String>();
+//                   // stock_index_details.put("full_name", longname);
+//                    stock_index_details.put("current_index", current_index);
+//                    stock_index_details.put("", diff_index);
+//                    stock_index_details.put("", diff_per_index);
+//                    stock_index_details.put("", time_index);
+//                    stock_index_details.put("", preivous_close);
+//                    stock_index_details.put("company_code",company_code);*/
+
+                    databaseReference.child(sharepref.getString("key_usermobno",null)).child(company_code)
+                            .child("current_index").setValue(current_index);
+                    databaseReference.child(sharepref.getString("key_usermobno",null)).child(company_code)
+                            .child("diff_index").setValue(diff_index);
+                    databaseReference.child(sharepref.getString("key_usermobno",null)).child(company_code)
+                            .child("diff_per_index").setValue(diff_per_index);
+                    databaseReference.child(sharepref.getString("key_usermobno",null)).child(company_code)
+                            .child("time_index").setValue(time_index);
+                    databaseReference.child(sharepref.getString("key_usermobno",null)).child(company_code)
+                            .child("preivous_close").setValue(preivous_close);
+
+                    autoComplete.setText("");
+                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame, new Watchlist_Firebase()).commit();
+
+                    Toast.makeText(getContext(), "Refresh...", Toast.LENGTH_LONG).show();
+
 
 
                 }
@@ -678,6 +758,5 @@ public class Watchlist_Firebase extends Fragment {
 
         }
     }
-
 
 }

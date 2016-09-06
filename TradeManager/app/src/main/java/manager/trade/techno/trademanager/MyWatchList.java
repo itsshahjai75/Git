@@ -337,7 +337,7 @@ public class MyWatchList extends Fragment {
                                         db = dbh.getWritableDatabase();
 
                                         DataObject_Watchlist clickedCategory = (DataObject_Watchlist)results.get(viewHolder.getAdapterPosition());
-                                        String companycode = clickedCategory.getCompnay_code();
+                                        String companycode = clickedCategory.getCompany_code();
                                         Log.d("companycode",companycode);
 
                                         String deletequery = "DELETE FROM " + DatabaseHelper.TABLE_NAME +" WHERE " + DatabaseHelper.company_code + "='" + companycode + "';";
@@ -517,7 +517,7 @@ public class MyWatchList extends Fragment {
                     String preivous_close = obj.getString("pcls_fix");
 
 
-                    DataObject_Watchlist obj12 = new DataObject_Watchlist(company_code, current_index, diff_index, diff_per_index, time_index, preivous_close);
+                    DataObject_Watchlist obj12 = new DataObject_Watchlist(company_code, current_index, diff_index, diff_per_index, time_index, preivous_close,company_code);
                     // Log.d("object",EVENT);
                     results.add(obj12);
                     mAdapter.notifyDataSetChanged();

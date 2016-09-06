@@ -24,12 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="Extra_RND_lib.Home_tab" />
+        <activity android:name="extra_rnd_libs.Home_tab" />
         <activity
             android:name=".Home"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".Setting_app" />
         <activity
             android:name=".Login"
             android:windowSoftInputMode="stateAlwaysHidden" />

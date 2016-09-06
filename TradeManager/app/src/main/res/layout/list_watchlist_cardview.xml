@@ -61,6 +61,7 @@
                         android:textSize="15dp"
                         android:paddingLeft="5dp"
                         android:text="Loading..."
+                        android:visibility="gone"
                         android:textColor="#000000"/>
 
 

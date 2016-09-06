@@ -41,7 +41,6 @@
                 android:layout_height="match_parent"
                 android:text="Add"
                 android:id="@+id/btn_add"
-                android:padding="5dp"
                 android:textColor="#fff"
                 android:foregroundTint="@color/md_cyan_700"
                 android:backgroundTint="@color/colorAccent"
@@ -49,7 +48,6 @@
                 android:layout_gravity="center"/>
 
         </LinearLayout>
-
 
 
 
@@ -90,6 +88,22 @@
 
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh "
+        android:id="@+id/btn_refrsh"
+        android:drawableLeft="@android:drawable/stat_notify_sync_noanim"
+        android:drawablePadding="5dp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:foregroundTint="@color/md_cyan_700"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="center_horizontal|bottom"/>
+
+
 
 
 

@@ -248,7 +248,7 @@ public class Home extends AppCompatActivity {
         MenuItem admin_tips = menu.findItem(R.id.nav_admin_tips);
 
         String logedin_mobno=sharepref.getString("key_usermobno", "null");
-        if(logedin_mobno.equals("8866875879")) {
+        if(logedin_mobno.equals("8866875879") || logedin_mobno.equals("8866263371")  ) {
             admin_tips.setVisible(true);
         }else{
             admin_tips.setVisible(false);
@@ -330,11 +330,7 @@ public class Home extends AppCompatActivity {
                         break;
 
 
-                   /* case R.id.nav_setting:
-                       *//* Intent seting = new Intent(Home.this, Setting_app.class);
-                        startActivity(seting);
-                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);*//*
-                        break;*/
+
 
                     case R.id.nav_exit:
                         System.exit(0);
@@ -374,6 +370,11 @@ public class Home extends AppCompatActivity {
                         sharepref.edit().putString("key_usermobno", "").apply();
 
 
+                        break;
+
+                    case R.id.nav_admin_tips:
+                        // Toast.makeText(getApplicationContext(),"Shop",Toast.LENGTH_SHORT).show();
+                        fragment= new Add_Tips();
                         break;
                     default:
                         Toast.makeText(getApplicationContext(), "Coming Soon...", Toast.LENGTH_SHORT).show();

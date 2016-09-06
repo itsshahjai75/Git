@@ -71,6 +71,8 @@
                     android:hint="Password"
                     android:drawablePadding="10dp"
                     android:inputType="textPassword"
+                    android:imeActionLabel="Done"
+                    android:imeOptions="actionDone"
                     app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout" />
             </android.support.design.widget.TextInputLayout>
 
