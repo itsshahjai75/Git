@@ -182,7 +182,9 @@ public class MainHomeFragment extends Fragment implements
 
 
     private void getAllTask(DataSnapshot dataSnapshot){
-
+        recyclerView.setAdapter(recyclerViewAdapter);
+        allindex.clear();
+        recyclerViewAdapter.notifyDataSetChanged();
         for(DataSnapshot singleSnapshot : dataSnapshot.getChildren()){
             //Log.e("Count " ,""+dataSnapshot.getChildrenCount());
 
@@ -192,7 +194,7 @@ public class MainHomeFragment extends Fragment implements
             allindex.add(new Stockindex(post.getTitle(),post.getIndexpoint(),post.getDiff(),post.getTime()));
 
         }
-        recyclerView.setAdapter(recyclerViewAdapter);
+
         recyclerViewAdapter.notifyDataSetChanged();
     }
 

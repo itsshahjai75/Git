@@ -175,6 +175,9 @@ public class Tips extends Fragment {
 
     private void getAllTask(DataSnapshot dataSnapshot){
 
+        recyclerView.setAdapter(recyclerViewAdapter);
+        allindex.clear();
+        recyclerViewAdapter.notifyDataSetChanged();
         for(DataSnapshot singleSnapshot : dataSnapshot.getChildren()){
             //Log.e("Count " ,""+dataSnapshot.getChildrenCount());
 
@@ -187,7 +190,6 @@ public class Tips extends Fragment {
                 mSwipeRefreshLayout.setRefreshing(false);
             }
         }
-        recyclerView.setAdapter(recyclerViewAdapter);
         recyclerViewAdapter.notifyDataSetChanged();
     }
 
