@@ -21,11 +21,13 @@
         <item
             android:id="@+id/nav_topgainer"
             android:title="Top Gainer"
+            android:visible="false"
             android:icon="@drawable/top_gainer"/>
 
          <item
             android:id="@+id/nav_toplooser"
             android:title="Top Loser"
+             android:visible="false"
             android:icon="@drawable/top_loser" />
 
         <item

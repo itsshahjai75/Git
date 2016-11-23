@@ -320,8 +320,7 @@ public class Home extends AppCompatActivity {
                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
                         } catch (Exception e) {
                             // Log.d("TAG","Message ="+e);
-
-                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.techno.jay.codingcontests&hl=en")));
+                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/")));
                         }
                         break;
 
