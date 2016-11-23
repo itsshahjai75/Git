@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top" >
+
+        <android.support.v4.view.PagerTitleStrip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/scroller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/messageView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="8dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:textColor="#000000" />
+        </ScrollView>
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/messagebox"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/preview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/black_grey" >
+
+            <ProgressBar
+                android:id="@+id/progress_circle"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/preview"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/timertitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call Duration"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00.00"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sendMessageButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#5CB85C"
+                android:onClick="onClickSend"
+                android:text="Start Call"
+                android:textColor="#FFFFFF" 
+                />
+
+            <Button
+                android:id="@+id/endcallbutton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#D9534F"
+                android:onClick="onClickEnd"
+                android:text="End Call"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout> <!-- <EditText -->
+<!-- android:id="@+id/message" -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="fill_parent" -->
+<!-- android:layout_toLeftOf="@+id/sendMessageButton" -->
+<!-- android:layout_toRightOf="@+id/preview" -->
+
+
+<!-- android:gravity="top" /> -->
+
+
+<!-- <Button -->
+<!-- android:id="@+id/sendMessageButton1" -->
+<!-- android:layout_width="100dp" -->
+<!-- android:layout_height="fill_parent" -->
+<!-- android:layout_alignParentLeft="false" -->
+<!-- android:layout_alignParentRight="true" -->
+<!-- android:layout_alignParentTop="false" -->
+<!-- android:onClick="onClickSend" -->
+<!-- android:text="@string/send" /> -->

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    
+    android:background="@drawable/whitebtn"
+    android:padding="3dp"
+    >  
+    
+     <TextView 
+         android:text="Do you wish Pay?" 
+         android:id="@+id/tv_desc"
+        
+       android:paddingLeft="5dp"
+       android:paddingRight="5dp"
+         android:layout_marginTop="10dp"
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content" 
+    	 android:layout_gravity="center_horizontal"
+    	 android:textColor="#000000"
+    	 android:textSize="21sp"
+    	 android:gravity="center"
+         />
+
+     <TextView 
+         android:text="Card No  " 
+         android:id="@+id/tv_CardNo"
+        
+       android:paddingLeft="5dp"
+       android:paddingRight="5dp"
+         android:layout_marginTop="10dp"
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content" 
+    	 android:layout_gravity="center_horizontal"
+    	 android:textColor="#000000"
+    	 android:textSize="19sp"
+    	 android:gravity="left"
+         />
+      <TextView 
+        
+         android:id="@+id/tv_name"
+         android:textSize="19sp" 
+           android:paddingLeft="5dp"
+       android:paddingRight="5dp"
+       android:text="Name "
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content" 
+           android:gravity="left"
+           android:textColor="#000000"
+    	 android:layout_gravity="center_horizontal"
+    	 
+         />
+       <TextView 
+         android:text="Expire Date " 
+         android:id="@+id/tv_expdate"
+         android:paddingLeft="5dp"
+       android:paddingRight="5dp"
+    
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content" 
+    	 android:layout_gravity="center_horizontal"
+    	 android:textColor="#000000"
+    	 android:textSize="19sp"
+    	  android:gravity="left"
+         />
+
+       <TextView 
+         android:text="CVV No  " 
+         android:id="@+id/tv_CCno"
+         android:paddingLeft="5dp"
+       android:paddingRight="5dp"
+       android:paddingBottom="15dp"
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content" 
+    	 android:layout_gravity="center_horizontal"
+    	 android:textColor="#000000"
+    	 android:textSize="19sp"
+    	  android:gravity="left"
+    	  android:visibility="gone"
+         />
+       <LinearLayout 
+           	android:layout_width="match_parent"
+           	android:layout_height="wrap_content"
+           	android:orientation="horizontal"
+           	android:weightSum="1"
+           >
+           
+     <Button android:id="@+id/pay_no" 
+         android:layout_height="match_parent" 
+       android:text="Cancel"  
+       android:focusable="false"
+         android:textColor="#00bfff"
+         android:textSize="21sp" 
+         android:layout_width="fill_parent" 
+         android:layout_weight="0.50"
+         android:layout_marginLeft="3dp"
+         android:layout_marginRight="3dp"
+         android:background="@drawable/skywhitebtn"
+         android:padding="8dp"
+         
+         />
+     
+      <Button android:id="@+id/pay_yes" 
+         android:layout_height="match_parent" 
+       android:text="Confirm"  
+       android:focusable="false"
+         android:textColor="#00bfff"
+         android:textSize="21sp" 
+         android:layout_width="fill_parent"
+		 android:layout_weight="0.50"
+		    android:layout_marginLeft="3dp"
+         android:layout_marginRight="3dp"
+         android:padding="8dp"
+		 android:background="@drawable/skywhitebtn"
+		 
+/>
+
+     </LinearLayout>
+</LinearLayout>

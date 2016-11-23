@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whitebtn"
+    android:orientation="vertical"
+    android:padding="3dp" >
+
+     <TextView 
+         android:text="1. By Logging into and/or Registering new Account with I Online Doctor, I accept all I Online Doctor's Terms &amp;Conditions. and Privacy Policy." 
+         android:id="@+id/rank_dialog_text1"
+       android:paddingLeft="5dp"
+       android:paddingRight="5dp"
+         android:layout_marginTop="10dp"
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+    	 android:layout_gravity="center_horizontal"
+    	 android:textColor="#000000"
+    	 android:textSize="19sp"
+    	 android:gravity="left"
+         />
+      <TextView 
+        
+         android:id="@+id/link1"
+         android:textSize="19sp" 
+           android:paddingLeft="5dp"
+       android:paddingRight="5dp"
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+           android:gravity="left"
+    	 android:layout_gravity="center_horizontal"
+    	 
+         />
+       <TextView 
+        
+         android:id="@+id/link2"
+         android:textSize="19sp" 
+           android:paddingLeft="5dp"
+       android:paddingRight="5dp"
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+           android:gravity="left"
+    	 android:layout_gravity="center_horizontal"
+    	 
+         />
+       <TextView 
+         android:text="2. I am legal Adult and I confirm that I am 18 years or over. " 
+         android:id="@+id/ret"
+         android:paddingLeft="5dp"
+       android:paddingRight="5dp"
+       android:paddingBottom="15dp"
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+    	 android:layout_gravity="center_horizontal"
+    	 android:textColor="#000000"
+    	 android:textSize="19sp"
+    	  android:gravity="left"
+         />
+      
+
+       
+       
+       <LinearLayout 
+           	android:layout_width="match_parent"
+           	android:layout_height="wrap_content"
+           	android:orientation="horizontal"
+           	android:weightSum="1"
+           >
+     <Button android:id="@+id/Disagree" 
+         android:layout_height="match_parent" 
+       android:text="Disagree"  
+       android:focusable="false"
+         android:textColor="#00bfff"
+         android:textSize="21sp" 
+         android:background="@drawable/skywhitebtn"
+         android:layout_marginRight="3dp"
+         android:layout_marginLeft="3dp"
+         android:padding="8dp"
+         android:layout_width="fill_parent" 
+         android:layout_weight="0.50"
+         
+         />
+     
+      <Button android:id="@+id/Agree" 
+         android:layout_height="match_parent" 
+       android:text="Agree"  
+       android:focusable="false"
+         android:textColor="#00bfff"
+         android:textSize="21sp" 
+         android:layout_marginLeft="3dp"
+         android:layout_marginRight="3dp"
+         android:background="@drawable/skywhitebtn"
+         android:layout_width="fill_parent"
+         android:padding="8dp"
+		 android:layout_weight="0.50"
+		 
+/>
+
+     </LinearLayout>
+</LinearLayout>

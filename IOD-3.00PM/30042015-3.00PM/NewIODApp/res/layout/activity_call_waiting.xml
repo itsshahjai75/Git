@@ -1,0 +1,237 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+     android:background="#4E4E4E"
+    >
+    
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+    android:orientation="vertical"
+    
+     >
+
+         
+        <TableRow 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="10dp"
+               android:background="#00BFFF"
+              
+               android:gravity="center">
+       
+        
+            <RelativeLayout
+     
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|fill"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAlignment="center" >
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Call Waiting"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+           />
+    </RelativeLayout>  
+
+         </TableRow>
+         
+    <TextView android:layout_width="match_parent"
+        android:layout_height="28dp"/>
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="94dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+        
+             <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnailcallWait"
+        android:layout_width="100dp"
+                android:layout_height="100dp"
+      android:background="@drawable/whitebtn"
+       android:padding="2dp"
+       android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/doctordefault"
+        android:contentDescription="@null"
+        />
+             
+            
+
+          
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/thumbnailcallWait"
+                android:layout_toRightOf="@+id/thumbnailcallWait"
+                android:paddingLeft="12dp"
+                android:text="sagar pate patel"
+                android:textColor="#FFFFFF"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/specilization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/thumbnailcallWait"
+                android:paddingLeft="12dp"
+                android:text="specilization"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/specilization"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/thumbnailcallWait"
+                android:paddingLeft="12dp"
+                android:paddingTop="30dp" >
+
+               
+
+                  <RatingBar
+        android:id="@+id/Dr_rating123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:clickable="false"     
+android:focusableInTouchMode="false"    
+android:focusable="false"
+       android:isIndicator="true"
+        android:layout_centerHorizontal="true"
+          style="@android:style/Widget.Holo.RatingBar.Small"
+        />
+
+                   
+              
+            </TableRow>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </RelativeLayout>
+    </LinearLayout>
+ <TextView android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+    <TextView
+        android:id="@+id/Queue_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4E4E4E"
+        android:gravity="center"
+        android:text="You&apos;re number 1 in a queue"
+        android:paddingBottom="25dp"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp" />
+    
+    <RelativeLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" android:layout_gravity="center"
+android:gravity="center" >
+
+    <com.iodapp.activities.CircularProgressBar
+    android:id="@+id/progressbar"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:indeterminate="false"
+    style="@style/Widget.ProgressBar.Holo.CircularProgressBar"
+    />
+
+    <TextView
+    android:id="@+id/tvTimeCount"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:text="00:00" 
+    android:gravity="center"
+    android:textColor="#fff"
+    android:textSize="60dip"/>
+
+</RelativeLayout>
+    
+  
+    <TextView
+        android:id="@+id/textclock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clock"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="25dp"
+        android:text="20:33"
+        android:textSize="30dp"
+        android:textColor="@color/green"
+        android:visibility="gone" />
+
+   
+
+
+    <Button
+        android:id="@+id/cancel_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redwhitebtn"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="CANCEL WAITING"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:textStyle="bold" 
+        android:layout_gravity="bottom"
+       
+        
+        />
+        
+         />
+             <Button
+     
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+                
+        android:layout_below="@+id/cancel_waiting"
+
+        android:gravity="center"
+     android:layout_gravity="bottom"
+	android:background="#4E4E4E"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+        
+         />
+
+</LinearLayout>
+
+</ScrollView>

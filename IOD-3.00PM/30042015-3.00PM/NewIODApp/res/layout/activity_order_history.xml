@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/main_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp" >
+
+            <ImageButton
+                android:id="@+id/order_backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/main_background"
+                android:paddingTop="2dp"
+                android:src="@drawable/bacn" />
+
+            <TextView
+                android:id="@+id/o_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/order_backbtn"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Order History"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Text_color" />
+        </RelativeLayout>
+ <ListView
+                android:id="@+id/order_h_list"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:divider="#FFFFFF"
+                android:padding="10dp"
+                 android:dividerHeight="1dp"
+                 android:listSelector="@drawable/list_row_selector"
+                 >
+            </ListView>
+    </LinearLayout>
+
+</FrameLayout>

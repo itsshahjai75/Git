@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/more_option" 
+          android:title="More Option"
+          android:icon="@drawable/moreoption"
+          
+          android:showAsAction="always"
+         
+          ></item>
+ 	
+      <item android:id="@+id/my_account" 
+          android:title="My Account"
+          android:icon="@drawable/myaccount"
+          
+          android:showAsAction="always"></item>
+        
+        <item android:id="@+id/view_plan" 
+          android:title="View Plan"
+          android:icon="@drawable/viewplan"
+          
+          android:showAsAction="always"></item>
+        
+        <item android:id="@+id/sing_out" 
+          android:title="Sing Out"
+          android:icon="@drawable/signout"
+          
+          android:showAsAction="always"></item>
+ 	
+ 	
+    
+
+</menu>

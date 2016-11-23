@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_deletappointment"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/main_background"
+    >
+
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        
+        
+        <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/appointment_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" >
+
+                <ImageButton
+                    android:id="@+id/d_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/main_background"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/bacn" />
+
+                <TextView
+                    android:id="@+id/A_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/d_back"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="My Appointment"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Text_color"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+            
+            
+             <TextView
+                    android:id="@+id/tv_noappointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/d_back"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Text_color"
+                    android:textSize="22sp" />
+
+            <ListView
+                android:id="@+id/BookedList"
+                android:layout_width="fill_parent"
+                android:layout_height="400dp"
+                android:layout_weight="3"
+                android:divider="#FFFFFF"
+                android:dividerHeight="1dp"
+                android:listSelector="@drawable/list_row_selector"
+                android:padding="10dp" >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/asubmit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="25dp" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/whitebtn"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/btn_booknew_appoinyment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:paddingRight="5dp"
+                        android:text="Book Now"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp"
+                        android:visibility="gone" />
+                </TableRow>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

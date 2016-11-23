@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:background="#00BFFF"
+     android:paddingTop="15dp"
+     android:paddingRight="10dp"
+     android:paddingLeft="10dp"
+     android:paddingBottom="15dp">
+    
+    
+    <!-- Thumbnail Image -->
+	<TextView 
+        android:id="@+id/date_call"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+		android:background="@drawable/whitebtn"
+       android:padding="1dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+       android:textSize="25sp"
+       android:text="2\nMar"
+       android:textColor="@color/Text_color"
+        android:layout_marginRight="5dp" 
+        android:gravity="center"/>
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/date_call"
+        android:layout_toRightOf="@+id/date_call"
+        android:textColor="#FFFFFF"
+        android:text="Dr AlexBlack"
+        android:paddingLeft="10dp"
+	
+        android:textSize="19sp"
+        
+        android:textStyle="bold" />
+
+    <!-- Rating  available and busy-->
+    
+    <TextView
+        android:id="@+id/timeDuration"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/date_call"
+        android:paddingLeft="10dp"
+        
+        android:text="Call Duration :"
+        
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+    
+    
+    <TextView
+        android:id="@+id/local"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeDuration"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/date_call"
+        android:paddingLeft="10dp"
+        
+        android:text="Local and International"
+        
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+         	   			          
+        	
+    
+    
+   
+      
+</RelativeLayout>

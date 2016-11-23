@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00BFFF" 
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+             >
+
+            <ImageButton
+                android:id="@+id/p_back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/main_background"
+                android:paddingTop="2dp"
+                android:src="@drawable/bacn" />
+
+            <TextView
+                android:id="@+id/Pay_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/p_back"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Payment"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Text_color" />
+        </RelativeLayout>
+        
+        
+        <Spinner
+                android:id="@+id/sp_cardtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+	             android:background="@drawable/apptheme_spinner_default_holo_light"
+		  android:layout_weight="1" />
+        
+			
+        <EditText
+            android:id="@+id/edit_cc_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:textSize="19dp"
+            android:hint="Credit Card Number"
+            android:textColorHint="#B3EAFE"
+            android:background="@drawable/edit_drawable"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:paddingBottom="35dp"
+            android:paddingLeft="10dp"
+            android:maxLength="16" />
+
+        <EditText
+            android:id="@+id/editholdernm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            
+            android:textSize="19dp"
+            android:hint="Card Holder Name"
+             android:textColorHint="#B3EAFE"
+            android:background="@drawable/edit_drawable"
+            android:textColor="@color/Text_color"
+             android:paddingBottom="35dp"
+            android:paddingLeft="10dp"
+            
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Spinner
+                android:id="@+id/spimonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/apptheme_spinner_default_holo_light"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spiyear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+	                android:background="@drawable/apptheme_spinner_default_holo_light"
+	
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_cc_expiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Card Expiry Details"
+            android:inputType="number"
+            android:maxLength="4"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_cvd_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Card CVV number"
+            android:inputType="numberPassword"
+            android:layout_marginTop="25dp"
+            android:textSize="19dp"
+             android:textColorHint="#B3EAFE"
+            android:background="@drawable/edit_drawable"
+            android:textColor="@color/white"
+             android:paddingBottom="35dp"
+            android:paddingLeft="10dp"
+            
+            android:maxLength="3" />
+
+        <EditText
+            android:id="@+id/editamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:visibility="gone"
+            android:hint="Amount"
+                         android:textColorHint="#B3EAFE"
+            
+            android:inputType="number" />
+        
+         <CheckBox 
+        android:id="@+id/Save_dtails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save my card"
+        android:textColor="@color/Text_color"
+        
+        /> 
+        
+        
+    </LinearLayout>
+
+    <RelativeLayout           
+      	 android:id="@+id/btncheck"
+                  	android:layout_width="match_parent"
+                 	android:layout_height="wrap_content"
+                   	android:layout_below="@+id/space"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    >
+              
+  	   <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/whitebtn"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:text="Pay"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/img_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:src="@drawable/submit" />
+
+    </TableRow>
+
+  	   </RelativeLayout>
+
+    <Button
+        android:id="@+id/btncheckresponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Check Response"
+        android:visibility="gone" />
+
+    <!-- <WebView -->
+    <!-- android:id="@+id/webView1" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" /> -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+         android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+<ScrollView 
+     android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+         android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</ScrollView>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+         android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <!-- </LinearLayout> -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+         android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+     android:layout_width="match_parent" 
+     android:layout_height="match_parent" 
+     
+     android:background="@color/main_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <RelativeLayout
+            android:id="@+id/rl_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.30" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#f4f4f4"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+                
+                
+                
+                <TableRow 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="#00BFFF"
+               android:padding="7dp"
+               android:gravity="center">
+            
+            
+            
+            
+            
+        <ImageButton
+            android:id="@+id/i_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:background="@color/main_background"
+            android:src="@drawable/bacn" />
+       
+        
+            <RelativeLayout
+     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|fill"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAlignment="center" >
+
+        
+
+        <TextView
+            android:id="@+id/skipbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="I Online Doctor"
+            android:textColor="@color/Text_color"
+            android:textSize="22sp"
+           />
+    </RelativeLayout>  
+
+         </TableRow>
+                
+            
+
+                <ImageView
+                    android:id="@+id/Content_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/iodimage"
+                    android:padding="20dp"
+                    android:background="@android:color/white"
+                     />
+               
+            </LinearLayout>
+        </RelativeLayout>
+
+        
+        <RelativeLayout
+            android:id="@+id/rl_button"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.70" >
+            
+            
+                  <ScrollView 
+            android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:fillViewport="true" 
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+     			android:paddingBottom="10dp"           
+                >
+                
+                <RelativeLayout
+           
+           	 android:id="@+id/About_Us"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+             android:background="@drawable/whitebtn"
+              
+            
+            >
+
+                    <TextView
+                        android:id="@+id/t1.1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="About Us"
+                        android:textAppearance="?android:attr/textAppearanceMedium" 
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:textSize="19sp"
+                        android:textColor="@color/Text_color"
+                        />
+                    <ImageButton android:id="@+id/t2.1"
+                        android:layout_width="8dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/content_arow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignRight="@+id/t1.1"/>
+                    
+                    
+
+                  
+                </RelativeLayout>
+                
+                
+                <RelativeLayout
+           
+           	 android:id="@+id/Pricing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+             android:background="@drawable/whitebtn"
+              
+            
+            >
+
+                    <TextView
+                        android:id="@+id/t_pricing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Pricing	"
+                        android:textAppearance="?android:attr/textAppearanceMedium" 
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:textSize="19sp"
+                        android:textColor="@color/Text_color"
+                        />
+                    <ImageButton android:id="@+id/i_pricing"
+                        android:layout_width="8dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/content_arow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignRight="@+id/i_pricing"/>
+                    
+                    
+
+                  
+                </RelativeLayout>
+                
+                <RelativeLayout
+           
+           	 android:id="@+id/hw_work"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+             android:background="@drawable/whitebtn" >
+
+                    
+                    <TextView
+                        android:id="@+id/t1.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="How it Works?"
+                        android:textAppearance="?android:attr/textAppearanceMedium" 
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:textSize="19sp"
+                        android:textColor="@color/Text_color"
+                        android:textStyle="bold"
+                        />
+                  
+
+               <ImageButton android:id="@+id/t2.2"
+                        android:layout_width="8dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/content_arow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignRight="@+id/t2.2"/>
+                
+                </RelativeLayout>
+                
+                
+                   <RelativeLayout
+           
+           	 android:id="@+id/Schedual_app"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+             android:background="@drawable/whitebtn"
+              
+            
+            >
+
+                    <TextView
+                        android:id="@+id/t1.7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="How to Schedule Appointment?"
+                        android:textAppearance="?android:attr/textAppearanceMedium" 
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                         android:textSize="19sp"
+                        android:textColor="@color/Text_color"
+                        android:textStyle="bold"
+                        />
+
+                <ImageButton android:id="@+id/t2.7"
+                        android:layout_width="8dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/content_arow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignRight="@+id/t2.7"/>
+                
+                </RelativeLayout>
+                
+                <RelativeLayout
+           
+           	 android:id="@+id/faq"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+             android:background="@drawable/whitebtn"
+              
+            
+            >
+
+                    <TextView
+                        android:id="@+id/t1.3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="F.A.Q"
+                        android:textAppearance="?android:attr/textAppearanceMedium" 
+                        android:gravity="center_vertical"
+                         android:textSize="19sp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/Text_color"
+                        android:textStyle="bold"
+                        />
+
+                    <ImageButton android:id="@+id/t2.3"
+                        android:layout_width="8dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/content_arow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignRight="@+id/t2.3"/>
+                
+                </RelativeLayout>
+                
+                <RelativeLayout
+           
+           	 android:id="@+id/term_condition"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+             android:background="@drawable/whitebtn"
+              
+            
+            >
+
+                    <TextView
+                        android:id="@+id/t1.4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Terms and Conditions"
+                        android:textAppearance="?android:attr/textAppearanceMedium" 
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                         android:textSize="19sp"
+                        android:textColor="@color/Text_color"
+                        android:textStyle="bold"
+                        />
+
+                   <ImageButton android:id="@+id/t2.4"
+                        android:layout_width="8dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/content_arow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignRight="@+id/t2.4"/>
+                
+                </RelativeLayout>
+                
+                  <RelativeLayout
+           
+           	 android:id="@+id/privacy_police"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+             android:background="@drawable/whitebtn"
+              
+            
+            >
+
+                    <TextView
+                        android:id="@+id/t1.6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Privacy Policy"
+                        android:textAppearance="?android:attr/textAppearanceMedium" 
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                         android:textSize="19sp"
+                        android:textColor="@color/Text_color"
+                        />
+
+                   <ImageButton android:id="@+id/t2.6"
+                        android:layout_width="8dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/content_arow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignRight="@+id/t2.6"/>
+                
+                </RelativeLayout>
+                
+             
+                
+                <RelativeLayout
+           
+           	 android:id="@+id/contect_us"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+             android:background="@drawable/whitebtn"
+              
+            
+            >
+
+                    <TextView
+                        android:id="@+id/t1.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Contact Us"
+                        android:textAppearance="?android:attr/textAppearanceMedium" 
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                         android:textSize="19sp"
+                        android:textColor="@color/Text_color"
+                        android:textStyle="bold"
+                        />
+						<ImageButton android:id="@+id/t2.5"
+		                        android:layout_width="8dp"
+		                        android:layout_height="15dp"
+		                        android:layout_centerVertical="true"
+		                        android:background="@drawable/content_arow"
+		                        android:layout_alignParentRight="true"
+		                        android:layout_marginRight="10dp"
+		                        android:layout_alignRight="@+id/t2.5"/>
+                </RelativeLayout>
+                
+              
+
+            </LinearLayout>
+            </ScrollView>
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

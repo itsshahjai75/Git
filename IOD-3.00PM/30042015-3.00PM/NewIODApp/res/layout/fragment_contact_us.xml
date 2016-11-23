@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    >
+    
+<!--     <TextView -->
+<!--         android:id="@+id/txtLabel" -->
+<!--          android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_centerInParent="true" -->
+<!--         android:textSize="16dp" -->
+<!--         android:text="Contact Us"/> -->
+    
+<!--     <ImageView android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_below="@id/txtLabel" -->
+<!--         android:src="@drawable/ic_whats_hot" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:layout_marginTop="10dp"/> -->
+
+<LinearLayout 
+     android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+    >
+    
+    
+    
+    
+    <RelativeLayout
+           
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.30" 
+            android:background="@color/white"
+            
+         
+            >
+            
+        <ImageView 
+            android:id="@+id/iodLOGO"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/iodimage"
+            android:padding="25dp"
+            android:background="@android:color/white"
+            />
+        
+            
+            
+            </RelativeLayout>
+            
+     <RelativeLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.70" 
+            
+            >
+            
+          <ScrollView 
+            
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:fillViewport="true" 
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="25dp"
+                
+                >
+
+                    
+                     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+    
+     
+        
+        >
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="10dp"
+            android:src="@android:drawable/ic_menu_myplaces" />
+
+        <TextView
+            android:id="@+id/addtitel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Address"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Text_color" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/addtitel"
+            android:layout_below="@+id/addtitel"
+            android:maxLines="3"
+            android:text="5201 Great America Parkway,Suite # 320,Santa Clara, California, 95054, USA "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/Text_color" />
+   
+                </RelativeLayout>
+                
+                     
+                     
+                     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="25dp"
+        
+        
+       
+        >
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="10dp"
+            android:src="@android:drawable/ic_menu_recent_history" />
+
+        <TextView
+            android:id="@+id/bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/img2"
+            android:text="Business Hours"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Text_color" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bus"
+            android:layout_below="@+id/bus"
+            android:maxLines="3"
+            android:text="Mon-Fri: 8:30 — 4:30 PST \nSaturday-Sunday: closed  "
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:textColor="@color/Text_color"
+            />
+        
+    </RelativeLayout>
+    
+                     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+       android:layout_marginTop="25dp"
+        android:background="@color/main_background"
+        >
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="10dp"
+            android:src="@android:drawable/ic_dialog_email" />
+
+        <TextView
+            android:id="@+id/emaititle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/img3"
+            android:text="Email"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Text_color" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/emaititle"
+            android:layout_below="@+id/emaititle"
+            
+            android:text="info@ionlinedoctor.com  "
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:textColor="@color/Text_color"
+            android:textSize="18dp"
+            />
+        
+    </RelativeLayout>
+
+                </LinearLayout>
+          
+            </ScrollView>
+            </RelativeLayout>
+    
+    
+</LinearLayout>
+
+
+
+</RelativeLayout>
