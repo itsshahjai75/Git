@@ -8,6 +8,7 @@ import android.database.DatabaseUtils;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -19,8 +20,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.text.Html;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.SubMenu;
 import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -33,6 +37,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 import org.json.JSONArray;
@@ -40,9 +47,12 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
+import CustomViews.CustomTypefaceSpan;
 import DB.DatabaseHelper;
 import DB.DatabaseHelper_Compnies;
 import okhttp3.OkHttpClient;
@@ -68,6 +78,13 @@ public class Home extends AppCompatActivity {
 
     String comapny_fullname,str_company_scurityID,res1;
 
+
+    private void applyFontToMenuItem(MenuItem mi) {
+        Typeface font = Typeface.createFromAsset(getAssets(), "ProductSans-Regular.ttf");
+        SpannableString mNewTitle = new SpannableString(mi.getTitle());
+        mNewTitle.setSpan(new CustomTypefaceSpan("" , font), 0 , mNewTitle.length(),  Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        mi.setTitle(mNewTitle);
+    }
 
 
 
@@ -185,9 +202,14 @@ public class Home extends AppCompatActivity {
             public boolean onQueryTextSubmit(String query) {
                 Snackbar.make(findViewById(android.R.id.content), "Query: " + query, Snackbar.LENGTH_LONG).show();
 
+                if(query.contains("(")){
                 str_company_scurityID = query.substring(query.indexOf("(")+1,query.length()-1);
                 comapny_fullname=query.substring(0,query.indexOf("("));
                 new GetShareIndex().execute();
+                }else{
+                    Toast.makeText(getBaseContext(),"Enter Name and Code.\nExample\nNAME(123456)",Toast.LENGTH_LONG).show();
+                }
+
                 return false;
             }
 
@@ -224,6 +246,23 @@ public class Home extends AppCompatActivity {
 
         //Initializing NavigationView
         navigationView = (NavigationView) findViewById(R.id.nav_view);
+        Menu m = navigationView.getMenu();
+        for (int i=0;i<m.size();i++) {
+            MenuItem mi = m.getItem(i);
+
+            //for aapplying a font to subMenu ...
+            SubMenu subMenu = mi.getSubMenu();
+            if (subMenu!=null && subMenu.size() >0 ) {
+                for (int j=0; j <subMenu.size();j++) {
+                    MenuItem subMenuItem = subMenu.getItem(j);
+                    applyFontToMenuItem(subMenuItem);
+                }
+            }
+
+            //the method we have create in activity
+            applyFontToMenuItem(mi);
+        }
+
 
         View header = navigationView.getHeaderView(0);
         tv_mobileno = (TextView) header.findViewById(R.id.tv_mobileno);
@@ -309,7 +348,9 @@ public class Home extends AppCompatActivity {
 
                         Intent intentshare = new Intent(Intent.ACTION_SEND);
                         intentshare.setType("text/plain");
-                        intentshare.putExtra(Intent.EXTRA_TEXT, "Indian Stock market apps for Traders and Broker to get price and index rate.");
+                        intentshare.putExtra(Intent.EXTRA_TEXT, "Indian Stock market apps for Traders and Broker to get price and index rate." +
+                                "https://play.google.com/" +
+                                getPackageName());
                         startActivity(Intent.createChooser(intentshare, "Share"));
 
 
@@ -320,7 +361,7 @@ public class Home extends AppCompatActivity {
                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
                         } catch (Exception e) {
                             // Log.d("TAG","Message ="+e);
-                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/")));
+                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/"+getPackageName())));
                         }
                         break;
 
@@ -364,9 +405,17 @@ public class Home extends AppCompatActivity {
 
                         Toast.makeText(Home.this, "Logout Done !\nMiss you, Comeback Soon.  ", Toast.LENGTH_LONG).show();
 
+                        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+
+                        DatabaseReference databaseReference;
+                        databaseReference = FirebaseDatabase.getInstance().getReference("users");
+                        databaseReference.child(sharepref.getString("key_usermobno","")).child("token").setValue("null");
+
                         sharepref.edit().putString("key_login","no").commit();
                         sharepref.edit().putString("key_useremail", "").apply();
                         sharepref.edit().putString("key_usermobno", "").apply();
+                        sharepref.edit().putString("TOKEN","").commit();
+
 
 
                         break;

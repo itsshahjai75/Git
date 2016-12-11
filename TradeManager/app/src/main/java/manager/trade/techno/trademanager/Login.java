@@ -43,7 +43,9 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Login extends AppCompatActivity {
     Button btn_login,btn_signup;
@@ -133,6 +135,13 @@ public class Login extends AppCompatActivity {
                                             sharepref.edit().putString("key_login","yes").apply();
                                             sharepref.edit().putString("key_useremail", email).apply();
                                             sharepref.edit().putString("key_usermobno", mobile_no).apply();
+                                            sharepref.edit().putString("TOKEN",refreshedToken).commit();
+
+
+                                            //=================================================================
+
+
+                                            databaseReference.child(mobno).child("token").setValue(refreshedToken);
 
                                             startActivity(new Intent(Login.this,Home.class));
                                             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
@@ -241,15 +250,19 @@ public class Login extends AppCompatActivity {
                 dialog.getWindow().setAttributes(lp);
 
                 final EditText et_frg_pwd =(EditText)dialog.findViewById(R.id.et_frg_pwd);
+                et_frg_pwd.setEnabled(false);
+                et_frg_pwd.setFocusableInTouchMode(false);
+                et_frg_pwd.setText("for receive your password kindly mail us on\ntechnocratsappwar@gmail.com.\n\n\n  by registerd email.");
                 Button btn_submit = (Button) dialog.findViewById(R.id.btn_frg_pwd);
+                btn_submit.setText("OK");
 
 
                 btn_submit.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
-
-                        email_frg_pwd=et_frg_pwd.getText().toString();
+                        dialog.dismiss();
+                        /*email_frg_pwd=et_frg_pwd.getText().toString();
 
                         if(et_frg_pwd.getText().toString().length()<10 || et_frg_pwd.getText().toString().length()>10)
                         {
@@ -258,8 +271,8 @@ public class Login extends AppCompatActivity {
                         }else{
                             email_frg_pwd=et_frg_pwd.getText().toString();
                            // new GetPassword().execute();
-                            dialog.dismiss();
-                        }
+
+                        }*/
 
                     }
                 });

@@ -224,8 +224,18 @@ public class Watchlist_Firebase extends Fragment {
                         || autoComplete.getText().equals("null")){
                     autoComplete.setError("Value Missing...");
 
+                }else if(!autoComplete.getText().toString().contains("(")){
+                    autoComplete.setError("Please Enter like this,\n Name (Index Code).");
+
                 }else{
-                    securitycode=securitycode.substring(1,securitycode.length()-1);
+
+                    if(longname.isEmpty()
+                            || longname.equalsIgnoreCase("")){
+                        securitycode=autoComplete.getText().toString();
+                    }else {
+                        securitycode = securitycode.substring(1, securitycode.length() - 1);
+                    }
+
                     str_whatchlist_shares=securitycode;
                     HideSoftKeyboard.hideSoftKeyboard(getActivity());
 

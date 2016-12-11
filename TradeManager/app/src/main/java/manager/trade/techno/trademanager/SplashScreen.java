@@ -33,15 +33,13 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+        FontChangeCrawler fontChanger = new FontChangeCrawler(getAssets(), "fonts/ProductSans-Regular.ttf");
+        fontChanger.replaceFonts((ViewGroup) this.findViewById(android.R.id.content));
 
         if(fbDatabase == null) {
             fbDatabase = FirebaseDatabase.getInstance();
             fbDatabase.setPersistenceEnabled(true);
         }
-
-
-        FontChangeCrawler fontChanger = new FontChangeCrawler(getAssets(), "fonts/ProductSans-Regular.ttf");
-        fontChanger.replaceFonts((ViewGroup) this.findViewById(android.R.id.content));
         //==2) for fragment hoy to====
         //== fontChanger.replaceFonts((ViewGroup) this.getView());
         //===3) for adepterview and handlerview na use mate====
