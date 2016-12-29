@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ToggleImageButton"><attr format="reference" name="tib_drawable_on"/><attr format="reference" name="tib_drawable_off"/></declare-styleable>
+</resources>
