@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/main_background"
+    android:padding="5dp"
+    >
+ <!-- Thumbnail Image -->
+	
+	  <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+    
+        android:background="@drawable/whitebtn">
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/date_call"
+        android:layout_toRightOf="@+id/date_call"
+        android:textColor="#FFFFFF"
+        android:text="xxxx-xxxx-xxxx-1111"
+        android:paddingLeft="10dp"
+	
+        android:textSize="21sp"
+        
+        android:textStyle="bold" />
+
+    <!-- Rating  available and busy-->
+    
+    <TextView
+        android:id="@+id/valid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/date_call"
+        android:paddingLeft="10dp"
+        
+        android:text="VALID THRU 05/20"
+        
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+    
+    
+    <TextView
+        android:id="@+id/card_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valid"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/date_call"
+        android:paddingLeft="10dp"
+        
+        android:text="Dex fiton"
+        
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ccCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/card_name"
+        android:layout_alignBottom="@+id/card_name"
+        android:layout_alignRight="@+id/card_name"
+        android:text="Master"
+         android:textColor="#FFFFFF"
+          android:textSize="16sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/valid"
+        android:layout_alignParentRight="true"
+        android:text="Remove"
+        android:textColor="@color/Text_color"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+    
+</RelativeLayout>

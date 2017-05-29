@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/topRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp" >
+
+        <ImageButton
+            android:id="@+id/sus_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/main_background"
+            android:paddingTop="2dp"
+            android:src="@drawable/bacn" />
+
+        <TextView
+            android:id="@+id/sus_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/parent_back_btn"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Subscribe Plan"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Text_color"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topRel"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/sus_date"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/whitebtn"
+            android:gravity="center"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            android:text="28 mar"
+            android:textColor="@color/Text_color"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/sus_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/sus_date"
+            android:layout_toRightOf="@+id/sus_date"
+            android:paddingLeft="10dp"
+            android:text="Monthly Membership"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sus_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sus_plan"
+            android:layout_toRightOf="@+id/sus_date"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="12.50 PM"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/No_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+              android:textSize="22sp" 
+            android:text="You do not have any Subscription Plan."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Text_color" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/unsuscribeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/whitebtn"
+        android:text="Unsubscribe"
+        android:textColor="@color/Text_color"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/unsuscribeBtn_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/whitebtn"
+        android:text="Subscribe Now"
+        android:textColor="@color/Text_color"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

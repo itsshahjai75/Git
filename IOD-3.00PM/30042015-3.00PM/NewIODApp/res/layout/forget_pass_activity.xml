@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal|center_vertical"
+    android:paddingLeft="10dp"
+    
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+    
+    
+    
+    
+    
+     <LinearLayout
+   
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" 
+            android:layout_weight="1" >
+            
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btnbackF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/main_background"
+                android:src="@drawable/bacn" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|fill"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="center" >
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:text="Forgot Password"
+                    android:textColor="@color/Text_color"
+                    android:textSize="26dp"
+                    />
+            </RelativeLayout>
+        </TableRow>
+
+
+    <TextView
+        android:id="@+id/tvIsConnected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#FF0000"
+        android:text="is connected? "
+        android:textColor="#FFF"
+        android:textSize="18dp"
+        android:visibility="gone" />
+    
+     
+     
+
+        <LinearLayout
+            android:id="@+id/MiddelLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+          android:weightSum="1"
+          
+          android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ErrorTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/red" />
+
+        <EditText
+            android:id="@+id/etforgetmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                      
+            android:background="@drawable/edit_drawable"
+            android:drawableBottom="@drawable/edit_drawable"
+            android:ems="10"
+           
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxWidth="100dp"
+            android:paddingBottom="35dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/Text_color"
+            android:textColorHint="#B3EAFE"
+            android:textSize="19sp"
+            android:textStyle="normal" >
+
+            <requestFocus />
+        </EditText>
+
+     <RelativeLayout           
+      	 android:id="@+id/btnsubmit"
+                  	android:layout_width="match_parent"
+                 	android:layout_height="wrap_content"
+                 >
+              
+  	   <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/whitebtn"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/btntext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:text="Submit"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/img_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:src="@drawable/submit" />
+
+    </TableRow>
+
+  	   </RelativeLayout>
+
+        <Button
+            android:id="@+id/Allready_regF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:background="@color/main_background"
+            android:text="Already Registered? Sign In"
+            android:textColor="@color/Text_color"
+            android:textSize="21sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/etResponse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+     <RelativeLayout 
+        android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background"
+    android:layout_weight="1">
+    
+    <Button
+        android:id="@+id/btnskipf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:text="           SKIP"
+        android:textColor="@color/Text_color"
+        android:textSize="16dp"
+        android:textStyle="normal" />
+    
+    
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

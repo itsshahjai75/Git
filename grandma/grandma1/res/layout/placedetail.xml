@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/box"
+    android:layout_margin="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hospname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:padding="10dip"
+        
+        android:textStyle="italic"
+        
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+          android:padding="10dip"
+      android:visibility="invisible"
+        android:textStyle="italic"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:padding="10dip"
+        android:textSize="20dip"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Landline"
+         android:padding="10dip"
+        android:visibility="invisible"
+        android:textStyle="italic" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:padding="10dip"
+        android:textSize="20dip"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:padding="10dip"
+       android:visibility="invisible"
+        android:textStyle="italic"
+        android:layout_height="wrap_content"
+        android:text="International number"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/ino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:padding="10dip"
+        android:textSize="20dip"
+        android:textStyle="italic"
+         />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:padding="10dip"
+        android:visibility="invisible"
+        android:textStyle="italic"
+        android:text="Website"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+          android:padding="10dip"
+        android:textSize="20dip"
+        android:textStyle="italic"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/main_background"
+    >
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <RelativeLayout
+            android:id="@+id/rl_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#f4f4f4"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <VideoView
+                    android:id="@+id/videoView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+               
+            </LinearLayout>
+        </RelativeLayout>
+        
+       
+            
+             <RelativeLayout
+            android:id="@+id/rl_button"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75" >
+            
+                  <ScrollView 
+            android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:fillViewport="true" 
+            >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="20dp" >
+                
+                
+                
+
+                <Button
+                    android:id="@+id/btn_aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  About Us" 
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textColor="@color/Text_color"
+                    
+                 	android:drawableRight="@drawable/content_arow"
+                 	
+                 	
+                    android:background="@drawable/contentutton"
+               
+                    
+                    />
+              
+                
+                 <Button
+                    android:id="@+id/btn_hwit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="  How its work" 
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textColor="@color/Text_color"
+                  
+                 	android:drawableRight="@drawable/content_arow"
+                 	android:layout_marginTop="15dp"
+                    android:background="@drawable/contentutton"
+                   
+                    
+                    />
+                 
+                  <Button
+                    android:id="@+id/btn_FAQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   
+                    android:text="  F.A.Q" 
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textColor="@color/Text_color"
+                  
+                 	android:drawableRight="@drawable/content_arow"
+                 	android:layout_marginTop="15dp"
+                    android:background="@drawable/contentutton"
+                   
+                    
+                    />
+                  
+                  <Button
+                    android:id="@+id/btn_Terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="  Terms and Condition" 
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textColor="@color/Text_color"
+                  
+                 	android:drawableRight="@drawable/content_arow"
+                 	android:layout_marginTop="15dp"
+                    android:background="@drawable/contentutton"
+                   
+                    
+                    />
+                   <Button
+                    android:id="@+id/btn_contectus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   
+                    android:text="  Contect Us" 
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textColor="@color/Text_color"
+                  
+                 	android:drawableRight="@drawable/content_arow"
+                 	android:layout_marginTop="15dp"
+                    android:background="@drawable/contentutton"
+                   
+                    
+                    />
+                   
+                    <Button
+                    android:id="@+id/btn_waitingFaq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="  What is call waiting?" 
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textColor="@color/Text_color"
+                  
+                 	android:drawableRight="@drawable/content_arow"
+                 	android:layout_marginTop="15dp"
+                    android:background="@drawable/contentutton"
+                   
+                    
+                    />
+                    <Button
+                    android:id="@+id/btn_Shedual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="  Schedule Appointment" 
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textColor="@color/Text_color"
+                  
+                 	android:drawableRight="@drawable/content_arow"
+                 	android:layout_marginTop="15dp"
+                    android:background="@drawable/contentutton"
+                   
+                    
+                    />
+
+            </LinearLayout>
+              </ScrollView>
+            
+        </RelativeLayout>
+            
+            
+            
+            
+            
+      
+        
+        
+        
+        </LinearLayout>
+    
+    
+    
+    
+
+</RelativeLayout>

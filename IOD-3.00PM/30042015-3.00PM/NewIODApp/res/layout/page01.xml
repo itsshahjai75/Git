@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+     android:layout_width="match_parent" 
+     android:layout_height="match_parent" 
+     android:padding="15dp"
+     
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:weightSum="1" >
+
+      
+
+        
+        <RelativeLayout
+            android:id="@+id/rl_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+          >
+            
+            
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                   android:layout_alignParentBottom="true"
+                   android:gravity="bottom"
+                >
+             
+
+                    <TextView 
+                        android:id="@+id/pt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_gravity="center"
+                        android:textSize="26sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    
+
+                			<ImageView android:id="@+id/im"
+                			    android:layout_width="wrap_content"
+                			    android:layout_height="wrap_content"
+                			    android:layout_gravity="center"
+                			    android:padding="10dp"
+                			    android:layout_margin="10dp"
+                			    android:background="@drawable/icon1"/>
+                			
+                			<TextView 
+                			    android:id="@+id/pt2"
+                			    android:layout_width="wrap_content"
+                			    android:layout_height="wrap_content"
+                			    android:text="Quick Sign Up"
+                			    android:textSize="24sp"
+                			    android:textColor="#FFFFFF"
+                			    android:shadowColor="#000000"
+                			    android:shadowRadius="10"
+                			    android:shadowDx="2"
+                			    android:shadowDy="2"
+                			    android:layout_gravity="center"
+                			    />
+                    
+                			
+                			<TextView 
+                			    android:id="@+id/pt3"
+                			    android:layout_width="wrap_content"
+                			    android:layout_height="wrap_content"
+                			    android:text="Sign up is very simple"
+                			    android:textSize="19sp"
+                			    android:layout_marginTop="30dp"
+                			    android:textColor="#FFFFFF"
+                			        android:shadowColor="#000000"
+                			    android:shadowRadius="10"
+                			    android:shadowDx="2"
+                			    android:shadowDy="2"
+                			    android:layout_gravity="center"/>
+         
+    							<TextView
+                				    android:id="@+id/pt4"
+                				    android:layout_width="wrap_content"
+                				    android:layout_height="wrap_content"
+                				    android:layout_gravity="center"
+                				   
+                				    android:text="and easy, and doesn't take"
+                				    android:textAlignment="center"
+                				    android:textColor="#FFFFFF"
+                				        android:shadowColor="#000000"
+                			    android:shadowRadius="10"
+                			    android:shadowDx="2"
+                			    android:shadowDy="2"
+                				    android:textSize="19sp" />
+
+                					<TextView 
+                			    android:id="@+id/pt5"
+                			    android:layout_width="wrap_content"
+                			    android:layout_height="wrap_content"
+                			    android:text="more than a minute!"
+                			    android:textSize="19sp"
+                			    
+                			    android:textAlignment="center"
+								    android:shadowColor="#000000"
+                			    android:shadowRadius="10"
+                			    android:shadowDx="2"
+                			    android:shadowDy="2"                		
+                			    android:textColor="#FFFFFF"
+                			    android:layout_gravity="center"/>
+         
+ 
+ 
+              
+
+            </LinearLayout>
+                
+                
+                
+            
+        </RelativeLayout>
+    </LinearLayout>
+   
+    
+
+</RelativeLayout>
+

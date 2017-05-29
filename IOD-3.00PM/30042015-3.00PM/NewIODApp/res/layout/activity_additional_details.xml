@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal|center_vertical"
+ 
+    android:focusable="true"
+android:focusableInTouchMode="true"
+    >
+
+    <ScrollView
+        android:layout_marginLeft="10dp"
+  android:layout_marginRight="10dp"
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        
+
+        
+        <LinearLayout    
+  			  android:layout_width="fill_parent"
+   			 android:layout_height="wrap_content"
+   			 android:orientation="vertical"  >
+
+     <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:orientation="horizontal"     
+        android:gravity="center"
+        
+       >
+
+          <ImageButton
+            android:id="@+id/btnback_Additional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:background="@color/main_background"
+            android:src="@drawable/bacn" />
+
+  
+    <RelativeLayout
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|fill"
+        android:layout_weight="1"
+        android:gravity="center"
+      >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/text"
+            android:contentDescription="@null"
+         />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Health Profile"
+            android:textColor="@color/Text_color"
+            android:textSize="22sp"
+         />
+    </RelativeLayout>   
+            
+            </TableRow>
+            
+
+         <TextView
+                android:id="@+id/textview21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:text="Create a FREE account "
+             
+                android:textColor="#00BFFF"
+                android:textSize="19sp"
+                android:textStyle="normal" />
+     
+   
+    <RelativeLayout
+        android:id="@+id/relativeLayoutForget"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+       
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/textView223"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="Please Enter Your Email Id For Recover \nYour New Password"
+            android:textColor="@color/Text_color"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+   
+
+   
+
+    <TextView
+        android:id="@+id/tvIsConnected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:background="#FF0000"
+        android:text="is connected?"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:visibility="gone" />
+    
+    
+ 
+
+  <!--Middel layout for Create New Account  -->
+  
+    <LinearLayout
+        android:id="@+id/MiddelLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_drawable"
+            android:drawableBottom="@drawable/edit_drawable"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:paddingBottom="35dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Text_color"
+            android:textColorHint="#B3EAFE"
+            android:textSize="19sp"
+            android:textStyle="normal" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/editcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editaddress"
+            android:background="@drawable/edit_drawable"
+            android:drawableBottom="@drawable/edit_drawable"
+            android:hint="City"
+            android:inputType="textCapSentences"
+            android:paddingBottom="35dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Text_color"
+            android:textColorHint="#B3EAFE"
+            android:textSize="19sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/editZipcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editcity"
+            android:background="@drawable/edit_drawable"
+            android:drawableBottom="@drawable/edit_drawable"
+            android:hint="Zipcode"
+            android:inputType="number"
+            android:paddingBottom="30dp"
+            android:paddingLeft="10dp"
+            android:maxLength="5"
+            android:textColor="@color/Text_color"
+            android:textColorHint="#B3EAFE"
+            android:textSize="19sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/editstreetnm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Gender"
+            android:visibility="gone" />
+
+      
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/apptheme_spinner_default_holo_light"
+/>
+
+        <EditText
+            android:id="@+id/editbirthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/edit_drawable"
+            android:drawableBottom="@drawable/edit_drawable"
+            android:hint="Birthdate"
+            android:inputType="date"
+            android:onClick="selectDate"
+            android:paddingBottom="35dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Text_color"
+            android:textColorHint="#B3EAFE"
+            android:textSize="19sp"
+            android:textStyle="normal" 
+            android:focusableInTouchMode="false"
+            android:cursorVisible="false"
+            android:clickable="true"
+            />
+
+        <EditText
+            android:id="@+id/editphoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editbirthdate"
+            android:background="@drawable/edit_drawable"
+            android:drawableBottom="@drawable/edit_drawable"
+            android:hint="Phone no"
+            android:inputType="number"
+            android:paddingBottom="35dp"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#B3EAFE"
+            android:textSize="19sp"
+            android:textStyle="normal" 
+            android:maxLength="10"
+            />
+
+        <Spinner
+            android:id="@+id/photype"
+            android:layout_width="match_parent"
+    		android:layout_height="35dp"
+            android:paddingBottom="5dp"
+                        android:layout_below="@+id/editphoneno"
+   
+            android:background="@drawable/apptheme_spinner_default_holo_light" />
+
+        
+    </LinearLayout>
+  <RelativeLayout           
+      	 android:id="@+id/asubmit"
+                  	android:layout_width="match_parent"
+                 	android:layout_height="wrap_content"
+                   	android:layout_below="@+id/space"
+                   	android:layout_marginTop="25dp"
+                    android:layout_centerInParent="true">
+              
+  	   <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/whitebtn"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:text="Submit"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/img_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:src="@drawable/submit" />
+
+    </TableRow>
+
+  	   </RelativeLayout>
+  	   
+  <RelativeLayout           
+      	 android:id="@+id/asubmit2"
+                  	android:layout_width="match_parent"
+                 	android:layout_height="wrap_content"
+                   	android:layout_below="@+id/space"
+                   	android:layout_marginTop="25dp"
+                    android:layout_centerInParent="true">
+              
+  	   <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/whitebtn"
+        android:gravity="center" >
+        
+  	       
+
+		<TextView
+            android:id="@+id/btnSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:text="Skip"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        
+
+    </TableRow>
+
+  	   </RelativeLayout>
+  
+  
+  
+    </LinearLayout>
+</ScrollView>
+       
+           
+
+       
+  
+
+    <LinearLayout
+        android:id="@+id/linerforgetpass"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" 
+        android:gravity="center"
+        android:visibility="gone"
+        
+        
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical" 
+            
+            >
+
+            <EditText
+            android:id="@+id/et_forgoteEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+              android:paddingBottom="38dp"
+            android:paddingLeft="10dp"
+             android:background="@drawable/edit_drawable"
+            android:drawableBottom="@drawable/edit_drawable"
+            android:textColor="@color/Text_color"
+            android:textColorHint="#B3EAFE"
+            android:textSize="18sp"
+            android:textStyle="normal"
+             >
+
+               
+            </EditText>
+
+            <Button
+                android:id="@+id/btnsubmitreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/whitebtn"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF00FF"
+            android:textStyle="bold"
+            
+                
+                
+                />
+   
+        </LinearLayout>
+        
+     
+        
+        
+        
+
+    
+ </LinearLayout>
+       
+   
+    
+   
+</LinearLayout>
