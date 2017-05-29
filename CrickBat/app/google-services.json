@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "499288929967",
+    "firebase_url": "https://crickbats-249c1.firebaseio.com",
+    "project_id": "crickbats-249c1",
+    "storage_bucket": "crickbats-249c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499288929967:android:83d5ae05352da0f4",
+        "android_client_info": {
+          "package_name": "billbook.smart.com.crickbat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499288929967-ia8upl1p239o6tegqo97duf8ptfoscqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGvnMa_BuanlAC8M3hdvx-gkr_1UWKZ5A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/grayLine1"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/rlEvent"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/txtEventLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grayLine1"
+            android:layout_margin="5dp"
+            android:text="Link" />
+
+        <View
+            android:id="@+id/grayLine2"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/txtEventLink"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rlEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+
+            <TextView
+                android:id="@+id/txtEventletter"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtEventName"
+                android:layout_alignTop="@+id/txtEventResources"
+                android:layout_marginLeft="15dp"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:padding="@dimen/padding_10dp"
+                android:textColor="@android:color/white"
+                tools:text="H" />
+
+            <TextView
+                android:id="@+id/txtEventResources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:layout_marginTop="14dp"
+                android:layout_toEndOf="@+id/txtEventletter"
+                android:layout_toRightOf="@+id/txtEventletter"
+                android:background="@android:color/holo_blue_light"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Resource Name"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txtEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEventResources"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/txtEventletter"
+                android:layout_toRightOf="@+id/txtEventletter"
+                android:text="Event Name" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEventLink"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtStartDay"
+                    android:background="@android:color/holo_red_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Friday" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Start"
+                    android:layout_alignLeft="@+id/txtStartDate"
+                    android:layout_alignStart="@+id/txtStartDate" />
+
+                <TextView
+                    android:id="@+id/txtStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:text="8"
+                    android:layout_below="@+id/textView9"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/txtStartDateRemainng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="10dp"
+                    android:layout_below="@+id/textView9"
+                    android:layout_toRightOf="@+id/txtStartDate"
+                    android:layout_toEndOf="@+id/txtStartDate" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_below="@+id/textView10"
+                    android:layout_centerHorizontal="true"
+                    android:text="8" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtEndDate"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignStart="@+id/txtEndDate"
+                    android:text="End" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="TextView"
+                    android:textSize="10dp"
+                    android:id="@+id/txtEndDateRemaing"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView10"
+                    android:layout_toRightOf="@+id/txtEndDate"
+                    android:layout_toEndOf="@+id/txtEndDate" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/grayLine3"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/llTime"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/grayLine3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status :"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#e9f23f"
+                android:text="Loading... "
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/txtDuration"
+                android:layout_toRightOf="@+id/textView13"
+                android:layout_toEndOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/txtDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:text="Duration: "
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
