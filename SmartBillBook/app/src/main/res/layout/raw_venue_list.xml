@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:padding="5dp"
+    android:elevation="3dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="false"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_venue"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/no_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:orientation="horizontal"
+                android:layout_alignBottom="@+id/img_venue"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:gravity="left|center"
+                    android:layout_weight="3"
+                    android:alpha="0.9"
+                    android:background="#80000000"
+                    android:orientation="vertical">
+
+                    <billbook.smart.com.smartbillbook.customviews.UserTextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="100"
+                        android:maxLines="1"
+                        android:text="Title"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/md_grey_600" />
+
+                    <billbook.smart.com.smartbillbook.customviews.UserTextView
+                        android:id="@+id/tv_addressline1"
+                        android:maxLines="1"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="200"
+                        android:text="Address Line 1"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/md_grey_600" />
+
+                    <billbook.smart.com.smartbillbook.customviews.UserTextView
+                        android:id="@+id/tv_addressline2"
+                        android:maxLines="1"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="200"
+                        android:text="Address Line 2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/md_grey_600" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <billbook.smart.com.smartbillbook.customviews.UserTextView
+                android:id="@+id/tv_capacity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:tag="100"
+                android:text=""
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <billbook.smart.com.smartbillbook.customviews.UserTextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:tag="100"
+                    android:text=""
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:padding="15dp"
+                    android:background="@drawable/rounded_corner_borde"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <billbook.smart.com.smartbillbook.customviews.UserTextView
+                android:id="@+id/tvdemo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:tag="300"
+                android:text=""
+                android:layout_marginRight="1dp"
+                android:layout_gravity="left|bottom"
+                android:gravity="left|bottom"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:scrollbars="none" />
+
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

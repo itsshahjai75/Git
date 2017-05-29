@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set >
+<alpha
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromAlpha="0.0"
+    android:toAlpha="2.0"
+    android:duration="5000" 
+    android:repeatMode="reverse"
+    android:repeatCount="infinite" />
+</set>
+<!-- From: file:/E:/workspace_AndroidStudio/TechnocratsAppware/app/src/main/res/anim/fade_in_slow.xml -->

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/navigation_header"
+tools:context=".Signup"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#80000000">
+
+    <Button
+        android:id="@+id/btn_report"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp"
+        android:gravity="right|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reports."
+        android:textAllCaps="false"
+        android:textSize="23dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/user_profile_image_background"
+        android:layout_gravity="right|center" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView3"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/billbookapp"/>
+
+    <billbook.smart.com.smartbillbook.customviews.UserTextView
+        android:tag="100"
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#80000000"
+        android:gravity="center_horizontal"
+        android:text="ADD BILL"
+        android:textColor="#fff"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp">
+        <billbook.smart.com.smartbillbook.customviews.UserEditText
+            android:id="@+id/et_billdate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="Bill Date"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="date"
+            android:tag="200"
+            android:padding="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:focusable="false"
+            android:focusableInTouchMode="true"/>
+
+        <billbook.smart.com.smartbillbook.customviews.UserEditText
+            android:id="@+id/et_billnumber"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="Bill Number"
+            android:inputType="numberDecimal"
+            android:tag="200"
+            android:padding="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:focusableInTouchMode="true"/>
+
+    </TableRow>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <billbook.smart.com.smartbillbook.customviews.UserEditText   android:tag="200"
+            android:id="@+id/et_partyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Party Name"
+            android:background="@android:drawable/editbox_background_normal"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <billbook.smart.com.smartbillbook.customviews.UserEditText   android:tag="200"
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail"
+            android:background="@android:drawable/editbox_background_normal"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <billbook.smart.com.smartbillbook.customviews.UserEditText   android:tag="200"
+            android:id="@+id/et_mobno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Mobile No."
+            android:maxLength="10"
+            android:background="@android:drawable/editbox_background_normal"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <billbook.smart.com.smartbillbook.customviews.UserEditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Amount"
+            android:tag="100"
+            android:background="@android:drawable/editbox_background_normal"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <billbook.smart.com.smartbillbook.customviews.UserEditText
+            android:id="@+id/et_note"
+            android:tag="100"
+            android:layout_gravity="top|center"
+            android:gravity="top|left|center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textImeMultiLine"
+            android:hint="Note"
+            android:background="@android:drawable/editbox_background_normal"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="19dp"
+        android:text="Paid."
+        android:id="@+id/cb_terms"
+        android:layout_gravity="left"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:buttonTint="@color/icons"
+        android:checked="false" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit."
+        android:textAllCaps="false"
+        android:textSize="23dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/user_profile_image_background"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+
+</ScrollView>

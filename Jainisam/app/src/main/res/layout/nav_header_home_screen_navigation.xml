@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="#FEE0A1"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:weightSum="1">
+
+    <ImageView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:src="@drawable/aaaa" android:id="@+id/imageView"
+        android:layout_weight="1" />
+
+    <com.jainisam.techno.jainisam.MyTextView
+        android:id="@+id/tv_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="shah.jai75@gmail.com"
+        android:paddingLeft="10dp"
+        android:textColor="#ffffff"
+        android:textSize="19sp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:background="#303f9f"
+        android:drawableRight="@android:drawable/ic_menu_edit"/>
+
+
+</LinearLayout>

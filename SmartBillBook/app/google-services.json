@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "600721198941",
+    "firebase_url": "https://smartbillbook.firebaseio.com",
+    "project_id": "smartbillbook",
+    "storage_bucket": "smartbillbook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600721198941:android:66402081f09df1b3",
+        "android_client_info": {
+          "package_name": "billbook.smart.com.smartbillbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600721198941-6mhaetduebh4f31362klnlgqnnvid234.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCshWX5ISpaGLQ1C-0lUkfZLp-OAFfAh7Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
