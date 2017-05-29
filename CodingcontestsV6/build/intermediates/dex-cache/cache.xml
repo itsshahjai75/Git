@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8d432d85e1b7f0a751e0215f0a1f41dd6a0d71b1">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_d77b2944198d6c5aea92eba10f690538bea6f61b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\3b77160daecb97c899dd9d83009d356b1b71b85f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b16a90ed4e909e15721f51cc29671251bc39efe4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\7bb7cbb60b84fa47f6c0f5ed6a154c1e6506f190\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_10ef2aea5eced3d5304d0316055dbd3c2efd03d5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\25e5544edf7c5833971480c864c3b708aaf7432a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6a96b317208023fd9c9c51a10df431134e0d2cdc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\c443dedd7c1613f7c309570ea60a793f214211c7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1f52ced7f4f198e0333f0c391bcd73ea1a2267ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\ba09f79f8b63ed5fb2df55f5ebee5ad739e3c6de\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_44d474845fb5d1a209a65a337c9350bfb0c6e119\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\9695d4017248320fcc60a1fa5e5cb62c23941b5a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_81d36ad3938215223cea1e8e6a5462b855c6df8d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\e1ac637d46208b96b7352ae119877f52a23afb1c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6178ae0640e61d2430eca284eaff9c9b9803773d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\0f521de3a5002166e36b772a4749c03c2d699004\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f5d23793df1e17be9a5ca6b9f2046ce27b563060">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e152e814384bf09709d12e6142ea61b7d6862d96\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\9d145f48fe76b81b02a3cf1d94f73052adf34f0a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f993438a6eb280890cdd418da9b3651c083eaae2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\c1035b350e9ed2f3cb4c6a57343c52d5c2c2f593\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8b492acbae36af836e9808412a8ecd17a8d7630e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\e895e1ca554ecc7adf2fed99a285fd155d61dd1c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d7ea102d796ad8508f9c03ac8e5e7ef71167c9cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0bbd903d627a01396fc0a332820f654089333627\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\596258a06fc5998cc6f44c1aa55c5d32ed6a67f0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fd126fbafe0a808f215d8a8fd2791867e79fdc17\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.gradle\caches\modules-2\files-2.1\com.anjlab.android.iab.v3\library\1.0.39\8a304d48adc75e3c1c8b92fb0be5ab14bc1ca5f1\library-1.0.39.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a304d48adc75e3c1c8b92fb0be5ab14bc1ca5f1">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-1.0.39_5ff6c9806aa822ced3ab0c897b57e45a33eb61e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\78ff11c85f01642b56a237f429507b85a86e23a0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_82001c4d0f11bea112d7d9aeee849f14b7a2c6c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\5ee2fe3d75d25e0611de50988b032aafde3d8fed\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_aa1bcf09ebe347de9277bbcd27256670ce3bf2f5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\ac78c94a32cbe5685be39a0e79dc6af2da715b55\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_895d164d391c944e21807704f9ee8a334897599e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jay-Andriod\.android\build-cache\b6148441e6f17a26523bf79cd11d55e313d09612\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09adf6e61abc0fe3b2cb5b1795a7033572475fad">
+        <dex dex="D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Git\CodingcontestsV6\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_83fb388ae767ace932c7b034d12bedda700b1c36\classes.dex" />
+    </item>
+
+</items>

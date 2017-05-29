@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cordinatelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="#00000000"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <!-- Framelayout to display Fragments -->
+
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/technocratsappware_home"
+                    android:layout_gravity="center"/>
+
+
+            <!-- <android.support.v7.widget.Toolbar
+                 android:id="@+id/toolbar_cart"
+                 android:layout_width="match_parent"
+                 android:layout_height="?attr/actionBarSize"
+                 android:title="Shoping Bag toolbar"
+                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                 app:layout_scrollFlags="scroll|enterAlways"
+                 app:layout_collapseMode="pin" />
+ -->
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wel Come to Technocrats Appware"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:gravity="left|center"
+            android:text="   - Top Leading Mobile Application Company of Surat,Gujarat." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="left|center"
+            android:text="   - For Any Kind of Mobile App Solutions Available." />
+
+
+
+
+
+
+
+
+
+
+
+        <!--<TextView
+            android:id="@+id/tv_online_reg"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textColor="#3E80BD"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Online Registration Form Click Here..."
+             />-->
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <ImageView android:id="@+id/imageView2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/contactus"/>
+
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Technocrats Appware"
+
+                    android:textSize="19dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="502 Shubham Complex,"
+                    android:textSize="19dp"
+                    />
+
+                <TextView  android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nanpura,Surat.\nGujarat-395002"
+                    android:textSize="19dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_website"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/website_icon" />
+
+
+            <TextView
+                android:id="@+id/txt_website"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="www.technocratsappware.com"
+                android:padding="5dp"
+                android:textSize="19dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_mail"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/email_icon"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center" >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_height="wrap_content"
+                    android:text="technocratsappware@gmail.com"
+
+                    />
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_call"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/btn_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_no"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="19dp"
+                    android:layout_height="wrap_content"
+                    android:text="Call\n    +91-8200967722"
+
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#cccccc"/>
+
+    <LinearLayout
+                android:layout_margin="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#3498db" >
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vision Statement"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </LinearLayout>
+            <TextView
+
+                android:layout_margin="3dp"
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     Technocrats Appware Businesshas a vision to serve our nation and take it to new heights in service industry. We want India to be the first choice for investors not because of its cheap devices in fact due to the quality of  software/application and services it provides."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <LinearLayout
+                android:layout_margin="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#d35400" >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mission Statement"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </LinearLayout>
+            <TextView
+
+                android:background="#ffffff"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     Technocrats Appware Businesswas started with a thought which came into execution and  then there was no U turn. Mr. Jay Shah executed his brilliant idea and started with hand full  of people. However, within a short span of 2 months we have reached a respectable figure  of 5  clients. We will train and place candidates in leading organizations where they are  performing as per best of their skills and knowledge. We have served major US and UK  clients and are expanding rapidly. Our mission is to take India at the top in service industry."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+
+            <LinearLayout
+                android:layout_margin="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#1abc9c" >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Business Competitiveness"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </LinearLayout>
+            <TextView
+
+                android:background="#ffffff"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     Quality is not the only factor which proves the competency in the market, there are other factor involves too; Time management, honesty, integrity, market knowledge, cost efficiency and much more. Technocrats AppwareBusinesskeeps all parameters in mind when it comes to delivery of work.
+ We analyse our Clients requirement, we study the market, and after apposite planning, and analytics comes the execution. We have Six Sigma certified staff, hence we place our own Quality benchmarking and deliver in accordance."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+
+            <LinearLayout
+                android:layout_margin="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#8e44ad" >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quality Policies"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </LinearLayout>
+            <TextView
+
+                android:background="#ffffff"
+                android:layout_marginBottom="7dp"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     We are a team of Quality Six Sigma green belt and black belt certified people. Henceforth, delivering quality  is in our veins. We have Kaizan and Lean certified staff, and focus on individual and team efforts towards achievement of goals while eliminating waste."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

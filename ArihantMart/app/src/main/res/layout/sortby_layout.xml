@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textSize="27dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:background="#c1c1c1"
+        android:paddingLeft="15dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/sortby"
+        android:text="Sort By       "
+        android:textColor="@color/md_black_1000"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/rg_sortby"
+        android:paddingLeft="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price low to high"
+            android:id="@+id/pricelowtohigh" />
+        <RadioButton
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price high to low"
+            android:id="@+id/pricehightolow" />
+        <RadioButton
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a to z"
+            android:id="@+id/atoz" />
+        <RadioButton
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="z to a"
+            android:id="@+id/ztoa" />
+
+    </RadioGroup>
+
+
+
+
+</LinearLayout>

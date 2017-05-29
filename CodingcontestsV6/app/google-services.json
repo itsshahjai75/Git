@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "653659171912",
+    "firebase_url": "https://codingcontest-1fb44.firebaseio.com",
+    "project_id": "codingcontest-1fb44",
+    "storage_bucket": "codingcontest-1fb44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653659171912:android:6f5be26e705116aa",
+        "android_client_info": {
+          "package_name": "com.techno.jay.codingcontests"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653659171912-b5hj89mns4hnncnqfqb32r3d880mkqlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi7BT9XBmv53T0W1pZtXoIPJI-AWqt6Mc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

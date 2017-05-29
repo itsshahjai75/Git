@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:title="Contests Home"
+            android:icon="@drawable/contesthome"/>
+        <item
+            android:id="@+id/nav_running"
+            android:title="Live"
+            android:icon="@drawable/livecontests" />
+
+        <item
+            android:id="@+id/nav_hiring"
+            android:title="Hiring Events"
+            android:icon="@drawable/hiring_con" />
+
+
+
+        <item
+            android:id="@+id/nav_past"
+            android:title="Completed"
+            android:icon="@drawable/completedcontestes"/>
+
+         <item
+            android:id="@+id/nav_longcompetition"
+            android:title="Long Duratin (1 Month+)"
+            android:icon="@drawable/longcompetition" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Setting"
+            android:icon="@drawable/setting"/>
+
+
+
+        <item
+            android:id="@+id/nav_share"
+            android:title="Share"
+            android:icon="@drawable/share"/>
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="Rate/Review Us"
+            android:icon="@drawable/feedback_icon"/>
+        <item
+            android:id="@+id/nav_exit"
+            android:title="Exit"
+            android:icon="@drawable/exit" />
+
+
+        <item android:title="More" >
+            <menu>
+                <item
+                    android:id="@+id/nav_aboutus"
+                    android:title="About us"
+                    android:icon="@drawable/aboutus"/>
+
+              </menu>
+        </item>
+    </group>
+
+
+
+</menu>
