@@ -1,0 +1,502 @@
+[
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ic_navigation_arrow_forward.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\ic_navigation_arrow_forward.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ic_navigation_check.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\ic_navigation_check.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\aplhabatelogo.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\aplhabatelogo.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\order_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\order_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\sugarsalt_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\sugarsalt_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\rounded_oval_primerycolor.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\rounded_oval_primerycolor.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\whatsapp_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\whatsapp_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\website_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\website_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\logout.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\logout.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\side_nav_bar.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\front_image4.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\front_image4.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_icon_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\checkout_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\checkout_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dryfruit_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\dryfruit_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\grain_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\grain_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\breads_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\breads_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\babycare_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\babycare_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\giverating.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\giverating.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\housecleaning_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\housecleaning_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\teacoffice_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\teacoffice_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\oilghee_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\oilghee_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\nonselecteditem_dot.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\nonselecteditem_dot.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\front_image3.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\front_image3.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\email_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\email_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\promotional_banner_logo.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\promotional_banner_logo.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\selecteditem_dot.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\selecteditem_dot.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\lock.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\lock.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\search_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\search_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\user.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\user.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\saucespikal_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\saucespikal_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\beverages_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\beverages_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\like.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\like.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\offersdeal_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\offersdeal_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ternsandcondtion_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\ternsandcondtion_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\support_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\support_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\front_image2_extra.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\front_image2_extra.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\shop_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\shop_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\front_image1.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\front_image1.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\shareearn_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\shareearn_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\snacks_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\snacks_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\privacy_policy_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\privacy_policy_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\breads_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\breads_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\loginpagerone.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\loginpagerone.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dryfruit_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\dryfruit_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_text_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\miscellaneous_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\miscellaneous_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\sortby.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\sortby.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\miscellaneous_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\miscellaneous_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\oilghee_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\oilghee_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\like_def.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\like_def.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\sugarsalt_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\sugarsalt_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\instantcook_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\instantcook_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\feedback_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\feedback_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\biscuits_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\biscuits_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\masalacoverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\masalacoverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\aboutus.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\aboutus.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\personalcare_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\personalcare_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\biscuits_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\biscuits_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\check_right_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\check_right_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\offerimage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\offerimage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\contactus.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\contactus.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\banner_image.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\banner_image.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\like_press.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\like_press.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\arihantmartlogomain.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\arihantmartlogomain.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\babycare_coverpage.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\babycare_coverpage.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\rounded_corner_oval_white.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\rounded_corner_oval_white.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\user_profile_image_background.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\user_profile_image_background.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\call_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\call_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\profile_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\profile_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\qv_btn_selector.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\me.himanshusoni.quantityview\\quantity-view\\1.1.1\\res\\drawable\\qv_btn_selector.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\graincoverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\graincoverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\sweetchocalate_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\sweetchocalate_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_icon_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\custome_cursor.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\custome_cursor.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\rupee_symbol.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\rupee_symbol.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\snack_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\snack_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\instantcook_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\instantcook_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\front_image2.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\front_image2.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\questionmark_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\questionmark_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\personalcare_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\personalcare_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\color_cursor_white.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.miguelcatalan\\materialsearchview\\1.4.0\\res\\drawable\\color_cursor_white.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\offer.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\offer.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\secure_payment.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\secure_payment.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\teacoffice_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\teacoffice_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\qv_bg_selector.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\me.himanshusoni.quantityview\\quantity-view\\1.1.1\\res\\drawable\\qv_bg_selector.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\shopingbag.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\shopingbag.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\beverages_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\beverages_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\saucespikal_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\saucespikal_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\sweetchocalate_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\sweetchocalate_icon.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\addtocart_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\addtocart_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\housecleaning_coverpage.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\housecleaning_coverpage.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_text_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\build\\intermediates\\res\\merged\\release\\drawable\\masala_icon.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\ArihantMart\\app\\src\\main\\res\\drawable\\masala_icon.jpg"
+    }
+]

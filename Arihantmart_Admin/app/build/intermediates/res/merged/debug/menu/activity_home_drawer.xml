@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/shop_icon"
+            android:title="Shop" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/order_icon"
+            android:title="My Orders" />
+
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/aboutus"
+            android:title="About us" />
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/contactus"
+            android:title="Contact us" />
+
+        <item
+            android:id="@+id/nav_howtobuy"
+            android:icon="@drawable/support_icon"
+            android:title="How to Buy" />
+
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/shareearn_icon"
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/feedback_icon"
+            android:title="Feedback"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+
+        <item android:title="More" >
+            <menu>
+                <item
+                    android:id="@+id/nav_termscondition"
+                    android:icon="@drawable/ternsandcondtion_icon"
+                    android:title="Terms &amp; Conditions" />
+                <item
+                    android:id="@+id/nav_privacypolicy"
+                    android:icon="@drawable/privacy_policy_icon"
+                    android:title="Privacy Policy" />
+              </menu>
+        </item>
+    </group>
+
+
+
+</menu>

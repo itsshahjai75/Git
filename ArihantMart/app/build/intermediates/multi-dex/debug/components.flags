@@ -1,0 +1,80 @@
+-injars 'D:\Hdd_Sync\Temp_PC_sync\AS_workspace\ArihantMart\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'D:\Hdd_Sync\Temp_PC_sync\AS_workspace\ArihantMart\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'D:\android_sdk_6.0\build-tools\23.0.3\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontwarn **
+-printconfiguration 'D:\Hdd_Sync\Temp_PC_sync\AS_workspace\ArihantMart\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class arihantmart.techno.arihantmart.Splash {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.Login {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.Signup {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.Home {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.Orderhistory {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.Otp_screren {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.Sub_categorylist {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.User_profile {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.CartProducts {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.Delivery_details {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.Payment_method {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.Change_password {
+    <init>();
+}
+
+-keep class arihantmart.techno.arihantmart.Detail_orders {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

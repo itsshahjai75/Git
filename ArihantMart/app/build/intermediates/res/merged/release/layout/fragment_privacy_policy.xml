@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ecf0f1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+
+        <LinearLayout
+            android:layout_margin="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#3498db" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collection, Storage and Use of Information Related to You"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+        <TextView
+
+            android:layout_margin="3dp"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We may automatically track certain information about you based upon your behaviour on the . We use this information to do internal research on our users’demographics, interests, and behaviour to better understand, protect and serve our users. This information is compiled and analysed on an aggregated basis. This information may include the URL that you just came from (whether this URL is on the or not), which URL you next go to (whether this URL is on the or not), your computer browser information, your IP address, and other information associated with your interaction with the .
+\nWe also collect and store personal information provided by you from time to time on the . We only collect and use such information from you that we consider necessary for achieving a seamless, efficient and safe experience, customized to your needs including:
+\n
+1.To enable the provision of services opted for by you;
+2.To communicate necessary account and product/service related information from time to time;
+3.To allow you to receive quality customer care services;
+4.To undertake necessary fraud and money laundering prevention checks, and comply with the highest security standards;
+5.To comply with applicable laws, rules and regulations; and
+6.To provide you with information and offers on products and services, on updates, on promotions, on related, affiliated or associated service providers and partners, that we believe would be of interest to you.
+\nWhere any service requested by you involves a third party, such information as is reasonably necessary by the Company to carry out your service request may be shared with such third party.
+\nWe also do use your contact information to send you offers based on your interests and prior activity. The Company may also use contact information internally to direct its efforts for product improvement, to contact you as a survey respondent, to notify you if you win any contest; and to send you promotional materials from its contest sponsors or advertisers.
+\nFurther, you may from time to time choose to provide payment related financial information (credit card, debit card, bank account details, billing address etc.) on the . We are committed to keeping all such sensitive data/information safe at all times and ensure that such data/information is only transacted over secure [of approved payment gateways which are digitally encrypted, and provide the highest possible degree of care available under the technology presently in use.
+\nThe Company will not use your financial information for any purpose other than to complete a transaction with you.
+\nTo the extent possible, we provide you the option of not divulging any specific information that you wish for us not to collect, store or use. You may also choose not to use a particular service or feature on the , and opt out of any non-essential communications from the Company.
+\nFurther, transacting over the internet has inherent risks which can only be avoided by you following security practices yourself, such as not revealing account/login related information to any other person and informing our customer care team about any suspicious activity or where your account has/may have been compromised.
+\nWe use data collection devices such as “cookies” on certain pages of the to help analyse our web page flow, measure promotional effectiveness, and promote trust and safety. “Cookies” are small files placed on your hard drive that assist us in providing our services. We offer certain features that are only available through the use of a “cookie”.
+\nWe also use cookies to allow you to enter your password less frequently during a session. Cookies can also help us provide information that is targeted to your interests. Most cookies are “session cookies,” meaning that they are automatically deleted from your hard drive at the end of a session. You are always free to decline our cookies if your browser permits, although in that case you may not be able to use certain features on the and you may be required to re-enter your password more frequently during a session.
+\nAdditionally, you may encounter “cookies” or other similar devices on certain pages of the that are placed by third parties. We do not control the use of cookies by third parties.
+\nIf you send us personal correspondence, such as emails or letters, or if other users or third parties send us correspondence about your activities on the , we may collect such information into a file specific to you.
+\nWe do not retain any information collected for any longer than is reasonably considered necessary by us, or such period as may be required by applicable laws. The Company may be required to disclose any information that is lawfully sought from it by a judicial or other competent body pursuant to applicable laws.
+\nThe may contain links to other websites. We are not responsible for the privacy practices of such websites which we do not manage and control."
+            android:textSize="15dp" />
+
+
+       <!-- <LinearLayout
+            android:layout_margin="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#d35400" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mission Statement"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+        <TextView
+
+            android:background="#ffffff"
+            android:layout_margin="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     Arihant Mart Businesswas started with a thought which came into execution and  then there was no U turn. Mr. Jay Shah executed his brilliant idea and started with hand full  of people. However, within a short span of 2 months we have reached a respectable figure  of 5  clients. We will train and place candidates in leading organizations where they are  performing as per best of their skills and knowledge. We have served major US and UK  clients and are expanding rapidly. Our mission is to take India at the top in service industry."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+-->
+
+
+
+    </LinearLayout>
+</ScrollView>

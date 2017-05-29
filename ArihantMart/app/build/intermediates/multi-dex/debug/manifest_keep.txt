@@ -1,0 +1,23 @@
+-keep class arihantmart.techno.arihantmart.Splash { <init>(); }
+-keep class arihantmart.techno.arihantmart.Login { <init>(); }
+-keep class arihantmart.techno.arihantmart.Signup { <init>(); }
+-keep class arihantmart.techno.arihantmart.Home { <init>(); }
+-keep class arihantmart.techno.arihantmart.Orderhistory { <init>(); }
+-keep class arihantmart.techno.arihantmart.Otp_screren { <init>(); }
+-keep class arihantmart.techno.arihantmart.Sub_categorylist { <init>(); }
+-keep class arihantmart.techno.arihantmart.User_profile { <init>(); }
+-keep class arihantmart.techno.arihantmart.CartProducts { <init>(); }
+-keep class arihantmart.techno.arihantmart.Delivery_details { <init>(); }
+-keep class arihantmart.techno.arihantmart.Payment_method { <init>(); }
+-keep class arihantmart.techno.arihantmart.Change_password { <init>(); }
+-keep class arihantmart.techno.arihantmart.Detail_orders { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}
+-keep class com.android.tools.fd.** {
+    *;
+}
+-dontnote com.android.tools.fd.**,android.support.multidex.MultiDexExtractor

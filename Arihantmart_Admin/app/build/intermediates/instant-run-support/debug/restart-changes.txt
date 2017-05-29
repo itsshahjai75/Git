@@ -1,0 +1,3 @@
+CHANGED,D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Arihantmart_Admin\app\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\arihantmartadmin\jay\arihantmart_admin\Home$2.class
+CHANGED,D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Arihantmart_Admin\app\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\arihantmartadmin\jay\arihantmart_admin\All_ordres.class
+CHANGED,D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Arihantmart_Admin\app\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\arihantmartadmin\jay\arihantmart_admin\All_ordres$GetOrdersbyordernumber.class

@@ -1,0 +1,100 @@
+-injars 'D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Arihantmart_Admin\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Arihantmart_Admin\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'D:\android_sdk_6.0\build-tools\23.0.3\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontwarn **
+-printconfiguration 'D:\Hdd_Sync\Temp_PC_sync\AS_workspace\Arihantmart_Admin\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class com.arihantmartadmin.jay.arihantmart_admin.Login {
+    <init>();
+}
+
+-keep class com.arihantmartadmin.jay.arihantmart_admin.Home {
+    <init>();
+}
+
+-keep class com.arihantmartadmin.jay.arihantmart_admin.Show_allitems {
+    <init>();
+}
+
+-keep class com.arihantmartadmin.jay.arihantmart_admin.Edit_item {
+    <init>();
+}
+
+-keep class com.arihantmartadmin.jay.arihantmart_admin.All_ordres {
+    <init>();
+}
+
+-keep class com.arihantmartadmin.jay.arihantmart_admin.Add_new_items {
+    <init>();
+}
+
+-keep class com.arihantmartadmin.jay.arihantmart_admin.Sub_categorylist {
+    <init>();
+}
+
+-keep class com.arihantmartadmin.jay.arihantmart_admin.Orders_short {
+    <init>();
+}
+
+-keep class com.arihantmartadmin.jay.arihantmart_admin.MyFirebaseMessagingService {
+    <init>();
+}
+
+-keep class com.arihantmartadmin.jay.arihantmart_admin.MyFirebaseInstanceIDService {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep class com.google.firebase.provider.FirebaseInitProvider {
+    <init>();
+}
+
+-keep class com.google.android.gms.common.api.GoogleApiActivity {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdService {
+    <init>();
+}
+
+-keep class com.google.firebase.messaging.FirebaseMessagingService {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="arihantmart.techno.arihantmart.Splash">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="465dp"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/arihantmartlogomain"/>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/material_design_progressbar"
+        app:mpb_progressStyle="horizontal"
+        android:indeterminate="true"
+        android:layout_marginTop="2dp"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Developed  by  Technocrats Appware.  "
+        android:id="@+id/textView"
+        android:layout_gravity="right" />
+
+
+</LinearLayout>
