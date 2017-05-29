@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="QuantityView"><attr format="string" name="qv_addButtonText"/><attr format="color|reference" name="qv_addButtonBackground"/><attr format="color" name="qv_addButtonTextColor"/><attr format="string" name="qv_removeButtonText"/><attr format="color|reference" name="qv_removeButtonBackground"/><attr format="color" name="qv_removeButtonTextColor"/><attr format="integer" name="qv_quantity"/><attr format="color|reference" name="qv_quantityBackground"/><attr format="color" name="qv_quantityTextColor"/><attr format="dimension" name="qv_quantityPadding"/><attr format="integer" name="qv_maxQuantity"/><attr format="integer" name="qv_minQuantity"/></declare-styleable>
+    <!-- From: file:/Users/himanshusoni/Documents/QuantityView/quantity-view/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">quantity-view</string>
+    <string name="qv_add">+</string>
+    <string name="qv_remove">-</string>
+</resources>

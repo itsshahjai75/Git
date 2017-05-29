@@ -1,0 +1,722 @@
+[
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\aboutus.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\aboutus.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\qv_bg_selector.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\me.himanshusoni.quantityview\\quantity-view\\1.1.1\\res\\drawable\\qv_bg_selector.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\feedback_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\feedback_icon.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\delete_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\delete_icon.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\feedback_icon.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\feedback_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vimox.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\vimox.jpg"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_bottom_shadow.9.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_bottom_shadow.9.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\trademanager_splash_logo.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\trademanager_splash_logo.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_gainer.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\top_gainer.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custome_cursor.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\custome_cursor.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\delete_icon.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\delete_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_header.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\navigation_header.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custome_cursor.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\custome_cursor.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_loser.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\top_loser.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_ic_visibility.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\drawable\\design_ic_visibility.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\aboutus.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\aboutus.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_bottom_right_shadow.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_bottom_right_shadow.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\user.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_left_shadow.9.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_left_shadow.9.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_fb.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\custom_fb.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_left_shadow.9.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_left_shadow.9.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\upmarket.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\upmarket.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lock.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\lock.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_bottom_shadow.9.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_bottom_shadow.9.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tips_icon.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\tips_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\exit.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\exit.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chart_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\chart_icon.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_twitter.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\custom_twitter.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profile_icon.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\profile_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_right_shadow.9.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_right_shadow.9.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_fb.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\custom_fb.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circleshape.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\circleshape.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\live_market_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\live_market_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\updownmarket_both.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\updownmarket_both.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_loser.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\top_loser.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\watch_list.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\watch_list.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vimox.jpg",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\vimox.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\upmarket.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\upmarket.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_default_material_shape.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\btn_default_material_shape.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_top_shadow.9.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_top_shadow.9.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_default_material_shape_tw.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\btn_default_material_shape_tw.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\setting.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\setting.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\front_image1.jpg",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\front_image1.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\exit.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\exit.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\downmarket.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\downmarket.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logout.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\logout.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_default_material_shape_fb.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\btn_default_material_shape_fb.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_default_material_shape_fb.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\btn_default_material_shape_fb.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\headerbanner.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\headerbanner.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\qv_btn_selector.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\me.himanshusoni.quantityview\\quantity-view\\1.1.1\\res\\drawable\\qv_btn_selector.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\updownmarket_both.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\updownmarket_both.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\share.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\share.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_top_right_shadow.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_top_right_shadow.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_right_shadow.9.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_right_shadow.9.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\color_cursor_white.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.miguelcatalan\\materialsearchview\\1.4.0\\res\\drawable\\color_cursor_white.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_default_material_shape_tw.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\btn_default_material_shape_tw.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_default_material_shape.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\btn_default_material_shape.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\watch_list.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\watch_list.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circleshape.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\circleshape.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logout.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\logout.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_five_one_two.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\logo_five_one_two.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\currency_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\currency_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_header.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\navigation_header.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_profile_image_background.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\user_profile_image_background.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_five_one_two.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\logo_five_one_two.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_top_right_shadow.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_top_right_shadow.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_top_shadow.9.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_top_shadow.9.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\qv_btn_selector.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\me.himanshusoni.quantityview\\quantity-view\\1.1.1\\res\\drawable\\qv_btn_selector.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\trademanager_splash_logo.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\trademanager_splash_logo.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_twitter.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\custom_twitter.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\live_market_icon.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\live_market_icon.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_ic_visibility.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\drawable\\design_ic_visibility.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\downmarket.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\downmarket.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\front_image1.jpg",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\front_image1.jpg"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_gainer.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\top_gainer.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\share.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\share.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lock.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\lock.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tips_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\tips_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\setting.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\setting.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chart_icon.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\chart_icon.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\user.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_onezerotwofour.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\logo_onezerotwofour.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\color_cursor_white.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.miguelcatalan\\materialsearchview\\1.4.0\\res\\drawable\\color_cursor_white.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\currency_icon.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\currency_icon.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profile_icon.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\profile_icon.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\headerbanner.png",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\src\\main\\res\\drawable\\headerbanner.png"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\qv_bg_selector.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\exploded-aar\\me.himanshusoni.quantityview\\quantity-view\\1.1.1\\res\\drawable\\qv_bg_selector.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_profile_image_background.xml",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\user_profile_image_background.xml"
+    },
+    {
+        "merged": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_onezerotwofour.png",
+        "source": "E:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerAll\\TradeManager\\app\\src\\main\\res\\drawable\\logo_onezerotwofour.png"
+    },
+    {
+        "merged": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\enls_bottom_right_shadow.xml",
+        "source": "D:\\Hdd_Sync\\Temp_PC_sync\\AS_workspace\\Git\\TradeManagerV4\\app\\build\\intermediates\\exploded-aar\\com.cleveroad\\loopbar\\1.0.0\\res\\drawable\\enls_bottom_right_shadow.xml"
+    }
+]

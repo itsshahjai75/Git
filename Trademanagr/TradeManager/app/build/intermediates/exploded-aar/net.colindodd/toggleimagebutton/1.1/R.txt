@@ -1,0 +1,5 @@
+int attr tib_drawable_off 0x7f010001
+int attr tib_drawable_on 0x7f010000
+int[] styleable ToggleImageButton { 0x7f010000, 0x7f010001 }
+int styleable ToggleImageButton_tib_drawable_off 1
+int styleable ToggleImageButton_tib_drawable_on 0
