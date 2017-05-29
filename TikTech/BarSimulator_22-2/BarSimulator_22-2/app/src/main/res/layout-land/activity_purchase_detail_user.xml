@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#51250A">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/back_btn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:id="@+id/backbtn" />
+
+        <com.barapp.simulator.uc.UserTextView
+            android:text="Product Details"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:tag="100"
+            android:id="@+id/textView2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#A48776"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#873B11">
+
+                    <ImageView
+                        android:id="@+id/img_wine"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@drawable/wine_bottle"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center|left|top"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@drawable/circular_bg">
+
+
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="3dp"
+                    app:srcCompat="@drawable/coin_white" />
+
+
+                <com.barapp.simulator.uc.UserTextView
+                    android:id="@+id/price"
+                    android:text="00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="100"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+       <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:fillViewport="true"
+            android:layout_weight="1">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="Name Of Product"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:textSize="23dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/name" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.7"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp">
+
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                app:srcCompat="@drawable/star_enable_yellow"
+                                android:id="@+id/rate_img1"/>
+
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                app:srcCompat="@drawable/star_enable_yellow"
+                                android:id="@+id/rate_img2"/>
+
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                app:srcCompat="@drawable/star_enable_yellow"
+                                android:id="@+id/rate_img3"/>
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                app:srcCompat="@drawable/star_enable_yellow"
+                                android:id="@+id/rate_img4"/>
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                app:srcCompat="@drawable/star_enable_yellow"
+                                android:id="@+id/rate_img5"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            app:srcCompat="@drawable/wine_icon_white"
+                            android:id="@+id/imageView10" />
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="Bar Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#C36A30"
+                            android:singleLine="true"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/bar_name" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="Qty : "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:textSize="18dp"
+                            android:textColor="#C36A30"
+                            android:layout_gravity="center_vertical"/>
+
+
+                        <RelativeLayout
+                            android:id="@+id/decrement"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:orientation="vertical"
+                            android:background="@drawable/circular_bg">
+
+                            <ImageView
+                                android:src="@drawable/minus"
+                                android:layout_width="15dp"
+                                android:layout_height="20dp"
+                                android:tint="@android:color/white"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"/>
+
+                        </RelativeLayout>
+
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:id="@+id/wine_quantity"
+                            android:text=""
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:textSize="22dp"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:layout_gravity="center_vertical"/>
+
+                        <RelativeLayout
+                            android:id="@+id/increment"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:orientation="vertical"
+                            android:background="@drawable/circular_bg">
+
+                            <ImageView
+                                android:src="@drawable/plus"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:tint="@android:color/white"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"/>
+
+                        </RelativeLayout>
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="Review : 100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="#C36A30"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/review_count" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="40pt">
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="Description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:textSize="16dp"
+                            android:textColor="#E1B598"
+                            android:id="@+id/desc"
+                            android:layout_weight="1" />
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:textSize="16dp"
+                            android:textColor="#E1B598"
+                            android:id="@+id/wine_description"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+
+
+                        <LinearLayout
+                            android:id="@+id/linear_isPurchased"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="0dp">
+
+
+                            <LinearLayout
+                                android:id="@+id/reviews"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_red"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:gravity="center_horizontal">
+
+                                <com.balysv.materialripple.MaterialRippleLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    rv_centered="true">
+
+                                    <com.barapp.simulator.uc.UserTextView
+                                        android:id="@+id/tv_review"
+                                        android:text="Add Reviews"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:tag="200"
+                                        android:textSize="20dp"
+                                        android:textColor="@android:color/white" />
+
+                                </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_viewmore"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_red"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:gravity="center_horizontal"
+                                android:layout_marginLeft="10dp">
+
+                                <com.balysv.materialripple.MaterialRippleLayout
+                                    android:id="@+id/product_mixture"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    rv_centered="true">
+
+                                    <com.barapp.simulator.uc.UserTextView
+                                        android:text="View More.."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:tag="200"
+                                        android:gravity="center_horizontal"
+                                        android:textSize="20dp"
+                                        android:textColor="@android:color/white" />
+
+                                </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:id="@+id/more"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_isPurchased"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rounded_white"
+                            rv_centered="true">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:id="@+id/purchase_now"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/rounded_red"
+                                android:visibility="visible"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp">
+
+                                <com.barapp.simulator.uc.UserTextView
+                                    android:text="PURCHASE NOW"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:tag="200"
+                                    android:gravity="center_horizontal"
+                                    android:textSize="20dp"
+                                    android:textColor="@android:color/white"
+                                    android:layout_weight="1"
+                                    android:id="@+id/txt_purchasenow" />
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,454 @@
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/buy_coins_drawable"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/product1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/wooden"
+                    android:layout_weight="1.1">
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/coin_yellow"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/imageView11" />
+
+                    <com.barapp.simulator.uc.UserTextView
+                        android:text="1000 Coins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView8"
+                        android:tag="200"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <com.barapp.simulator.uc.UserTextView
+                        android:text="$0.99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView9"
+                        android:tag="100"
+                        android:textSize="24dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#EA6E30"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="end"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/product4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/wooden"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/coin_yellow"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/imageView1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="0dp"
+                        >
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="10000 + 1500 Bonus!"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView23"
+                            android:tag="200"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/yellow"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="11,500 Coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView24"
+                            android:tag="200"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                    </LinearLayout>
+
+                    <com.barapp.simulator.uc.UserTextView
+                        android:text="$9.99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView"
+                        android:tag="100"
+                        android:textSize="24dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#EA6E30"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="end"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/product2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/wooden"
+                    android:layout_weight="1.1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/coin_yellow"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/imageView13" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="0dp">
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="3000 + 150 Bonus!"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView33"
+                            android:tag="200"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/yellow"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="3,150 Coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView34"
+                            android:tag="200"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                    </LinearLayout>
+
+                    <com.barapp.simulator.uc.UserTextView
+                        android:text="$2.99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView43"
+                        android:tag="100"
+                        android:textSize="24dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#EA6E30"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="end"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/product5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/wooden"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/coin_yellow"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/imageView15" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="0dp"
+                        >
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="20000 + 4000 Bonus!"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/yellow"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="24,000 Coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                    </LinearLayout>
+
+                    <com.barapp.simulator.uc.UserTextView
+                        android:text="$19.99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="100"
+                        android:textSize="24dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#EA6E30"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="end"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/product3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/wooden"
+                    android:layout_weight="1.1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/coin_yellow"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="0dp"
+                        >
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="5000 + 500 Bonus!"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/yellow"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="5,500 Coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                    </LinearLayout>
+
+                    <com.barapp.simulator.uc.UserTextView
+                        android:text="$4.99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="100"
+                        android:textSize="24dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#EA6E30"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="end"
+                        android:layout_weight="1"
+                        android:id="@+id/userTextView" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/product6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/wooden"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/coin_yellow"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="0dp">
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="50000 + 7500 Bonus!"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/yellow"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                        <com.barapp.simulator.uc.UserTextView
+                            android:text="57,500 Coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="200"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                    </LinearLayout>
+
+                    <com.barapp.simulator.uc.UserTextView
+                        android:text="$39.99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="100"
+                        android:textSize="24dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#EA6E30"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="end"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buycoins_linear"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_red"
+                >
+
+                <com.barapp.simulator.uc.RippleTextView
+                    android:text="BUY COINS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="100"
+                    android:textSize="20dp"
+                    android:id="@+id/buycoins"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right|top"
+        android:src="@drawable/close" />
+
+</FrameLayout>
+

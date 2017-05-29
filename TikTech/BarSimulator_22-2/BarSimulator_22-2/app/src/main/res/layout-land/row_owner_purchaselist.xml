@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/darker_gray"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:padding="0dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_white"
+        android:padding="5dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/wine_red_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/wine_icon" />
+
+        <com.barapp.simulator.uc.UserTextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#5D2B12"
+            android:tag="200"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/wine_icon"
+            android:id="@+id/wine_name" />
+
+
+
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            app:srcCompat="@drawable/coin_brown"
+            android:id="@+id/coin"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/wine_price"
+            android:layout_gravity="right" />
+
+        <com.barapp.simulator.uc.UserTextView
+            android:text="400"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:tag="100"
+            android:textColor="#5D2B12"
+            android:layout_marginRight="16dp"
+            android:textSize="20dp"
+            android:id="@+id/wine_price"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/close" />
+
+</FrameLayout>

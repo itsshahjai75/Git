@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_blur_bg" android:id="@+id/icon" />
+
+
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp"
+        android:background="#51250A">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/backbtn" />
+
+        <com.barapp.simulator.uc.UserTextView
+            android:text="RATING"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:tag="100"
+            android:id="@+id/textView2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/linear"
+        android:background="@drawable/buy_coins_drawable"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <com.barapp.simulator.uc.UserTextView
+            android:text="PLEASE RATE AND COMMENT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:tag="100"
+            android:id="@+id/textView3" />
+
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:progressDrawable="@drawable/ratingbar_red"
+            android:id="@+id/ratingBar" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:background="@drawable/purchase_owner_et"
+            android:textColorHint="@android:color/white"
+            android:hint="Enter Comments....."
+            android:textColor="@android:color/white"
+            android:layout_marginTop="-15dp"
+            android:gravity="top|left"
+            android:imeOptions="flagNoFullscreen"
+            android:padding="10dp"
+            android:ems="10"
+            android:id="@+id/et_comments" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bg_red"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearmain"
+        android:padding="3dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp">
+
+        <com.barapp.simulator.uc.UserTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="100"
+            android:textSize="18dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/white"
+            android:text="SUBMIT"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

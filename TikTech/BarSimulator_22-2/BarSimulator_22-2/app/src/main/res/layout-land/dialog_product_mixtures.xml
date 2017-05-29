@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_blur_bg">
+
+   <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#51250A">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_btn"/>
+
+        <com.barapp.simulator.uc.UserTextView
+            android:text="Product Mixtures"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:tag="100"
+            android:id="@+id/textView2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buy_coins_drawable"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    android:padding="5dp">
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listwines"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>

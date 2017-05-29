@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_290sdp"
+                android:background="@color/white">
+
+
+                <ImageView
+                    android:id="@+id/img_add_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_290sdp"
+                    android:src="@drawable/no_image" />
+
+                <ImageView
+                    android:id="@+id/img_addemoji_back"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/back_arrow"
+                    android:padding="@dimen/_10sdp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_add_emoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:background="@drawable/round_yellow"
+                    android:src="@drawable/ic_send"
+                    app:backgroundTint="@color/yellow"
+                    app:borderWidth="0dp"
+                    app:elevation="6dp"
+                    app:fabSize="normal" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_setmeemoji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:background="@drawable/rec_keyboard_blue"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/me_emoji" />
+
+
+                    <TextView
+                        android:id="@+id/btn_goto_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transperent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_15sdp"
+                        android:text="set me emoji"
+                        android:textAllCaps="true"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_hr_setmeemoji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".75"
+                        android:background="@color/transperent"
+                        android:orientation="vertical">
+
+                        <com.emoji.me_emoji.keyboard.EmojiHorizontalScrollView
+                            android:id="@+id/hr_setmeemoji"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:fadingEdgeLength="0dp"
+                            android:overScrollMode="never"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_smile_pr"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_weight="3.5"
+                                    android:background="@color/transperent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/img_smile_pr"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/wink" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_wink_pr"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_weight="3.5"
+                                    android:background="@color/transperent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/img_wink_pr"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/wink" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_troll_pr"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_weight="3.5"
+                                    android:background="@color/transperent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/img_troll_pr"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/troll" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_squint_pr"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_weight="3.5"
+                                    android:background="@color/transperent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/img_squint_pr"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/squint" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_sad_pr"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_weight="3.5"
+                                    android:background="@color/transperent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/img_sad_pr"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/sad" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_browup_pr"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_weight="3.5"
+                                    android:background="@color/transperent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/img_browup_pr"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/browup" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_oops_pr"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:layout_weight="3.5"
+                                    android:background="@color/transperent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/img_oops_pr"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/oops" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </com.emoji.me_emoji.keyboard.EmojiHorizontalScrollView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_convertcartoon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/rec_keyboard_yellow"
+                        android:gravity="center"
+                        android:minHeight="@dimen/_60sdp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/btn_change_keyboard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:background="@color/transperent"
+                            android:text="convert in cartoon"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:src="@drawable/ic_cartoon" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

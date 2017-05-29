@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#51250A">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/back_btn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:id="@+id/backbtn" />
+
+        <com.barapp.simulator.uc.UserTextView
+            android:text="Select Gallery Image"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:tag="100"
+            android:id="@+id/textView2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/grid_pics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="2dp"
+        android:background="#8C5536"
+        android:layout_marginLeft="-10dp"/>
+
+</LinearLayout>

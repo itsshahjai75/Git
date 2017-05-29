@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_left"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/owner_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+                </android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@android:color/white"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginRight="15dp"
+                    rv_centered="true">
+
+                <LinearLayout
+                    android:id="@+id/linear_addwine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/addwine"/>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/wineicon"/>
+
+                </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+             android:orientation="horizontal"
+            android:background="@android:color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/nameicon"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ffffff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.barapp.simulator.uc.UserTextView
+                    android:text="Name Of Owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="200"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_sixteen"
+                    android:singleLine="true"
+                    android:id="@+id/owner_name" />
+
+                <com.barapp.simulator.uc.UserTextView
+                    android:text="Name Of Owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="200"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/txt_fourteen"
+                    android:id="@+id/bar_name" />
+
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical"
+                   android:padding="1dp"
+                   android:layout_marginBottom="5dp">
+
+                   <ImageView
+                       android:id="@+id/rate1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/star_diseble"
+                       android:scaleType="fitXY"
+                       android:adjustViewBounds="true" />
+
+                   <ImageView
+                       android:id="@+id/rate2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/star_diseble"
+                       android:adjustViewBounds="true" />
+
+
+                   <ImageView
+                       android:id="@+id/rate3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/star_diseble"
+                       android:adjustViewBounds="true" />
+
+                   <ImageView
+                       android:id="@+id/rate4"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/star_diseble"
+                       android:adjustViewBounds="true" />
+
+                   <ImageView
+                       android:id="@+id/rate5"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/star_diseble"
+                       android:adjustViewBounds="true" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_owner_wallet"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:background="@drawable/circular_bg_wallet">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/wallets"
+                    android:id="@+id/imageView3" />
+
+                <com.barapp.simulator.uc.UserTextView
+                    android:tag="200"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/txt_fourteen"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:textStyle="bold"
+                    android:id="@+id/total_coins" />
+
+                </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_logout"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="7dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:src="@drawable/power_icon"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <pl.droidsonroids.gif.GifImageView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bar_simulator" android:id="@+id/icon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+                <LinearLayout
+                    android:id="@+id/linear_addwines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_white">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/addwine"/>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/wineicon"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

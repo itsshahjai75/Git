@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ME_Emoji</string>
+    <string name="simple_ime">ME_Emoji</string>
+    <string name="subtype_en_US">English (US)</string>
+
+    <string name="runtime_permissions_txt">Please enable ALL permissions from app settings.</string>
+</resources>

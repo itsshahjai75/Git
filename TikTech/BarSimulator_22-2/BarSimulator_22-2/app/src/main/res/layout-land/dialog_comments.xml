@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="10dp">
+
+
+    <com.barapp.simulator.uc.UserTextView
+        android:text="Add Comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:tag="100"
+        android:textSize="30dp" />
+
+
+    <com.barapp.simulator.uc.UserTextView
+        android:text="Please Rate and Comment:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="5dp"
+        android:tag="100"
+        android:textSize="20dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:progressDrawable="@drawable/ratingbar_red"
+        android:id="@+id/ratingBar" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:background="@drawable/purchase_owner_et"
+        android:textColorHint="@android:color/white"
+        android:hint="Enter Comments....."
+        android:textColor="@android:color/white"
+        android:gravity="top|left"
+        android:imeOptions="flagNoFullscreen"
+        android:padding="10dp"
+        android:ems="10"
+        android:id="@+id/et_comments" />
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:padding="10dp"
+        android:layout_marginTop="20dp">
+
+
+        <com.barapp.simulator.uc.UserTextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:tag="100"
+        android:text="Submit"
+        android:textSize="16dp"
+        android:padding="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_edittext" />
+
+
+        <com.barapp.simulator.uc.UserTextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:tag="100"
+            android:text="Cancel"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_edittext" />
+
+        </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

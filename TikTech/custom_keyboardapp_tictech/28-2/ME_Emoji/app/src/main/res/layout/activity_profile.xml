@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="com.emoji.me_emoji.LoginActivity">
+
+
+        <com.emoji.me_emoji.uc.UserTextView
+            android:text="Edit Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="30dp"
+            android:tag="100"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_profile" android:layout_width="90dp" android:layout_height="90dp"
+                android:src="@drawable/noimage"
+                app:civ_border_width="2dp" app:civ_border_color="#FFFFFF" />
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/edit_oval"
+                android:id="@+id/imageView3"
+                android:paddingTop="-10dp"
+                android:layout_gravity="right|top" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="12dp"
+            android:background="#1Affffff">
+
+            <com.emoji.me_emoji.uc.UserEditText
+                android:hint="First Name"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:tag="200"
+                android:background="@null"
+                android:drawableRight="@drawable/edit"
+                android:id="@+id/firstname" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#1Affffff"
+            android:layout_marginTop="2dp">
+
+            <com.emoji.me_emoji.uc.UserEditText
+                android:hint="Your Email"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:tag="200"
+                android:drawableRight="@drawable/edit"
+                android:background="@null"
+                android:id="@+id/email" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#1Affffff"
+            android:layout_marginTop="2dp">
+
+            <com.emoji.me_emoji.uc.UserEditText
+                android:hint="Phone No"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:tag="200"
+                android:drawableRight="@drawable/edit"
+                android:background="@null"
+                android:id="@+id/mobileno" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="2dp">
+
+            <com.emoji.me_emoji.uc.UserTextView
+                android:text="Change Password"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:tag="100"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@null"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#1Affffff"
+            android:layout_marginTop="2dp">
+
+            <com.emoji.me_emoji.uc.UserEditText
+                android:hint="Password"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:drawableRight="@drawable/edit"
+                android:tag="200"
+                android:background="@null"
+                android:id="@+id/password" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#1Affffff"
+            android:layout_marginTop="2dp">
+
+            <com.emoji.me_emoji.uc.UserEditText
+                android:hint="Confirm Password"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:tag="200"
+                android:drawableRight="@drawable/edit"
+                android:background="@null"
+                android:id="@+id/confirm_pass" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_submit"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:background="@drawable/login_btn">
+
+
+            <com.emoji.me_emoji.uc.UserTextView
+                android:text="SUBMIT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:tag="100"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

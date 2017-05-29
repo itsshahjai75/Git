@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_screen" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_bg_white"
+    android:orientation="vertical">
+
+    <com.barapp.simulator.uc.UserTextView
+        android:text="Login With Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="21dp"
+        android:padding="7dp"
+        android:gravity="center"
+        android:tag="200"
+        android:textStyle="bold"
+        android:background="@color/brown"
+        android:textColor="#ffffff" />
+
+
+    <com.barapp.simulator.uc.UserTextView
+        android:text="Login type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:tag="200"
+        android:gravity="left"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext_blackborder"
+        android:orientation="vertical">
+
+
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:buttonTint="@color/brown"
+                android:textColor="@color/black"
+                android:text="Owner"/>
+
+
+            <RadioButton
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/brown"
+                android:textColor="@color/black"
+                android:text="User"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <com.barapp.simulator.uc.UserTextView
+        android:text="Email ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:tag="200"
+        android:gravity="left"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black" />
+
+    <com.barapp.simulator.uc.UserEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" android:ems="10"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="top|left"
+        android:tag="200"
+        android:hint="Email ID"
+        android:background="@drawable/rounded_edittext_blackborder"
+        android:imeOptions="flagNoFullscreen"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/gray"
+        android:id="@+id/et_emailid" />
+
+
+    <Spinner
+        android:id="@+id/statedialog_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext_blackborder"
+        style="@style/MyAlertDialogMaterialStyle"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/com_facebook_blue"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

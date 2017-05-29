@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bar_simulator" android:id="@+id/icon" />
+
+    <ImageView
+        android:id="@+id/img_mic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/audio"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <com.barapp.simulator.uc.UserTextView
+        android:tag="200"
+        android:textAllCaps="false"
+        android:layout_below="@+id/img_mic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap on MIC to add BAR Name."
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="#90000000"
+        android:enabled="false"
+        android:textSize="21sp"
+        android:id="@+id/tv_tap" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_tap"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#90000000"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <com.barapp.simulator.uc.UserEditText
+            android:tag="200"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@color/black"
+            android:ems="10"
+            android:hint="BarName"
+            android:textColorHint="@android:color/black"
+            android:enabled="false"
+            android:padding="10dp"
+            android:background="@drawable/rounded_white_transparent"
+            android:id="@+id/et_barname" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/next"
+            android:id="@+id/submit" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

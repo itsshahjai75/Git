@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/rounded_white">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/wineicon"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/icon" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+
+            <com.barapp.simulator.uc.UserTextView
+                android:text="Product Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_name"
+                android:tag="200"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_sixteen"
+                />
+
+
+            <com.barapp.simulator.uc.UserTextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="100"
+                android:id="@+id/quantity"
+                android:textSize="12dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circular_bg"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/imageView2">
+
+
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/coin_white"
+                android:id="@+id/imageView3"
+                android:layout_weight="1" />
+
+
+            <com.barapp.simulator.uc.UserTextView
+                android:tag="200"
+                android:text="1500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:id="@+id/unit_price"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

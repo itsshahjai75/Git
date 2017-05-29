@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_blur_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#51250A">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_btn"/>
+
+        <com.barapp.simulator.uc.UserTextView
+            android:text="Profile Update"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:tag="100"
+            android:id="@+id/textView2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/buy_coins_drawable"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/nameicon"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FFFFFF" />
+
+
+            <com.barapp.simulator.uc.UserTextView
+                android:text="NAME OF USER"
+                android:tag="100"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_ratings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:gravity="center_horizontal">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@drawable/star_enable_yellow"
+                    android:id="@+id/rate_img1"/>
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@drawable/star_enable_yellow"
+                    android:id="@+id/rate_img2"/>
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@drawable/star_enable_yellow"
+                    android:id="@+id/rate_img3"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@drawable/star_enable_yellow"
+                    android:id="@+id/rate_img4"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@drawable/star_enable_yellow"
+                    android:id="@+id/rate_img5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@drawable/coin_brown"
+                    android:id="@+id/imageView8" />
+
+                <com.barapp.simulator.uc.UserTextView
+                    android:text="500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="100"
+                    android:textSize="20dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/coins" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/power_icon"
+                android:layout_marginTop="0dp"
+                android:visibility="gone"
+                android:id="@+id/logout" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/buy_coins_drawable"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="30dp"
+            android:padding="5dp">
+
+
+
+            <com.barapp.simulator.uc.UserTextView
+                android:text="My Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="15dp"
+                android:tag="200" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:padding="3dp"
+                        android:hint="Full Name"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="1dp"
+                        android:imeOptions="flagNoExtractUi"
+                        android:textColorHint="#ffffff"
+                        android:textColor="@android:color/white"
+                        android:ems="10"
+                        android:background="@drawable/et_profile"
+                        android:id="@+id/fullname" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:padding="3dp"
+                        android:hint="Email"
+                        android:enabled="false"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:textColorHint="#ffffff"
+                        android:textColor="@android:color/white"
+                        android:ems="10"
+                        android:background="@drawable/et_profile"
+                        android:id="@+id/email" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:padding="3dp"
+                        android:hint="New Password"
+                        android:imeOptions="flagNoExtractUi"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:textColorHint="#ffffff"
+                        android:textColor="@android:color/white"
+                        android:ems="10"
+                        android:background="@drawable/et_profile"
+                        android:id="@+id/password" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:padding="3dp"
+                        android:hint="Confirm Password"
+                        android:imeOptions="flagNoExtractUi"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:textColorHint="#ffffff"
+                        android:textColor="@android:color/white"
+                        android:ems="10"
+                        android:background="@drawable/et_profile"
+                        android:id="@+id/confirm_pass" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@drawable/et_profile"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/spinner_state" />
+
+
+                    <com.barapp.simulator.uc.UserTextView
+                        android:text="SUBMIT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="19dp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:tag="100"
+                        android:id="@+id/submit" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

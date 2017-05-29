@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.barapp.simulator">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.barapp.simulator.SplashActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.barapp.simulator.LoginActivity"
+            android:screenOrientation="landscape" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+
+
+        <activity
+            android:name="com.barapp.simulator.SignUPActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.barapp.simulator.OwnerMenuActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.barapp.simulator.UserMenuActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.barapp.simulator.SelectWineCategoryActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.barapp.simulator.SelectWineSubCategoryActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.barapp.simulator.Purchase_Detail_Owner"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.barapp.simulator.PurchaseDetail_User"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.barapp.simulator.BarNameActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.barapp.simulator.GalleryActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.barapp.simulator.Rate_Comment_ListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.barapp.simulator.Add_Rate_Comment"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.barapp.simulator.Dialog_Product_Mixtures"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.barapp.simulator.Profile_Get_Update"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="landscape" ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="com.emoji.me_emoji.LoginActivity">
+
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/top_img"
+            android:layout_marginTop="40dp"
+            android:id="@+id/imageView" />
+
+        <com.emoji.me_emoji.uc.UserTextView
+            android:text="SIGN UP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:tag="100"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:background="#1Affffff">
+
+            <com.emoji.me_emoji.uc.UserEditText
+                android:hint="Name"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:tag="200"
+                android:gravity="center_horizontal"
+                android:background="@null"
+                android:id="@+id/username" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="#1Affffff"
+            android:layout_marginTop="2dp">
+
+            <com.emoji.me_emoji.uc.UserEditText
+                android:hint="Email"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:tag="200"
+                android:background="@null"
+                android:id="@+id/email" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="#1Affffff"
+            android:layout_marginTop="2dp">
+
+            <com.emoji.me_emoji.uc.UserEditText
+                android:hint="Mobile No"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:tag="200"
+                android:background="@null"
+                android:id="@+id/mobileno" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="#1Affffff"
+            android:layout_marginTop="2dp">
+
+            <com.emoji.me_emoji.uc.UserEditText
+                android:hint="Password"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:inputType="textPassword"
+                android:tag="200"
+                android:gravity="center_horizontal"
+                android:background="@null"
+                android:id="@+id/password" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="#1Affffff"
+            android:layout_marginTop="2dp">
+
+            <com.emoji.me_emoji.uc.UserEditText
+                android:hint="Confirm Password"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:inputType="textPassword"
+                android:tag="200"
+                android:gravity="center_horizontal"
+                android:background="@null"
+                android:id="@+id/confirm_pass" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_signup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="30dp"
+            android:padding="12dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/login_btn">
+
+
+            <com.emoji.me_emoji.uc.UserTextView
+                android:text="SIGN UP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textColor="#BD5586"
+                android:tag="100"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/redirect_signin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="#BA5855"
+            android:padding="3dp"
+            android:layout_marginTop="25dp">
+
+
+            <com.emoji.me_emoji.uc.UserTextView
+                android:text="Already have an account? Sign in!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:tag="200"
+                android:gravity="center_horizontal"
+                 />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

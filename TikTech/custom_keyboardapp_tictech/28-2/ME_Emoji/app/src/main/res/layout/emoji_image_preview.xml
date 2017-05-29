@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:id="@+id/image_preview"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:layout_height="match_parent">
+
+            <com.emoji.me_emoji.keyboard.EmojiHorizontalScrollView
+                android:id="@+id/chat_hscroll_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fadingEdgeLength="0dp"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lin_chat_button1"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_marginRight="1dp"
+                    android:background="@android:color/white"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_chat_popup_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/emoji_big_smile" />
+                </LinearLayout>
+                </LinearLayout>
+            </com.emoji.me_emoji.keyboard.EmojiHorizontalScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

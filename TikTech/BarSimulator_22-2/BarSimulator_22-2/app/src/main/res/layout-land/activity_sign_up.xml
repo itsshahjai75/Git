@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/header_1280">
+
+                <com.barapp.simulator.uc.UserTextView
+                    android:text="Sign UP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="60dp"
+                    android:tag="200"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="23dp"
+                    android:id="@+id/textView" />
+
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/nameicon"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="30dp"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="#FFFFFF"/>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/textView6" />
+
+                    <RadioGroup
+                        android:id="@+id/rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/owner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:textSize="21dp"
+                            android:buttonTint="@android:color/white"
+                            android:textColor="@android:color/white"
+                            android:text="Owner"/>
+
+
+                        <RadioButton
+                            android:id="@+id/user"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="21dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:buttonTint="@android:color/white"
+                            android:text="User"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <com.barapp.simulator.uc.UserEditText
+                    android:tag="200"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/username"
+                    android:inputType="textPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:imeOptions="flagNoFullscreen|actionNext"
+                    android:padding="5dp"
+                    android:background="@null"
+                    android:hint="Name"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white"></View>
+
+                <com.barapp.simulator.uc.UserEditText
+                    android:tag="200"
+                    android:id="@+id/email"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="flagNoFullscreen|actionNext"
+                    android:padding="5dp"
+                    android:background="@null"
+                    android:hint="Email"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white">
+
+                </View>
+
+                <Spinner
+                    android:id="@+id/state"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#ffffff" />
+
+                <com.barapp.simulator.uc.UserEditText
+                    android:tag="200"
+                    android:id="@+id/password"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:imeOptions="flagNoFullscreen|actionNext"
+                    android:padding="5dp"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:hint="Password"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white">
+
+                </View>
+
+                <com.barapp.simulator.uc.UserEditText
+                    android:tag="200"
+                    android:id="@+id/confirmPassword"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:imeOptions="flagNoFullscreen|actionDone"
+                    android:padding="5dp"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:hint="Confirm Password"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white"></View>
+
+                <com.barapp.simulator.uc.RippleTextView
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="200"
+                    android:text="SIGN UP"
+                    android:textSize="21dp"
+                    android:padding="8dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_edittext"
+                    app:circlecolor="#512A09"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>

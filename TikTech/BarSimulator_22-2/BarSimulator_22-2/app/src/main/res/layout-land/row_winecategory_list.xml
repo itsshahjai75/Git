@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="150dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/righ_line"
+    android:layout_height="150dp">
+
+ <RelativeLayout
+    android:id="@+id/rel_main"
+    android:orientation="vertical" android:layout_width="150dp"
+    android:background="#000000"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/product_frame"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/imageView5" />
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/wine_bottle"
+        android:id="@+id/wine_image"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:padding="10dp"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_black_transparent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:layout_marginTop="15dp">
+
+
+        <TextView
+            android:text="Champagne"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wine_name"
+            android:gravity="center_horizontal"
+            android:textSize="13dp"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+    </LinearLayout>
+
+
+
+    <com.barapp.simulator.uc.UserTextView
+        android:text="Price 200$"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:tag="200"
+        android:background="#63341A"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/wine_price"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_selected"
+        android:orientation="vertical"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        android:background="#73000000">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_red"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="5dp"
+        android:padding="7dp"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:text="Champagne"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wine_name1"
+            android:gravity="center_horizontal"
+            android:textSize="13dp"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/check"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:tint="#ffffff"
+            android:id="@+id/imageView" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>
